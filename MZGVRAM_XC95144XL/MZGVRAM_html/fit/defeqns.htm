@@ -1,0 +1,993 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$$OpTx$FX_DC$383_INV$700 <= (SRAD(13) AND NOT gdlatchad/LIMITAD(9));
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$$OpTx$FX_DC$385_INV$701 <= (SRAD(6) AND NOT gdlatchad/LIMITAD(2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$$OpTx$FX_DC$392_INV$702 <= (SRAD(7) AND NOT gdlatchad/LIMITAD(3));
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$$OpTx$FX_DC$393_INV$703 <= ((SRAD(13) AND SRAD(12) AND NOT gdlatchad/LIMITAD(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(12) AND NOT gdlatchad/LIMITAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/LIMITAD(8)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$FX_SC$397 <= ((EXP20_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(10) AND NOT SRAD(11) AND nVBLANK AND NOT cnt(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND NOT $OpTx$INV$382 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(10) AND nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(6) AND gdlatchad/LIMITAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND NOT $OpTx$INV$382 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(9) AND nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND NOT $OpTx$INV$382 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(9) AND nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(5) AND gdlatchad/LIMITAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND NOT $OpTx$INV$382 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(6) AND nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$392_INV$702 AND NOT $OpTx$INV$382 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (BD(0).EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(7) AND nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$392_INV$702 AND NOT $OpTx$INV$382 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(6) AND nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(7) AND gdlatchad/LIMITAD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$392_INV$702 AND NOT $OpTx$INV$382 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(7) AND nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(7) AND gdlatchad/LIMITAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$392_INV$702 AND NOT $OpTx$INV$382 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(5) AND NOT SRAD(6) AND nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(1) AND NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND NOT $OpTx$$OpTx$FX_DC$392_INV$702 AND NOT $OpTx$INV$382 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(5) AND nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(2) AND NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND NOT $OpTx$$OpTx$FX_DC$392_INV$702 AND NOT $OpTx$INV$382 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(12) AND nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(8) AND nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND NOT $OpTx$INV$382 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(8) AND nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(7) AND gdlatchad/LIMITAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND NOT $OpTx$INV$382 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2));
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$INV$382 <= ((SRAD(10) AND SRAD(8) AND NOT gdlatchad/LIMITAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/LIMITAD(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(9) AND SRAD(8) AND NOT gdlatchad/LIMITAD(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/LIMITAD(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(8) AND NOT gdlatchad/LIMITAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/LIMITAD(6) AND NOT gdlatchad/LIMITAD(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(10) AND NOT gdlatchad/LIMITAD(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(10) AND SRAD(9) AND NOT gdlatchad/LIMITAD(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(9) AND NOT gdlatchad/LIMITAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/LIMITAD(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(10) AND SRAD(9) AND SRAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/LIMITAD(4)));
+</td></tr><tr><td>
+FDCPE_BD0: FDCPE port map (BD(0),DB(0),NOT CLK,RST,'0',BD_CE(0));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BD_CE(0) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_BD1: FDCPE port map (BD(1),DB(1),NOT CLK,RST,'0',BD_CE(1));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BD_CE(1) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_BD2: FDCPE port map (BD(2),DB(2),NOT CLK,RST,'0',BD_CE(2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BD_CE(2) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_BD3: FDCPE port map (BD(3),DB(3),NOT CLK,RST,'0',BD_CE(3));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BD_CE(3) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_BD4: FDCPE port map (BD(4),DB(4),NOT CLK,RST,'0',BD_CE(4));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BD_CE(4) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_BD5: FDCPE port map (BD(5),DB(5),NOT CLK,RST,'0',BD_CE(5));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BD_CE(5) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_BD6: FDCPE port map (BD(6),DB(6),NOT CLK,RST,'0',BD_CE(6));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BD_CE(6) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_BD7: FDCPE port map (BD(7),DB(7),NOT CLK,RST,'0',BD_CE(7));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BD_CE(7) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_BG: FDCPE port map (BG,BG_D,CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;BG_D <= ((nVBLANK AND cnt(0) AND nHBLANK AND bgdout/outdata(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND bgdout/outdata(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND bgdout/outdata(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND BD(0) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+</td></tr><tr><td>
+BLUE <= ((nVBLANK AND f5(3) AND f4(0) AND nHBLANK AND NOT VGATE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	VID)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND f4(0) AND nHBLANK AND NOT VGATE AND NOT VQH AND VID)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND f5(0) AND nHBLANK AND NOT VGATE AND VQH AND VID)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND f5(3) AND f6(0) AND nHBLANK AND BG AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT VGATE AND VID)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND f6(0) AND nHBLANK AND BG AND NOT VGATE AND NOT VQH AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	VID));
+</td></tr><tr><td>
+</td></tr><tr><td>
+BUFDIR <= NOT nWD;
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+FDCPE_GD0: FDCPE port map (GD(0),DB(0),NOT CLK,RST,'0',GD_CE(0));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GD_CE(0) <= (nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_GD1: FDCPE port map (GD(1),DB(1),NOT CLK,RST,'0',GD_CE(1));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GD_CE(1) <= (nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_GD2: FDCPE port map (GD(2),DB(2),NOT CLK,RST,'0',GD_CE(2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GD_CE(2) <= (nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_GD3: FDCPE port map (GD(3),DB(3),NOT CLK,RST,'0',GD_CE(3));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GD_CE(3) <= (nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_GD4: FDCPE port map (GD(4),DB(4),NOT CLK,RST,'0',GD_CE(4));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GD_CE(4) <= (nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_GD5: FDCPE port map (GD(5),DB(5),NOT CLK,RST,'0',GD_CE(5));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GD_CE(5) <= (nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_GD6: FDCPE port map (GD(6),DB(6),NOT CLK,RST,'0',GD_CE(6));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GD_CE(6) <= (nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_GD7: FDCPE port map (GD(7),DB(7),NOT CLK,RST,'0',GD_CE(7));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GD_CE(7) <= (nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_GG: FDCPE port map (GG,GG_D,CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GG_D <= ((nVBLANK AND cnt(0) AND nHBLANK AND ggdout/outdata(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND ggdout/outdata(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND ggdout/outdata(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND GD(0) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+</td></tr><tr><td>
+GOUT <= ((nVBLANK AND f6(0) AND NOT f6(3) AND nHBLANK AND BG AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT VGATE)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND f6(1) AND NOT f6(3) AND nHBLANK AND RG AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT VGATE)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND f6(2) AND NOT f6(3) AND nHBLANK AND GG AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT VGATE));
+</td></tr><tr><td>
+</td></tr><tr><td>
+GREEN <= ((nVBLANK AND f5(3) AND f4(2) AND nHBLANK AND NOT VGATE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	VID)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND f4(2) AND nHBLANK AND NOT VGATE AND NOT VQH AND VID)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND f5(2) AND nHBLANK AND NOT VGATE AND VQH AND VID)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND f5(3) AND f6(2) AND nHBLANK AND GG AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT VGATE AND VID)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND f6(2) AND nHBLANK AND GG AND NOT VGATE AND NOT VQH AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	VID));
+</td></tr><tr><td>
+FDCPE_RD0: FDCPE port map (RD(0),DB(0),NOT CLK,RST,'0',RD_CE(0));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RD_CE(0) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND NOT cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_RD1: FDCPE port map (RD(1),DB(1),NOT CLK,RST,'0',RD_CE(1));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RD_CE(1) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND NOT cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_RD2: FDCPE port map (RD(2),DB(2),NOT CLK,RST,'0',RD_CE(2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RD_CE(2) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND NOT cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_RD3: FDCPE port map (RD(3),DB(3),NOT CLK,RST,'0',RD_CE(3));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RD_CE(3) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND NOT cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_RD4: FDCPE port map (RD(4),DB(4),NOT CLK,RST,'0',RD_CE(4));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RD_CE(4) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND NOT cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_RD5: FDCPE port map (RD(5),DB(5),NOT CLK,RST,'0',RD_CE(5));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RD_CE(5) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND NOT cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_RD6: FDCPE port map (RD(6),DB(6),NOT CLK,RST,'0',RD_CE(6));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RD_CE(6) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND NOT cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_RD7: FDCPE port map (RD(7),DB(7),NOT CLK,RST,'0',RD_CE(7));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RD_CE(7) <= (nVBLANK AND NOT cnt(0) AND cnt(1) AND NOT cnt(2) AND nHBLANK);
+</td></tr><tr><td>
+</td></tr><tr><td>
+RED <= ((nVBLANK AND f5(3) AND f4(1) AND nHBLANK AND NOT VGATE AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	VID)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND f4(1) AND nHBLANK AND NOT VGATE AND NOT VQH AND VID)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND f5(1) AND nHBLANK AND NOT VGATE AND VQH AND VID)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND f5(3) AND f6(1) AND nHBLANK AND RG AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT VGATE AND VID)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND f6(1) AND nHBLANK AND RG AND NOT VGATE AND NOT VQH AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	VID));
+</td></tr><tr><td>
+FDCPE_RG: FDCPE port map (RG,RG_D,CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;RG_D <= ((nVBLANK AND cnt(0) AND nHBLANK AND rgdout/outdata(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND rgdout/outdata(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND rgdout/outdata(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND RD(0) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+</td></tr><tr><td>
+SBANKAD_I(0) <= NOT (((NOT nVBLANK AND NOT f7(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT f7(0) AND NOT nHBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND NOT cnt(0) AND cnt(1) AND NOT cnt(2) AND nHBLANK)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SBANKAD(0) <= SBANKAD_I(0) when SBANKAD_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SBANKAD_OE(0) <= NOT SBANKAD_0_OBUFE/SBANKAD_0_OBUFE_TRST__$INT;
+</td></tr><tr><td>
+</td></tr><tr><td>
+SBANKAD_I(1) <= ((NOT nVBLANK AND f7(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (f7(1) AND NOT nHBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND NOT cnt(0) AND cnt(1) AND NOT cnt(2) AND nHBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND NOT cnt(0) AND NOT cnt(1) AND cnt(2) AND nHBLANK));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SBANKAD(1) <= SBANKAD_I(1) when SBANKAD_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SBANKAD_OE(1) <= NOT SBANKAD_0_OBUFE/SBANKAD_0_OBUFE_TRST__$INT;
+</td></tr><tr><td>
+</td></tr><tr><td>
+SBANKAD_0_OBUFE/SBANKAD_0_OBUFE_TRST__$INT <= ((nVBLANK AND cnt(0) AND nHBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK));
+</td></tr><tr><td>
+FDCPE_SRAD0: FDCPE port map (SRAD_I(0),SRAD(0),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(0) <= ((SRAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND NOT SRAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(0) <= SRAD_I(0) when SRAD_OE(0) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_OE(0) <= (nVBLANK AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_SRAD1: FDCPE port map (SRAD_I(1),SRAD(1),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(1) <= ((SRAD(0) AND NOT SRAD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2 AND $OpTx$FX_SC$397)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND NOT SRAD(0) AND SRAD(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT nVBLANK AND NOT SRAD(0) AND $OpTx$FX_SC$397)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2 AND $OpTx$FX_SC$397));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(1) <= SRAD_I(1) when SRAD_OE(1) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_OE(1) <= (nVBLANK AND nHBLANK);
+</td></tr><tr><td>
+FTCPE_SRAD2: FTCPE port map (SRAD_I(2),SRAD_T(2),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_T(2) <= ((NOT nVBLANK AND SRAD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND SRAD(0) AND SRAD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(2) <= SRAD_I(2) when SRAD_OE(2) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_OE(2) <= (nVBLANK AND nHBLANK);
+</td></tr><tr><td>
+FTCPE_SRAD3: FTCPE port map (SRAD_I(3),SRAD_T(3),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_T(3) <= ((NOT nVBLANK AND SRAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND SRAD(0) AND SRAD(1) AND SRAD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(3) <= SRAD_I(3) when SRAD_OE(3) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_OE(3) <= (nVBLANK AND nHBLANK);
+</td></tr><tr><td>
+FTCPE_SRAD4: FTCPE port map (SRAD_I(4),SRAD_T(4),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_T(4) <= ((NOT nVBLANK AND SRAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND SRAD(0) AND SRAD(1) AND SRAD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(3) AND gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(4) <= SRAD_I(4) when SRAD_OE(4) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_OE(4) <= (nVBLANK AND nHBLANK);
+</td></tr><tr><td>
+FTCPE_SRAD5: FTCPE port map (SRAD_I(5),SRAD_T(5),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_T(5) <= ((SRAD(5) AND NOT nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND SRAD(0) AND SRAD(4) AND SRAD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(2) AND SRAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(5) <= SRAD_I(5) when SRAD_OE(5) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_OE(5) <= (nVBLANK AND nHBLANK);
+</td></tr><tr><td>
+FTCPE_SRAD6: FTCPE port map (SRAD_I(6),SRAD_T(6),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_T(6) <= ((SRAD(6) AND NOT nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(5) AND nVBLANK AND SRAD(0) AND SRAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(1) AND SRAD(2) AND SRAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(6) <= SRAD_I(6) when SRAD_OE(6) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_OE(6) <= (nVBLANK AND nHBLANK);
+</td></tr><tr><td>
+FTCPE_SRAD7: FTCPE port map (SRAD_I(7),SRAD_T(7),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_T(7) <= ((NOT SRAD(10) AND SRAD(5) AND SRAD(6) AND nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND SRAD(5) AND SRAD(6) AND nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(12) AND SRAD(5) AND SRAD(6) AND nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(5) AND SRAD(6) AND SRAD(8) AND nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(7) AND NOT nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(5) AND SRAD(6) AND SRAD(7) AND SRAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND SRAD(5) AND SRAD(6) AND nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(9) AND SRAD(5) AND SRAD(6) AND nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(7) <= SRAD_I(7) when SRAD_OE(7) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_OE(7) <= (nVBLANK AND nHBLANK);
+</td></tr><tr><td>
+FTCPE_SRAD8: FTCPE port map (SRAD_I(8),SRAD_T(8),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_T(8) <= ((EXP12_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(12) AND SRAD(5) AND SRAD(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(7) AND NOT SRAD(8) AND nVBLANK AND SRAD(0) AND SRAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND SRAD(5) AND SRAD(6) AND SRAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SRAD(8) AND nVBLANK AND SRAD(0) AND SRAD(4) AND SRAD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(7) AND gdlatchad/LIMITAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(12) AND SRAD(5) AND SRAD(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(7) AND NOT SRAD(8) AND nVBLANK AND SRAD(0) AND SRAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$INV$382)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND SRAD(5) AND SRAD(6) AND SRAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SRAD(8) AND nVBLANK AND SRAD(0) AND SRAD(4) AND SRAD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(8) AND gdlatchad/LIMITAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$INV$382)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(12) AND SRAD(5) AND SRAD(6) AND SRAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SRAD(8) AND nVBLANK AND SRAD(0) AND SRAD(4) AND SRAD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(7) AND gdlatchad/LIMITAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$INV$382)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(8) AND NOT nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(5) AND SRAD(6) AND SRAD(7) AND SRAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND SRAD(5) AND SRAD(6) AND SRAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SRAD(8) AND nVBLANK AND SRAD(0) AND SRAD(4) AND SRAD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(12) AND SRAD(5) AND SRAD(6) AND SRAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT SRAD(8) AND nVBLANK AND SRAD(0) AND SRAD(4) AND SRAD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(8) AND NOT $OpTx$$OpTx$FX_DC$383_INV$700));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(8) <= SRAD_I(8) when SRAD_OE(8) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_OE(8) <= (nVBLANK AND nHBLANK);
+</td></tr><tr><td>
+FTCPE_SRAD9: FTCPE port map (SRAD_I(9),SRAD_T(9),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_T(9) <= ((EXP23_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(9) AND SRAD(5) AND SRAD(6) AND SRAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(8) AND SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(3) AND gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(13) AND SRAD(10) AND SRAD(11) AND SRAD(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(9) AND SRAD(5) AND SRAD(6) AND NOT SRAD(7) AND NOT SRAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND NOT SRAD(9) AND SRAD(5) AND SRAD(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(7) AND SRAD(8) AND nVBLANK AND SRAD(0) AND SRAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$393_INV$703)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(9) AND SRAD(5) AND SRAD(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(7) AND SRAD(8) AND nVBLANK AND SRAD(0) AND SRAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(12) AND NOT SRAD(9) AND SRAD(5) AND SRAD(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(7) AND SRAD(8) AND nVBLANK AND SRAD(0) AND SRAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(9) AND NOT nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(9) <= SRAD_I(9) when SRAD_OE(9) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_OE(9) <= (nVBLANK AND nHBLANK);
+</td></tr><tr><td>
+FTCPE_SRAD10: FTCPE port map (SRAD_I(10),SRAD_T(10),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_T(10) <= ((EXP17_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND NOT SRAD(11) AND NOT SRAD(12) AND SRAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(5) AND SRAD(6) AND SRAD(7) AND SRAD(8) AND nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND NOT SRAD(11) AND SRAD(9) AND SRAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(6) AND SRAD(7) AND SRAD(8) AND nVBLANK AND SRAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(12) AND SRAD(9) AND SRAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(6) AND SRAD(7) AND SRAD(8) AND nVBLANK AND SRAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND SRAD(9) AND SRAD(5) AND SRAD(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(7) AND SRAD(8) AND nVBLANK AND SRAD(0) AND SRAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(9) AND gdlatchad/LIMITAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(10) AND NOT SRAD(12) AND SRAD(9) AND SRAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(6) AND SRAD(7) AND SRAD(8) AND nVBLANK AND SRAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(6) AND gdlatchad/LIMITAD(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(10) AND NOT SRAD(11) AND NOT SRAD(12) AND SRAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(5) AND SRAD(6) AND SRAD(7) AND SRAD(8) AND nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(10) AND NOT nVBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND SRAD(9) AND SRAD(5) AND SRAD(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(7) AND SRAD(8) AND nVBLANK AND SRAD(0) AND SRAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND NOT SRAD(12) AND SRAD(9) AND SRAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(6) AND SRAD(7) AND SRAD(8) AND nVBLANK AND SRAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(12) AND SRAD(9) AND SRAD(5) AND SRAD(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(7) AND SRAD(8) AND nVBLANK AND SRAD(0) AND SRAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(9) AND gdlatchad/LIMITAD(8)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(10) <= SRAD_I(10) when SRAD_OE(10) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_OE(10) <= (nVBLANK AND nHBLANK);
+</td></tr><tr><td>
+FTCPE_SRAD11: FTCPE port map (SRAD_I(11),SRAD_T(11),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_T(11) <= ((OUTAD(12).EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND SRAD(10) AND NOT SRAD(12) AND SRAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(5) AND SRAD(6) AND SRAD(7) AND SRAD(8) AND nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND SRAD(10) AND NOT SRAD(11) AND NOT SRAD(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(9) AND SRAD(5) AND SRAD(6) AND SRAD(7) AND SRAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nVBLANK AND SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND SRAD(10) AND NOT SRAD(11) AND SRAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(5) AND SRAD(6) AND SRAD(7) AND SRAD(8) AND nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(10) AND NOT SRAD(11) AND NOT SRAD(12) AND SRAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(5) AND SRAD(6) AND SRAD(7) AND SRAD(8) AND nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(10) AND NOT SRAD(11) AND SRAD(9) AND SRAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(6) AND SRAD(7) AND SRAD(8) AND nVBLANK AND SRAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(7) AND gdlatchad/LIMITAD(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(11) AND NOT nVBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND SRAD(10) AND SRAD(9) AND SRAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(6) AND SRAD(7) AND SRAD(8) AND nVBLANK AND SRAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(10) AND NOT SRAD(12) AND SRAD(9) AND SRAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(6) AND SRAD(7) AND SRAD(8) AND nVBLANK AND SRAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(8)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(11) <= SRAD_I(11) when SRAD_OE(11) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_OE(11) <= (nVBLANK AND nHBLANK);
+</td></tr><tr><td>
+FTCPE_SRAD12: FTCPE port map (SRAD_I(12),SRAD_T(12),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_T(12) <= ((NOT SRAD(13) AND SRAD(10) AND SRAD(11) AND NOT SRAD(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(9) AND SRAD(5) AND SRAD(6) AND SRAD(7) AND SRAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nVBLANK AND SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(10) AND SRAD(11) AND NOT SRAD(12) AND SRAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(5) AND SRAD(6) AND SRAD(7) AND SRAD(8) AND nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(13) AND SRAD(10) AND SRAD(11) AND SRAD(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(9) AND SRAD(5) AND SRAD(6) AND NOT SRAD(7) AND NOT SRAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(5) AND gdlatchad/LIMITAD(6) AND gdlatchad/LIMITAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(8) AND gdlatchad/LIMITAD(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(13) AND SRAD(10) AND SRAD(11) AND SRAD(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(9) AND SRAD(5) AND SRAD(6) AND NOT SRAD(7) AND NOT SRAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(5) AND gdlatchad/LIMITAD(6) AND gdlatchad/LIMITAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(8) AND gdlatchad/LIMITAD(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(12) AND NOT nVBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND SRAD(10) AND SRAD(11) AND SRAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(5) AND SRAD(6) AND SRAD(7) AND SRAD(8) AND nVBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(9)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(12) <= SRAD_I(12) when SRAD_OE(12) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_OE(12) <= (nVBLANK AND nHBLANK);
+</td></tr><tr><td>
+FTCPE_SRAD13: FTCPE port map (SRAD_I(13),SRAD_T(13),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_T(13) <= ((SRAD(13) AND NOT nVBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND SRAD(10) AND SRAD(11) AND SRAD(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(9) AND SRAD(5) AND SRAD(6) AND SRAD(7) AND SRAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nVBLANK AND SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(13) AND SRAD(10) AND SRAD(11) AND SRAD(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(9) AND SRAD(5) AND SRAD(6) AND NOT SRAD(7) AND NOT SRAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(5) AND gdlatchad/LIMITAD(6) AND gdlatchad/LIMITAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(8) AND gdlatchad/LIMITAD(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (SRAD(13) AND SRAD(10) AND SRAD(11) AND SRAD(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(9) AND SRAD(5) AND SRAD(6) AND NOT SRAD(7) AND NOT SRAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3) AND NOT cnt(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND gdlatchad/LIMITAD(9) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(5) AND gdlatchad/LIMITAD(6) AND gdlatchad/LIMITAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(8) AND gdlatchad/LIMITAD(4)));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD(13) <= SRAD_I(13) when SRAD_OE(13) = '1' else 'Z';
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SRAD_OE(13) <= (nVBLANK AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_bgdout/outdata1: FDCPE port map (bgdout/outdata(1),bgdout/outdata_D(1),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bgdout/outdata_D(1) <= ((nVBLANK AND cnt(0) AND nHBLANK AND bgdout/outdata(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND bgdout/outdata(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND bgdout/outdata(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND BD(1) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_bgdout/outdata2: FDCPE port map (bgdout/outdata(2),bgdout/outdata_D(2),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bgdout/outdata_D(2) <= ((nVBLANK AND cnt(0) AND nHBLANK AND bgdout/outdata(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND bgdout/outdata(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND bgdout/outdata(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND BD(2) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_bgdout/outdata3: FDCPE port map (bgdout/outdata(3),bgdout/outdata_D(3),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bgdout/outdata_D(3) <= ((nVBLANK AND cnt(0) AND nHBLANK AND bgdout/outdata(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND bgdout/outdata(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND bgdout/outdata(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND BD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_bgdout/outdata4: FDCPE port map (bgdout/outdata(4),bgdout/outdata_D(4),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bgdout/outdata_D(4) <= ((nVBLANK AND cnt(0) AND nHBLANK AND bgdout/outdata(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND bgdout/outdata(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND bgdout/outdata(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND BD(4) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_bgdout/outdata5: FDCPE port map (bgdout/outdata(5),bgdout/outdata_D(5),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bgdout/outdata_D(5) <= ((nVBLANK AND cnt(0) AND nHBLANK AND bgdout/outdata(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND bgdout/outdata(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND bgdout/outdata(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND BD(5) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_bgdout/outdata6: FDCPE port map (bgdout/outdata(6),bgdout/outdata_D(6),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bgdout/outdata_D(6) <= ((nVBLANK AND cnt(0) AND nHBLANK AND bgdout/outdata(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND bgdout/outdata(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND bgdout/outdata(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND BD(6) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_bgdout/outdata7: FDCPE port map (bgdout/outdata(7),bgdout/outdata_D(7),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bgdout/outdata_D(7) <= (nVBLANK AND BD(7) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK);
+</td></tr><tr><td>
+FDCPE_cnt0: FDCPE port map (cnt(0),cnt_D(0),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cnt_D(0) <= (nVBLANK AND NOT cnt(0) AND nHBLANK);
+</td></tr><tr><td>
+FDCPE_cnt1: FDCPE port map (cnt(1),cnt_D(1),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cnt_D(1) <= ((nVBLANK AND cnt(0) AND NOT cnt(1) AND nHBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND NOT cnt(0) AND cnt(1) AND nHBLANK));
+</td></tr><tr><td>
+FDCPE_cnt2: FDCPE port map (cnt(2),cnt_D(2),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cnt_D(2) <= ((nVBLANK AND NOT cnt(0) AND cnt(2) AND nHBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND NOT cnt(1) AND cnt(2) AND nHBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(0) AND cnt(1) AND NOT cnt(2) AND nHBLANK));
+</td></tr><tr><td>
+FDCPE_csedcnt0: FDCPE port map (csedcnt(0),csedcnt_D(0),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;csedcnt_D(0) <= (NOT nCSED AND NOT csedcnt(0));
+</td></tr><tr><td>
+FDCPE_csedcnt1: FDCPE port map (csedcnt(1),csedcnt_D(1),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;csedcnt_D(1) <= ((NOT nCSED AND csedcnt(0) AND NOT csedcnt(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT nCSED AND csedcnt(0) AND NOT csedcnt(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT nCSED AND NOT csedcnt(0) AND csedcnt(1)));
+</td></tr><tr><td>
+FDCPE_csedcnt2: FDCPE port map (csedcnt(2),csedcnt_D(2),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;csedcnt_D(2) <= ((NOT nCSED AND NOT csedcnt(0) AND csedcnt(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT nCSED AND NOT csedcnt(1) AND csedcnt(2)));
+</td></tr><tr><td>
+FDCPE_f40: FDCPE port map (f4(0),IODB(0),CLK,RST,'0',f4_CE(0));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f4_CE(0) <= (NOT IOAD(0) AND NOT IOAD(1) AND iocnt(0) AND iocnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT iocnt(2) AND NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+FDCPE_f41: FDCPE port map (f4(1),IODB(1),CLK,RST,'0',f4_CE(1));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f4_CE(1) <= (NOT IOAD(0) AND NOT IOAD(1) AND iocnt(0) AND iocnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT iocnt(2) AND NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+FDCPE_f42: FDCPE port map (f4(2),IODB(2),CLK,RST,'0',f4_CE(2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f4_CE(2) <= (NOT IOAD(0) AND NOT IOAD(1) AND iocnt(0) AND iocnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT iocnt(2) AND NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+FDCPE_f50: FDCPE port map (f5(0),IODB(0),CLK,'0',RST,f5_CE(0));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f5_CE(0) <= (IOAD(0) AND NOT IOAD(1) AND iocnt(0) AND iocnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT iocnt(2) AND NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+FDCPE_f51: FDCPE port map (f5(1),IODB(1),CLK,'0',RST,f5_CE(1));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f5_CE(1) <= (IOAD(0) AND NOT IOAD(1) AND iocnt(0) AND iocnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT iocnt(2) AND NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+FDCPE_f52: FDCPE port map (f5(2),IODB(2),CLK,'0',RST,f5_CE(2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f5_CE(2) <= (IOAD(0) AND NOT IOAD(1) AND iocnt(0) AND iocnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT iocnt(2) AND NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+FDCPE_f53: FDCPE port map (f5(3),IODB(3),CLK,RST,'0',f5_CE(3));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f5_CE(3) <= (IOAD(0) AND NOT IOAD(1) AND iocnt(0) AND iocnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT iocnt(2) AND NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+FDCPE_f60: FDCPE port map (f6(0),IODB(0),CLK,RST,'0',f6_CE(0));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f6_CE(0) <= (NOT IOAD(0) AND IOAD(1) AND iocnt(0) AND iocnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT iocnt(2) AND NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+FDCPE_f61: FDCPE port map (f6(1),IODB(1),CLK,RST,'0',f6_CE(1));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f6_CE(1) <= (NOT IOAD(0) AND IOAD(1) AND iocnt(0) AND iocnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT iocnt(2) AND NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+FDCPE_f62: FDCPE port map (f6(2),IODB(2),CLK,RST,'0',f6_CE(2));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f6_CE(2) <= (NOT IOAD(0) AND IOAD(1) AND iocnt(0) AND iocnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT iocnt(2) AND NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+FDCPE_f63: FDCPE port map (f6(3),IODB(3),CLK,'0',RST,f6_CE(3));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f6_CE(3) <= (NOT IOAD(0) AND IOAD(1) AND iocnt(0) AND iocnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT iocnt(2) AND NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+FDCPE_f70: FDCPE port map (f7(0),IODB(0),CLK,RST,'0',f7_CE(0));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f7_CE(0) <= (IOAD(0) AND IOAD(1) AND iocnt(0) AND iocnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT iocnt(2) AND NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+FDCPE_f71: FDCPE port map (f7(1),IODB(1),CLK,RST,'0',f7_CE(1));
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;f7_CE(1) <= (IOAD(0) AND IOAD(1) AND iocnt(0) AND iocnt(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT iocnt(2) AND NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+FDCPE_gdlatchad/LIMITAD0: FDCPE port map (gdlatchad/LIMITAD(0),gdlatchad/LIMITAD_D(0),NOT nHBLANK,'0',RST);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gdlatchad/LIMITAD_D(0) <= (nVBLANK AND gdlatchad/LIMITAD(0));
+</td></tr><tr><td>
+FDCPE_gdlatchad/LIMITAD1: FDCPE port map (gdlatchad/LIMITAD(1),gdlatchad/LIMITAD_D(1),NOT nHBLANK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gdlatchad/LIMITAD_D(1) <= ((nVBLANK AND gdlatchad/LIMITAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/LIMITAD(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND NOT gdlatchad/LIMITAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(1)));
+</td></tr><tr><td>
+FTCPE_gdlatchad/LIMITAD2: FTCPE port map (gdlatchad/LIMITAD(2),gdlatchad/LIMITAD_T(2),NOT nHBLANK,'0',RST);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gdlatchad/LIMITAD_T(2) <= ((NOT nVBLANK AND gdlatchad/LIMITAD(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND gdlatchad/LIMITAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(1)));
+</td></tr><tr><td>
+FTCPE_gdlatchad/LIMITAD3: FTCPE port map (gdlatchad/LIMITAD(3),gdlatchad/LIMITAD_T(3),NOT nHBLANK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gdlatchad/LIMITAD_T(3) <= ((nVBLANK AND NOT gdlatchad/LIMITAD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/LIMITAD(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT nVBLANK AND NOT gdlatchad/LIMITAD(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND NOT gdlatchad/LIMITAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/LIMITAD(2)));
+</td></tr><tr><td>
+FTCPE_gdlatchad/LIMITAD4: FTCPE port map (gdlatchad/LIMITAD(4),gdlatchad/LIMITAD_T(4),NOT nHBLANK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gdlatchad/LIMITAD_T(4) <= ((nVBLANK AND NOT gdlatchad/LIMITAD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/LIMITAD(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND NOT gdlatchad/LIMITAD(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT nVBLANK AND NOT gdlatchad/LIMITAD(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND NOT gdlatchad/LIMITAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT gdlatchad/LIMITAD(2)));
+</td></tr><tr><td>
+FTCPE_gdlatchad/LIMITAD5: FTCPE port map (gdlatchad/LIMITAD(5),gdlatchad/LIMITAD_T(5),NOT nHBLANK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gdlatchad/LIMITAD_T(5) <= ((NOT nVBLANK AND gdlatchad/LIMITAD(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND gdlatchad/LIMITAD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(3) AND gdlatchad/LIMITAD(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND gdlatchad/LIMITAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(1) AND gdlatchad/LIMITAD(3) AND gdlatchad/LIMITAD(4)));
+</td></tr><tr><td>
+FTCPE_gdlatchad/LIMITAD6: FTCPE port map (gdlatchad/LIMITAD(6),gdlatchad/LIMITAD_T(6),NOT nHBLANK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gdlatchad/LIMITAD_T(6) <= ((NOT nVBLANK AND gdlatchad/LIMITAD(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND gdlatchad/LIMITAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(2) AND gdlatchad/LIMITAD(3) AND gdlatchad/LIMITAD(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND gdlatchad/LIMITAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(0) AND gdlatchad/LIMITAD(1) AND gdlatchad/LIMITAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(4)));
+</td></tr><tr><td>
+FTCPE_gdlatchad/LIMITAD7: FTCPE port map (gdlatchad/LIMITAD(7),gdlatchad/LIMITAD_T(7),NOT nHBLANK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gdlatchad/LIMITAD_T(7) <= ((NOT nVBLANK AND gdlatchad/LIMITAD(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND gdlatchad/LIMITAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(6) AND gdlatchad/LIMITAD(2) AND gdlatchad/LIMITAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND gdlatchad/LIMITAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(6) AND gdlatchad/LIMITAD(0) AND gdlatchad/LIMITAD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(3) AND gdlatchad/LIMITAD(4)));
+</td></tr><tr><td>
+FTCPE_gdlatchad/LIMITAD8: FTCPE port map (gdlatchad/LIMITAD(8),gdlatchad/LIMITAD_T(8),NOT nHBLANK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gdlatchad/LIMITAD_T(8) <= ((NOT nVBLANK AND gdlatchad/LIMITAD(8))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND gdlatchad/LIMITAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(6) AND gdlatchad/LIMITAD(7) AND gdlatchad/LIMITAD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(3) AND gdlatchad/LIMITAD(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND gdlatchad/LIMITAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(6) AND gdlatchad/LIMITAD(7) AND gdlatchad/LIMITAD(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(1) AND gdlatchad/LIMITAD(3) AND gdlatchad/LIMITAD(4)));
+</td></tr><tr><td>
+FTCPE_gdlatchad/LIMITAD9: FTCPE port map (gdlatchad/LIMITAD(9),gdlatchad/LIMITAD_T(9),NOT nHBLANK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;gdlatchad/LIMITAD_T(9) <= ((NOT nVBLANK AND gdlatchad/LIMITAD(9))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND gdlatchad/LIMITAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(6) AND gdlatchad/LIMITAD(7) AND gdlatchad/LIMITAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(2) AND gdlatchad/LIMITAD(3) AND gdlatchad/LIMITAD(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND gdlatchad/LIMITAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(6) AND gdlatchad/LIMITAD(7) AND gdlatchad/LIMITAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(0) AND gdlatchad/LIMITAD(1) AND gdlatchad/LIMITAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(4)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2 <= (SRAD(13) AND SRAD(10) AND SRAD(11) AND SRAD(12) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(9) AND SRAD(5) AND SRAD(6) AND NOT SRAD(7) AND NOT SRAD(8) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	SRAD(0) AND SRAD(4) AND SRAD(1) AND SRAD(2) AND SRAD(3));
+</td></tr><tr><td>
+</td></tr><tr><td>
+gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2 <= ((NOT nVBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (gdlatchad/LIMITAD(3).EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(10) AND NOT SRAD(11) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND NOT $OpTx$INV$382)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(10) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(6) AND gdlatchad/LIMITAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND NOT $OpTx$INV$382)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(9) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND NOT $OpTx$INV$382)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(9) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(5) AND gdlatchad/LIMITAD(7) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND NOT $OpTx$INV$382)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(8) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(7) AND gdlatchad/LIMITAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND NOT $OpTx$INV$382)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (gdlatchad/LIMITAD(5).EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(6) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$392_INV$702 AND NOT $OpTx$INV$382)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(7) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$392_INV$702 AND NOT $OpTx$INV$382)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(6) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(7) AND gdlatchad/LIMITAD(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$392_INV$702 AND NOT $OpTx$INV$382)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(7) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(7) AND gdlatchad/LIMITAD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$392_INV$702 AND NOT $OpTx$INV$382)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(5) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$385_INV$701 AND NOT $OpTx$$OpTx$FX_DC$392_INV$702 AND NOT $OpTx$INV$382)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(13) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(9) AND NOT $OpTx$$OpTx$FX_DC$393_INV$703)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(7) AND NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$393_INV$703)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(12) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	gdlatchad/LIMITAD(8) AND NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$393_INV$703)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT SRAD(11) AND NOT SRAD(8) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK AND gdlatchad/LIMITAD(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$383_INV$700 AND NOT $OpTx$$OpTx$FX_DC$393_INV$703 AND NOT $OpTx$INV$382));
+</td></tr><tr><td>
+FDCPE_ggdout/outdata1: FDCPE port map (ggdout/outdata(1),ggdout/outdata_D(1),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ggdout/outdata_D(1) <= ((nVBLANK AND cnt(0) AND nHBLANK AND ggdout/outdata(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND ggdout/outdata(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND ggdout/outdata(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND GD(1) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_ggdout/outdata2: FDCPE port map (ggdout/outdata(2),ggdout/outdata_D(2),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ggdout/outdata_D(2) <= ((nVBLANK AND cnt(0) AND nHBLANK AND ggdout/outdata(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND ggdout/outdata(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND ggdout/outdata(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND GD(2) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_ggdout/outdata3: FDCPE port map (ggdout/outdata(3),ggdout/outdata_D(3),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ggdout/outdata_D(3) <= ((nVBLANK AND cnt(0) AND nHBLANK AND ggdout/outdata(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND ggdout/outdata(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND ggdout/outdata(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND GD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_ggdout/outdata4: FDCPE port map (ggdout/outdata(4),ggdout/outdata_D(4),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ggdout/outdata_D(4) <= ((nVBLANK AND cnt(0) AND nHBLANK AND ggdout/outdata(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND ggdout/outdata(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND ggdout/outdata(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND GD(4) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_ggdout/outdata5: FDCPE port map (ggdout/outdata(5),ggdout/outdata_D(5),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ggdout/outdata_D(5) <= ((nVBLANK AND cnt(0) AND nHBLANK AND ggdout/outdata(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND ggdout/outdata(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND ggdout/outdata(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND GD(5) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_ggdout/outdata6: FDCPE port map (ggdout/outdata(6),ggdout/outdata_D(6),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ggdout/outdata_D(6) <= ((nVBLANK AND cnt(0) AND nHBLANK AND ggdout/outdata(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND ggdout/outdata(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND ggdout/outdata(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND GD(6) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_ggdout/outdata7: FDCPE port map (ggdout/outdata(7),ggdout/outdata_D(7),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ggdout/outdata_D(7) <= (nVBLANK AND GD(7) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK);
+</td></tr><tr><td>
+FDCPE_iocnt0: FDCPE port map (iocnt(0),iocnt_D(0),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iocnt_D(0) <= (NOT iocnt(0) AND NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+FDCPE_iocnt1: FDCPE port map (iocnt(1),iocnt_D(1),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iocnt_D(1) <= ((NOT iocnt(0) AND iocnt(1) AND NOT nIWR AND NOT nF47)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (iocnt(0) AND NOT iocnt(1) AND NOT iocnt(2) AND NOT nIWR AND NOT nF47));
+</td></tr><tr><td>
+FDCPE_iocnt2: FDCPE port map (iocnt(2),iocnt_D(2),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iocnt_D(2) <= ((NOT iocnt(0) AND iocnt(2) AND NOT nIWR AND NOT nF47)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT iocnt(1) AND iocnt(2) AND NOT nIWR AND NOT nF47)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (iocnt(0) AND iocnt(1) AND NOT iocnt(2) AND NOT nIWR AND NOT nF47));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nBUFOE <= ((rCSED)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND nHBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT f7(0) AND NOT f7(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nRD AND nWD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT nRD AND NOT nWD));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nCS <= ((cnt(0) AND NOT nRD AND NOT nWD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND NOT cnt(1) AND NOT cnt(2) AND nHBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT f7(0) AND NOT f7(1) AND NOT cnt(1) AND NOT cnt(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT cnt(1) AND NOT cnt(2) AND nRD AND nWD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT cnt(1) AND NOT cnt(2) AND NOT nRD AND NOT nWD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (rCSED AND cnt(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(0) AND nHBLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT f7(0) AND NOT f7(1) AND cnt(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (rCSED AND NOT cnt(1) AND NOT cnt(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (cnt(0) AND nRD AND nWD));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nOE <= ((NOT nVBLANK AND f7(0) AND NOT rCSED AND nRD AND NOT nWD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT nVBLANK AND f7(1) AND NOT rCSED AND nRD AND NOT nWD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (f7(0) AND NOT rCSED AND NOT nHBLANK AND nRD AND NOT nWD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (f7(1) AND NOT rCSED AND NOT nHBLANK AND nRD AND NOT nWD));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nWE <= NOT (((NOT nVBLANK AND f7(0) AND NOT rCSED AND nRD AND NOT nWD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT nVBLANK AND f7(1) AND NOT rCSED AND nRD AND NOT nWD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (f7(0) AND NOT rCSED AND NOT nHBLANK AND nRD AND NOT nWD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (f7(1) AND NOT rCSED AND NOT nHBLANK AND nRD AND NOT nWD)));
+</td></tr><tr><td>
+FDCPE_rCSED: FDCPE port map (rCSED,rCSED_D,CLK,'0',RST);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rCSED_D <= ((NOT nCSED AND NOT rCSED)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT nCSED AND csedcnt(0) AND csedcnt(1) AND NOT csedcnt(2)));
+</td></tr><tr><td>
+FDCPE_rgdout/outdata1: FDCPE port map (rgdout/outdata(1),rgdout/outdata_D(1),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgdout/outdata_D(1) <= ((nVBLANK AND cnt(0) AND nHBLANK AND rgdout/outdata(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND rgdout/outdata(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND rgdout/outdata(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND RD(1) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_rgdout/outdata2: FDCPE port map (rgdout/outdata(2),rgdout/outdata_D(2),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgdout/outdata_D(2) <= ((nVBLANK AND cnt(0) AND nHBLANK AND rgdout/outdata(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND rgdout/outdata(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND rgdout/outdata(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND RD(2) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_rgdout/outdata3: FDCPE port map (rgdout/outdata(3),rgdout/outdata_D(3),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgdout/outdata_D(3) <= ((nVBLANK AND cnt(0) AND nHBLANK AND rgdout/outdata(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND rgdout/outdata(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND rgdout/outdata(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND RD(3) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_rgdout/outdata4: FDCPE port map (rgdout/outdata(4),rgdout/outdata_D(4),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgdout/outdata_D(4) <= ((nVBLANK AND cnt(0) AND nHBLANK AND rgdout/outdata(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND rgdout/outdata(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND rgdout/outdata(5))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND RD(4) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_rgdout/outdata5: FDCPE port map (rgdout/outdata(5),rgdout/outdata_D(5),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgdout/outdata_D(5) <= ((nVBLANK AND cnt(0) AND nHBLANK AND rgdout/outdata(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND rgdout/outdata(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND rgdout/outdata(6))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND RD(5) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_rgdout/outdata6: FDCPE port map (rgdout/outdata(6),rgdout/outdata_D(6),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgdout/outdata_D(6) <= ((nVBLANK AND cnt(0) AND nHBLANK AND rgdout/outdata(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(1) AND nHBLANK AND rgdout/outdata(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND cnt(2) AND nHBLANK AND rgdout/outdata(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nVBLANK AND RD(6) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK));
+</td></tr><tr><td>
+FDCPE_rgdout/outdata7: FDCPE port map (rgdout/outdata(7),rgdout/outdata_D(7),CLK,RST,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;rgdout/outdata_D(7) <= (nVBLANK AND RD(7) AND NOT cnt(0) AND NOT cnt(1) AND NOT cnt(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nHBLANK);
+</td></tr><tr><td>
+FDCPE_tp1: FDCPE port map (tp1,'0',CLK,'0',RST,tp1_CE);
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tp1_CE <= (NOT nIWR AND NOT nF47);
+</td></tr><tr><td>
+</td></tr><tr><td>
+tp2 <= NOT ((NOT nCSED AND NOT nRD AND BLANK));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

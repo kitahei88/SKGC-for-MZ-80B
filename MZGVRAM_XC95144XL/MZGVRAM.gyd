@@ -1,0 +1,102 @@
+Pin Freeze File:  version P.20131013
+
+95144XL100 XC95144XL-10-TQ100
+BLANK S:PIN10
+CLK S:PIN22
+DB<0> S:PIN72
+DB<1> S:PIN74
+DB<2> S:PIN76
+DB<3> S:PIN77
+DB<4> S:PIN78
+DB<5> S:PIN79
+DB<6> S:PIN81
+DB<7> S:PIN82
+IOAD<0> S:PIN40
+IOAD<1> S:PIN39
+IODB<0> S:PIN9
+IODB<1> S:PIN8
+IODB<2> S:PIN6
+IODB<3> S:PIN1
+RST S:PIN99
+VGATE S:PIN36
+VID S:PIN35
+VQH S:PIN12
+nCSED S:PIN20
+nF47 S:PIN32
+nHBLANK S:PIN30
+nIWR S:PIN25
+nRD S:PIN15
+nVBLANK S:PIN29
+nWD S:PIN14
+BLUE S:PIN91
+BUFDIR S:PIN97
+GOUT S:PIN18
+GREEN S:PIN92
+SRAD<0> S:PIN52
+SRAD<1> S:PIN53
+SRAD<2> S:PIN54
+SRAD<3> S:PIN55
+SRAD<4> S:PIN56
+SRAD<5> S:PIN58
+SRAD<6> S:PIN59
+SRAD<7> S:PIN60
+SRAD<8> S:PIN61
+SRAD<9> S:PIN63
+SRAD<10> S:PIN64
+SRAD<11> S:PIN65
+SRAD<12> S:PIN66
+SRAD<13> S:PIN67
+RED S:PIN93
+SBANKAD<0> S:PIN94
+SBANKAD<1> S:PIN95
+nBUFOE S:PIN96
+nCS S:PIN87
+nOE S:PIN85
+nWE S:PIN86
+tp1 S:PIN89
+tp2 S:PIN90
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 $OpTx$INV$382 gdlatchad/LIMITAD<4> gdlatchad/LIMITAD<3> EXP10_
+		 gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2 EXP11_ gdlatchad/LIMITAD<5> gdlatchad/LIMITAD<6>
+		 gdlatchad/LIMITAD<7> gdlatchad/LIMITAD<8> gdlatchad/LIMITAD<1> GOUT_OBUF
+		 gdlatchad/LIMITAD<2> $OpTx$$OpTx$FX_DC$393_INV$703 BD<1> GD<1>
+		 RD<1> gdlatchad/LIMITAD<0>
+PARTITION FB2_1 iocnt<0> iocnt<1> f7<1> f7<0>
+		 f6<3> f6<2> f6<1> f6<0>
+		 f5<3> f5<2> f5<1> f5<0>
+		 f4<2> f4<1> f4<0> iocnt<2>
+		 rgdout/outdata<5> rgdout/outdata<4>
+PARTITION FB3_1 RD<7> RD<6> RD<5> RD<4>
+		 RD<3> RD<2> RD<0> GD<7>
+		 GD<6> GD<5> GD<4> GD<3>
+		 BD<7> BD<6> BD<5> BD<4>
+		 BD<3> rgdout/outdata<6>
+PARTITION FB4_1 cnt<0> nCS_OBUF cnt<1> SBANKAD_0_OBUFE/SBANKAD_0_OBUFE_TRST__$INT
+		 rstchk tp2_OBUF cnt<2> BLUE_OBUF
+		 GREEN_OBUF bgdout/outdata<1> RED_OBUF SBANKAD_0_OBUFE
+		 RG SBANKAD_1_OBUFE nBUFOE_OBUF GG
+		 BUFDIR_OBUF BG
+PARTITION FB5_9 rgdout/outdata<7> ggdout/outdata<7> csedcnt<0> bgdout/outdata<7>
+		 $OpTx$$OpTx$FX_DC$392_INV$702 $OpTx$$OpTx$FX_DC$385_INV$701 $OpTx$$OpTx$FX_DC$383_INV$700 rCSED
+		 csedcnt<2> csedcnt<1>
+PARTITION FB6_1 GD<2> BD<2> rgdout/outdata<3> rgdout/outdata<2>
+		 rgdout/outdata<1> ggdout/outdata<6> ggdout/outdata<5> ggdout/outdata<4>
+		 ggdout/outdata<3> ggdout/outdata<2> ggdout/outdata<1> bgdout/outdata<6>
+		 bgdout/outdata<5> bgdout/outdata<4> nOE_OBUF bgdout/outdata<3>
+		 nWE_OBUF bgdout/outdata<2>
+PARTITION FB7_1 EXP12_ EXP13_
+PARTITION FB7_5 OUTAD<0> OUTAD<1>
+PARTITION FB7_8 OUTAD<2> OUTAD<3>
+PARTITION FB7_11 OUTAD<4> OUTAD<5>
+PARTITION FB7_14 OUTAD<6> OUTAD<7> EXP14_ OUTAD<8>
+		 EXP15_
+PARTITION FB8_1 EXP16_ OUTAD<9> EXP17_ EXP18_
+		 OUTAD<10> OUTAD<11> EXP19_ OUTAD<12>
+		 OUTAD<13> gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2 GD<0> EXP20_
+		 EXP21_ $OpTx$FX_SC$397 EXP22_ BD<0>
+		 gdlatchad/LIMITAD<9> EXP23_
+

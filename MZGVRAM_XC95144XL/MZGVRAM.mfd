@@ -1,0 +1,3131 @@
+MDF Database:  version 1.0
+MDF_INFO | MZGVRAM | XC95144XL-10-TQ100
+MACROCELL | 7 | 8 | OUTAD<13>
+ATTRIBUTES | 4630274 | 0
+OUTPUTMC | 16 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 14 | 6 | 16 | 4 | 14 | 0 | 13 | 0 | 4 | 7 | 13 | 7 | 9 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8
+INPUTS | 27 | SRAD<13>  | nVBLANK  | SRAD<10>  | SRAD<11>  | SRAD<12>  | SRAD<9>  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<8>  | gdlatchad/LIMITAD<9>  | gdlatchad/LIMITAD<5>  | gdlatchad/LIMITAD<6>  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<3>  | gdlatchad/LIMITAD<4>  | gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2.EXP
+INPUTMC | 25 | 7 | 8 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 9 | 7 | 16 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 2 | 0 | 1 | 7 | 9
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 7 | 7
+IMPORTS | 1 | 7 | 9
+EQ | 44 | 
+   SRAD<13>.T = ;Imported pterms FB8_10
+	  SRAD<13> & !nVBLANK
+	# !SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & 
+	nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<9>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<3>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4>;
+   SRAD<13>.CLK = CLK;	// GCK
+   SRAD<13>.AR = RST;	// GSR
+   SRAD<13>.OE = nVBLANK & nHBLANK;
+    OUTAD<13>.EXP  =  !SRAD<13> & SRAD<10> & SRAD<11> & !SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & 
+	nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<8>
+	# SRAD<10> & SRAD<11> & !SRAD<12> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<8>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<3>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4>
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 7 | 4 | OUTAD<10>
+ATTRIBUTES | 4630274 | 0
+OUTPUTMC | 17 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 13 | 6 | 0 | 0 | 3 | 0 | 0 | 7 | 12 | 7 | 9 | 0 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 17
+INPUTS | 22 | SRAD<10>  | nVBLANK  | SRAD<13>  | SRAD<9>  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<9>  | SRAD<12>  | gdlatchad/LIMITAD<8>  | EXP18_.EXP  | OUTAD<11>.EXP
+INPUTMC | 20 | 7 | 4 | 7 | 8 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 7 | 16 | 7 | 7 | 0 | 9 | 7 | 3 | 7 | 5
+INPUTP | 2 | 47 | 49
+IMPORTS | 2 | 7 | 3 | 7 | 5
+EQ | 91 | 
+   SRAD<10>.T = SRAD<10> & !nVBLANK
+	# !SRAD<13> & SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<9>
+	# !SRAD<13> & !SRAD<12> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<8>
+	# !SRAD<12> & SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<9> & gdlatchad/LIMITAD<8>
+;Imported pterms FB8_4
+	# !SRAD<13> & !SRAD<11> & !SRAD<12> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<7>
+	# !SRAD<13> & !SRAD<11> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8>
+	# !SRAD<11> & !SRAD<12> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<7>
+	# !SRAD<11> & SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<9> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8>
+	# !SRAD<10> & !SRAD<12> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7>
+;Imported pterms FB8_3
+	# !SRAD<13> & !SRAD<10> & !SRAD<11> & !SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & 
+	nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<6>
+	# !SRAD<13> & !SRAD<10> & !SRAD<12> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	gdlatchad/LIMITAD<7>
+	# !SRAD<13> & !SRAD<10> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8>
+	# !SRAD<10> & !SRAD<11> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<8>
+	# !SRAD<10> & SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<9> & gdlatchad/LIMITAD<6> & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8>
+;Imported pterms FB8_2
+	# !SRAD<13> & !SRAD<10> & !SRAD<11> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	gdlatchad/LIMITAD<8>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<3>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4>
+;Imported pterms FB8_6
+	# !SRAD<10> & !SRAD<11> & !SRAD<12> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<6>;
+   SRAD<10>.CLK = CLK;	// GCK
+   SRAD<10>.AR = RST;	// GSR
+   SRAD<10>.OE = nVBLANK & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 7 | 5 | OUTAD<11>
+ATTRIBUTES | 4630274 | 0
+OUTPUTMC | 25 | 7 | 6 | 7 | 3 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 1 | 6 | 15 | 0 | 4 | 7 | 13 | 7 | 9 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 6 | 0 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 8 | 7 | 11 | 7 | 12 | 7 | 14 | 7 | 15 | 7 | 17 | 7 | 4
+INPUTS | 23 | SRAD<11>  | nVBLANK  | SRAD<13>  | SRAD<10>  | SRAD<9>  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<9>  | SRAD<12>  | gdlatchad/LIMITAD<8>  | gdlatchad/LIMITAD<6>  | EXP19_.EXP
+INPUTMC | 21 | 7 | 5 | 7 | 8 | 7 | 4 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 7 | 16 | 7 | 7 | 0 | 9 | 0 | 7 | 7 | 6
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 7 | 4
+IMPORTS | 1 | 7 | 6
+EQ | 56 | 
+   SRAD<11>.T = SRAD<11> & !nVBLANK
+	# !SRAD<13> & SRAD<10> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<9>
+	# SRAD<10> & !SRAD<12> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<8>
+;Imported pterms FB8_7
+	# !SRAD<13> & SRAD<10> & !SRAD<12> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<8>
+	# !SRAD<13> & SRAD<10> & !SRAD<11> & !SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & 
+	nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7>
+	# !SRAD<13> & SRAD<10> & !SRAD<11> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8>
+	# SRAD<10> & !SRAD<11> & !SRAD<12> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<7>
+	# SRAD<10> & !SRAD<11> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8>
+;Imported pterms FB8_8
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<3>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4>;
+   SRAD<11>.CLK = CLK;	// GCK
+   SRAD<11>.AR = RST;	// GSR
+   SRAD<11>.OE = nVBLANK & nHBLANK;
+    OUTAD<11>.EXP  =  !SRAD<10> & !SRAD<11> & !SRAD<12> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<6>
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 7 | 7 | OUTAD<12>
+ATTRIBUTES | 4630274 | 0
+OUTPUTMC | 18 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 1 | 6 | 16 | 0 | 13 | 0 | 4 | 7 | 13 | 7 | 9 | 6 | 0 | 6 | 15 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8
+INPUTS | 27 | SRAD<12>  | nVBLANK  | SRAD<13>  | SRAD<10>  | SRAD<11>  | SRAD<9>  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<9>  | gdlatchad/LIMITAD<5>  | gdlatchad/LIMITAD<6>  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<8>  | gdlatchad/LIMITAD<3>  | gdlatchad/LIMITAD<4>  | OUTAD<13>.EXP
+INPUTMC | 25 | 7 | 7 | 7 | 8 | 7 | 4 | 7 | 5 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 7 | 16 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 2 | 0 | 1 | 7 | 8
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 7 | 6
+IMPORTS | 1 | 7 | 8
+EQ | 43 | 
+   SRAD<12>.T = SRAD<12> & !nVBLANK
+	# !SRAD<13> & SRAD<10> & SRAD<11> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9>
+;Imported pterms FB8_9
+	# !SRAD<13> & SRAD<10> & SRAD<11> & !SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & 
+	nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<8>
+	# SRAD<10> & SRAD<11> & !SRAD<12> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<8>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<3>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4>;
+   SRAD<12>.CLK = CLK;	// GCK
+   SRAD<12>.AR = RST;	// GSR
+   SRAD<12>.OE = nVBLANK & nHBLANK;
+    OUTAD<12>.EXP  =  SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<3>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4>
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 7 | 1 | OUTAD<9>
+ATTRIBUTES | 4630274 | 0
+OUTPUTMC | 18 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 1 | 6 | 14 | 6 | 1 | 0 | 3 | 0 | 0 | 7 | 12 | 7 | 9 | 0 | 17 | 7 | 0 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 16 | 7 | 17
+INPUTS | 28 | SRAD<9>  | nVBLANK  | gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2  | SRAD<13>  | SRAD<10>  | SRAD<11>  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | cnt<0>  | cnt<1>  | cnt<2>  | gdlatchad/LIMITAD<6>  | nHBLANK  | gdlatchad/LIMITAD<8>  | SRAD<12>  | gdlatchad/LIMITAD<9>  | gdlatchad/LIMITAD<5>  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<3>  | gdlatchad/LIMITAD<4>  | EXP16_.EXP
+INPUTMC | 26 | 7 | 1 | 0 | 4 | 7 | 8 | 7 | 4 | 7 | 5 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 7 | 0 | 9 | 7 | 7 | 7 | 16 | 0 | 6 | 0 | 8 | 0 | 2 | 0 | 1 | 7 | 0
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 7 | 2
+IMPORTS | 1 | 7 | 0
+EQ | 77 | 
+   SRAD<9>.T = SRAD<9> & !nVBLANK & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+;Imported pterms FB8_1
+	# SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	SRAD<8> & SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# !SRAD<13> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<9> & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<11> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<12> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+;Imported pterms FB8_18
+	# !SRAD<10> & !SRAD<11> & !SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<5> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<10> & !SRAD<11> & !SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<10> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<10> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<11> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+;Imported pterms FB8_17
+	# !SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703;
+   SRAD<9>.CLK = CLK;	// GCK
+   SRAD<9>.AR = RST;	// GSR
+   SRAD<9>.OE = nVBLANK & nHBLANK;
+    OUTAD<9>.EXP  =  !SRAD<13> & !SRAD<10> & !SRAD<11> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	gdlatchad/LIMITAD<8>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<3>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4>
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 6 | 11 | OUTAD<5>
+ATTRIBUTES | 4630274 | 0
+OUTPUTMC | 26 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 0 | 2 | 7 | 11 | 7 | 9 | 0 | 5 | 0 | 6 | 6 | 0 | 6 | 1 | 6 | 15 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 14 | 7 | 15 | 7 | 16 | 7 | 17
+INPUTS | 9 | nVBLANK  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2  | SRAD<5>  | nHBLANK
+INPUTMC | 7 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 0 | 4 | 6 | 11
+INPUTP | 2 | 47 | 49
+EQ | 8 | 
+   SRAD<5>.T = SRAD<5> & !nVBLANK & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2;
+   SRAD<5>.CLK = CLK;	// GCK
+   SRAD<5>.AR = RST;	// GSR
+   SRAD<5>.OE = nVBLANK & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 6 | 13 | OUTAD<6>
+ATTRIBUTES | 4630274 | 0
+OUTPUTMC | 26 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 13 | 6 | 14 | 6 | 16 | 7 | 9 | 4 | 13 | 7 | 12 | 0 | 5 | 6 | 0 | 6 | 1 | 6 | 15 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 10 | 7 | 11 | 7 | 14 | 7 | 15 | 7 | 16 | 7 | 17
+INPUTS | 11 | SRAD<5>  | nVBLANK  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2  | SRAD<6>  | nHBLANK  | SRAD<10>
+INPUTMC | 9 | 6 | 11 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 0 | 4 | 6 | 13 | 7 | 4
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 6 | 14
+EQ | 11 | 
+   SRAD<6>.T = SRAD<6> & !nVBLANK & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# SRAD<5> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2;
+   SRAD<6>.CLK = CLK;	// GCK
+   SRAD<6>.AR = RST;	// GSR
+   SRAD<6>.OE = nVBLANK & nHBLANK;
+    OUTAD<6>.EXP  =  !SRAD<10> & SRAD<5> & SRAD<6> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 6 | 14 | OUTAD<7>
+ATTRIBUTES | 4630274 | 0
+OUTPUTMC | 20 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 14 | 6 | 16 | 7 | 9 | 4 | 12 | 7 | 8 | 0 | 5 | 6 | 0 | 6 | 1 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 14 | 7 | 16 | 7 | 17
+INPUTS | 15 | SRAD<7>  | nVBLANK  | gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2  | SRAD<5>  | SRAD<6>  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | SRAD<9>  | SRAD<13>  | OUTAD<6>.EXP  | EXP14_.EXP  | nHBLANK
+INPUTMC | 13 | 6 | 14 | 0 | 4 | 6 | 11 | 6 | 13 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 7 | 1 | 7 | 8 | 6 | 13 | 6 | 15
+INPUTP | 2 | 47 | 49
+IMPORTS | 2 | 6 | 13 | 6 | 15
+EQ | 28 | 
+   SRAD<7>.T = SRAD<7> & !nVBLANK & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# SRAD<5> & SRAD<6> & SRAD<7> & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# !SRAD<13> & SRAD<5> & SRAD<6> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# !SRAD<9> & SRAD<5> & SRAD<6> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+;Imported pterms FB7_14
+	# !SRAD<10> & SRAD<5> & SRAD<6> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+;Imported pterms FB7_16
+	# !SRAD<11> & SRAD<5> & SRAD<6> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# !SRAD<12> & SRAD<5> & SRAD<6> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# SRAD<5> & SRAD<6> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2;
+   SRAD<7>.CLK = CLK;	// GCK
+   SRAD<7>.AR = RST;	// GSR
+   SRAD<7>.OE = nVBLANK & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 6 | 16 | OUTAD<8>
+ATTRIBUTES | 4630274 | 0
+OUTPUTMC | 22 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 1 | 6 | 16 | 0 | 4 | 0 | 0 | 7 | 13 | 7 | 9 | 0 | 3 | 0 | 17 | 6 | 0 | 6 | 15 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 16 | 7 | 17
+INPUTS | 21 | SRAD<8>  | nVBLANK  | gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | SRAD<13>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<9>  | SRAD<12>  | gdlatchad/LIMITAD<8>  | $OpTx$$OpTx$FX_DC$383_INV$700  | EXP15_.EXP
+INPUTMC | 19 | 6 | 16 | 0 | 4 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 7 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 7 | 16 | 7 | 7 | 0 | 9 | 4 | 14 | 6 | 17
+INPUTP | 2 | 47 | 49
+IMPORTS | 1 | 6 | 17
+EQ | 89 | 
+   SRAD<8>.T = SRAD<8> & !nVBLANK & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# !SRAD<13> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<9>
+	# !SRAD<12> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<8> & !$OpTx$$OpTx$FX_DC$383_INV$700
+;Imported pterms FB7_18
+	# !SRAD<11> & !SRAD<12> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700
+	# !SRAD<11> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700
+	# !SRAD<11> & !SRAD<12> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<4> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<11> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<12> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<4> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+;Imported pterms FB7_1
+	# SRAD<5> & SRAD<6> & SRAD<7> & !SRAD<8> & 
+	nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<10> & !SRAD<11> & !SRAD<12> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<10> & !SRAD<11> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<10> & !SRAD<12> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<10> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+;Imported pterms FB7_2
+	# !SRAD<11> & !SRAD<12> & !SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<5> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<11> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<12> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382;
+   SRAD<8>.CLK = CLK;	// GCK
+   SRAD<8>.AR = RST;	// GSR
+   SRAD<8>.OE = nVBLANK & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 6 | 4 | OUTAD<0>
+ATTRIBUTES | 8824578 | 0
+OUTPUTMC | 25 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 7 | 9 | 6 | 0 | 6 | 1 | 6 | 15 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 16 | 7 | 17
+INPUTS | 6 | SRAD<0>  | gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2  | nVBLANK  | nHBLANK  | SRAD<1>  | $OpTx$FX_SC$397
+INPUTMC | 4 | 6 | 4 | 0 | 4 | 6 | 5 | 7 | 13
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 6 | 5
+EQ | 9 | 
+   SRAD<0>.D = SRAD<0> & 
+	!gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# nVBLANK & !SRAD<0> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2;
+   SRAD<0>.CLK = CLK;	// GCK
+   SRAD<0>.AR = RST;	// GSR
+   SRAD<0>.OE = nVBLANK & nHBLANK;
+    OUTAD<0>.EXP  =  SRAD<0> & !SRAD<1> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2 & $OpTx$FX_SC$397
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 6 | 10 | OUTAD<4>
+ATTRIBUTES | 4630274 | 0
+OUTPUTMC | 26 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 10 | 0 | 2 | 7 | 11 | 7 | 9 | 0 | 6 | 6 | 0 | 6 | 1 | 6 | 15 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 10 | 7 | 15 | 7 | 16 | 7 | 17
+INPUTS | 8 | nVBLANK  | SRAD<0>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2  | SRAD<4>  | nHBLANK
+INPUTMC | 6 | 6 | 4 | 6 | 5 | 6 | 7 | 6 | 8 | 0 | 4 | 6 | 10
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   SRAD<4>.T = !nVBLANK & SRAD<4> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# nVBLANK & SRAD<0> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2;
+   SRAD<4>.CLK = CLK;	// GCK
+   SRAD<4>.AR = RST;	// GSR
+   SRAD<4>.OE = nVBLANK & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 6 | 5 | OUTAD<1>
+ATTRIBUTES | 8824578 | 0
+OUTPUTMC | 25 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 7 | 9 | 6 | 0 | 6 | 1 | 6 | 4 | 6 | 15 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 16 | 7 | 17
+INPUTS | 7 | SRAD<1>  | gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2  | SRAD<0>  | $OpTx$FX_SC$397  | nVBLANK  | nHBLANK  | OUTAD<0>.EXP
+INPUTMC | 5 | 6 | 5 | 0 | 4 | 6 | 4 | 7 | 13 | 6 | 4
+INPUTP | 2 | 47 | 49
+IMPORTS | 1 | 6 | 4
+EQ | 12 | 
+   SRAD<1>.D = SRAD<1> & 
+	!gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# nVBLANK & !SRAD<0> & SRAD<1>
+	# !nVBLANK & !SRAD<0> & $OpTx$FX_SC$397
+	# !SRAD<0> & 
+	!gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2 & $OpTx$FX_SC$397
+;Imported pterms FB7_5
+	# SRAD<0> & !SRAD<1> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2 & $OpTx$FX_SC$397;
+   SRAD<1>.CLK = CLK;	// GCK
+   SRAD<1>.AR = RST;	// GSR
+   SRAD<1>.OE = nVBLANK & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 6 | 7 | OUTAD<2>
+ATTRIBUTES | 4630274 | 0
+OUTPUTMC | 23 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 10 | 6 | 7 | 6 | 8 | 7 | 9 | 6 | 0 | 6 | 1 | 6 | 15 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 16 | 7 | 17
+INPUTS | 6 | nVBLANK  | SRAD<0>  | SRAD<1>  | gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2  | SRAD<2>  | nHBLANK
+INPUTMC | 4 | 6 | 4 | 6 | 5 | 0 | 4 | 6 | 7
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   SRAD<2>.T = !nVBLANK & SRAD<2> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# nVBLANK & SRAD<0> & SRAD<1> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2;
+   SRAD<2>.CLK = CLK;	// GCK
+   SRAD<2>.AR = RST;	// GSR
+   SRAD<2>.OE = nVBLANK & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 6 | 8 | OUTAD<3>
+ATTRIBUTES | 4630274 | 0
+OUTPUTMC | 22 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 10 | 6 | 8 | 7 | 9 | 6 | 0 | 6 | 1 | 6 | 15 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 16 | 7 | 17
+INPUTS | 7 | nVBLANK  | SRAD<0>  | SRAD<1>  | SRAD<2>  | gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2  | SRAD<3>  | nHBLANK
+INPUTMC | 5 | 6 | 4 | 6 | 5 | 6 | 7 | 0 | 4 | 6 | 8
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   SRAD<3>.T = !nVBLANK & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# nVBLANK & SRAD<0> & SRAD<1> & SRAD<2> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2;
+   SRAD<3>.CLK = CLK;	// GCK
+   SRAD<3>.AR = RST;	// GSR
+   SRAD<3>.OE = nVBLANK & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 8 | f5<3>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 3 | 3 | 7 | 3 | 8 | 3 | 10
+INPUTS | 8 | IODB<3>  | IOAD<0>  | IOAD<1>  | iocnt<0>  | iocnt<1>  | iocnt<2>  | nIWR  | nF47
+INPUTMC | 3 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTP | 5 | 2 | 63 | 62 | 37 | 54
+EQ | 5 | 
+   f5<3>.D = IODB<3>;
+   f5<3>.CLK = CLK;	// GCK
+   f5<3>.AR = RST;	// GSR
+   f5<3>.CE = IOAD<0> & !IOAD<1> & iocnt<0> & iocnt<1> & 
+	!iocnt<2> & !nIWR & !nF47;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 7 | f6<0>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 2 | 0 | 11 | 3 | 7
+INPUTS | 8 | IODB<0>  | IOAD<0>  | IOAD<1>  | iocnt<0>  | iocnt<1>  | iocnt<2>  | nIWR  | nF47
+INPUTMC | 3 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTP | 5 | 15 | 63 | 62 | 37 | 54
+EQ | 5 | 
+   f6<0>.D = IODB<0>;
+   f6<0>.CLK = CLK;	// GCK
+   f6<0>.AR = RST;	// GSR
+   f6<0>.CE = !IOAD<0> & IOAD<1> & iocnt<0> & iocnt<1> & 
+	!iocnt<2> & !nIWR & !nF47;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 6 | f6<1>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 2 | 0 | 11 | 3 | 10
+INPUTS | 8 | IODB<1>  | IOAD<0>  | IOAD<1>  | iocnt<0>  | iocnt<1>  | iocnt<2>  | nIWR  | nF47
+INPUTMC | 3 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTP | 5 | 13 | 63 | 62 | 37 | 54
+EQ | 5 | 
+   f6<1>.D = IODB<1>;
+   f6<1>.CLK = CLK;	// GCK
+   f6<1>.AR = RST;	// GSR
+   f6<1>.CE = !IOAD<0> & IOAD<1> & iocnt<0> & iocnt<1> & 
+	!iocnt<2> & !nIWR & !nF47;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 5 | f6<2>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 2 | 0 | 11 | 3 | 8
+INPUTS | 8 | IODB<2>  | IOAD<0>  | IOAD<1>  | iocnt<0>  | iocnt<1>  | iocnt<2>  | nIWR  | nF47
+INPUTMC | 3 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTP | 5 | 11 | 63 | 62 | 37 | 54
+EQ | 5 | 
+   f6<2>.D = IODB<2>;
+   f6<2>.CLK = CLK;	// GCK
+   f6<2>.AR = RST;	// GSR
+   f6<2>.CE = !IOAD<0> & IOAD<1> & iocnt<0> & iocnt<1> & 
+	!iocnt<2> & !nIWR & !nF47;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 3 | f7<0>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 6 | 3 | 11 | 5 | 16 | 3 | 1 | 5 | 14 | 3 | 14 | 3 | 2
+INPUTS | 8 | IODB<0>  | IOAD<0>  | IOAD<1>  | iocnt<0>  | iocnt<1>  | iocnt<2>  | nIWR  | nF47
+INPUTMC | 3 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTP | 5 | 15 | 63 | 62 | 37 | 54
+EQ | 5 | 
+   f7<0>.D = IODB<0>;
+   f7<0>.CLK = CLK;	// GCK
+   f7<0>.AR = RST;	// GSR
+   f7<0>.CE = IOAD<0> & IOAD<1> & iocnt<0> & iocnt<1> & 
+	!iocnt<2> & !nIWR & !nF47;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 2 | f7<1>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 6 | 3 | 13 | 5 | 16 | 3 | 1 | 5 | 14 | 3 | 14 | 3 | 2
+INPUTS | 8 | IODB<1>  | IOAD<0>  | IOAD<1>  | iocnt<0>  | iocnt<1>  | iocnt<2>  | nIWR  | nF47
+INPUTMC | 3 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTP | 5 | 13 | 63 | 62 | 37 | 54
+EQ | 5 | 
+   f7<1>.D = IODB<1>;
+   f7<1>.CLK = CLK;	// GCK
+   f7<1>.AR = RST;	// GSR
+   f7<1>.CE = IOAD<0> & IOAD<1> & iocnt<0> & iocnt<1> & 
+	!iocnt<2> & !nIWR & !nF47;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 7 | 15 | BD<0>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 2 | 3 | 17 | 7 | 14
+INPUTS | 19 | DB<0>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | SRAD<11>  | SRAD<6>  | SRAD<4>  | gdlatchad/LIMITAD<0>  | gdlatchad/LIMITAD<1>  | $OpTx$$OpTx$FX_DC$383_INV$700  | $OpTx$$OpTx$FX_DC$393_INV$703  | $OpTx$$OpTx$FX_DC$392_INV$702  | $OpTx$INV$382  | gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2  | gdlatchad/LIMITAD<2>  | SRAD<5>  | gdlatchad/LIMITAD<7>
+INPUTMC | 16 | 3 | 0 | 3 | 2 | 3 | 6 | 7 | 5 | 6 | 13 | 6 | 10 | 0 | 17 | 0 | 10 | 4 | 14 | 0 | 13 | 4 | 12 | 0 | 0 | 7 | 9 | 0 | 12 | 6 | 11 | 0 | 8
+INPUTP | 3 | 116 | 47 | 49
+EXPORTS | 1 | 7 | 14
+EQ | 22 | 
+   BD<0>.D = DB<0>;
+   !BD<0>.CLK = CLK;	// GCK
+   BD<0>.AR = RST;	// GSR
+   BD<0>.CE = nVBLANK & !cnt<0> & cnt<1> & cnt<2> & nHBLANK;
+    BD<0>.EXP  =  !SRAD<11> & !SRAD<6> & nVBLANK & !SRAD<4> & 
+	!cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & nVBLANK & !SRAD<4> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<0> & 
+	gdlatchad/LIMITAD<1> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<5> & nVBLANK & !SRAD<4> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 0 | 14 | BD<1>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 3 | 9
+INPUTS | 6 | DB<1>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 118 | 47 | 49
+EQ | 4 | 
+   BD<1>.D = DB<1>;
+   !BD<1>.CLK = CLK;	// GCK
+   BD<1>.AR = RST;	// GSR
+   BD<1>.CE = nVBLANK & !cnt<0> & cnt<1> & cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 1 | BD<2>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 5 | 17
+INPUTS | 6 | DB<2>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 123 | 47 | 49
+EQ | 4 | 
+   BD<2>.D = DB<2>;
+   !BD<2>.CLK = CLK;	// GCK
+   BD<2>.AR = RST;	// GSR
+   BD<2>.CE = nVBLANK & !cnt<0> & cnt<1> & cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 16 | BD<3>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 5 | 15
+INPUTS | 6 | DB<3>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 125 | 47 | 49
+EQ | 4 | 
+   BD<3>.D = DB<3>;
+   !BD<3>.CLK = CLK;	// GCK
+   BD<3>.AR = RST;	// GSR
+   BD<3>.CE = nVBLANK & !cnt<0> & cnt<1> & cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 15 | BD<4>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 5 | 13
+INPUTS | 6 | DB<4>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 127 | 47 | 49
+EQ | 4 | 
+   BD<4>.D = DB<4>;
+   !BD<4>.CLK = CLK;	// GCK
+   BD<4>.AR = RST;	// GSR
+   BD<4>.CE = nVBLANK & !cnt<0> & cnt<1> & cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 14 | BD<5>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 5 | 12
+INPUTS | 6 | DB<5>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 130 | 47 | 49
+EQ | 4 | 
+   BD<5>.D = DB<5>;
+   !BD<5>.CLK = CLK;	// GCK
+   BD<5>.AR = RST;	// GSR
+   BD<5>.CE = nVBLANK & !cnt<0> & cnt<1> & cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 13 | BD<6>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 5 | 11
+INPUTS | 6 | DB<6>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 135 | 47 | 49
+EQ | 4 | 
+   BD<6>.D = DB<6>;
+   !BD<6>.CLK = CLK;	// GCK
+   BD<6>.AR = RST;	// GSR
+   BD<6>.CE = nVBLANK & !cnt<0> & cnt<1> & cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 12 | BD<7>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 4 | 11
+INPUTS | 6 | DB<7>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 136 | 47 | 49
+EQ | 4 | 
+   BD<7>.D = DB<7>;
+   !BD<7>.CLK = CLK;	// GCK
+   BD<7>.AR = RST;	// GSR
+   BD<7>.CE = nVBLANK & !cnt<0> & cnt<1> & cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 7 | 10 | GD<0>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 2 | 3 | 15 | 7 | 11
+INPUTS | 17 | DB<0>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | SRAD<6>  | SRAD<4>  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<0>  | gdlatchad/LIMITAD<1>  | $OpTx$$OpTx$FX_DC$383_INV$700  | $OpTx$$OpTx$FX_DC$393_INV$703  | $OpTx$$OpTx$FX_DC$392_INV$702  | $OpTx$INV$382  | gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2  | gdlatchad/LIMITAD<2>
+INPUTMC | 14 | 3 | 0 | 3 | 2 | 3 | 6 | 6 | 13 | 6 | 10 | 0 | 8 | 0 | 17 | 0 | 10 | 4 | 14 | 0 | 13 | 4 | 12 | 0 | 0 | 7 | 9 | 0 | 12
+INPUTP | 3 | 116 | 47 | 49
+EXPORTS | 1 | 7 | 11
+EQ | 16 | 
+   GD<0>.D = DB<0>;
+   !GD<0>.CLK = CLK;	// GCK
+   GD<0>.AR = RST;	// GSR
+   GD<0>.CE = nVBLANK & !cnt<0> & !cnt<1> & cnt<2> & nHBLANK;
+    GD<0>.EXP  =  !SRAD<6> & nVBLANK & !SRAD<4> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# nVBLANK & !SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<0> & 
+	gdlatchad/LIMITAD<1> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 0 | 15 | GD<1>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 5 | 10
+INPUTS | 6 | DB<1>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 118 | 47 | 49
+EQ | 4 | 
+   GD<1>.D = DB<1>;
+   !GD<1>.CLK = CLK;	// GCK
+   GD<1>.AR = RST;	// GSR
+   GD<1>.CE = nVBLANK & !cnt<0> & !cnt<1> & cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 0 | GD<2>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 5 | 9
+INPUTS | 6 | DB<2>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 123 | 47 | 49
+EQ | 4 | 
+   GD<2>.D = DB<2>;
+   !GD<2>.CLK = CLK;	// GCK
+   GD<2>.AR = RST;	// GSR
+   GD<2>.CE = nVBLANK & !cnt<0> & !cnt<1> & cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 11 | GD<3>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 5 | 8
+INPUTS | 6 | DB<3>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 125 | 47 | 49
+EQ | 4 | 
+   GD<3>.D = DB<3>;
+   !GD<3>.CLK = CLK;	// GCK
+   GD<3>.AR = RST;	// GSR
+   GD<3>.CE = nVBLANK & !cnt<0> & !cnt<1> & cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 10 | GD<4>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 5 | 7
+INPUTS | 6 | DB<4>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 127 | 47 | 49
+EQ | 4 | 
+   GD<4>.D = DB<4>;
+   !GD<4>.CLK = CLK;	// GCK
+   GD<4>.AR = RST;	// GSR
+   GD<4>.CE = nVBLANK & !cnt<0> & !cnt<1> & cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 9 | GD<5>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 5 | 6
+INPUTS | 6 | DB<5>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 130 | 47 | 49
+EQ | 4 | 
+   GD<5>.D = DB<5>;
+   !GD<5>.CLK = CLK;	// GCK
+   GD<5>.AR = RST;	// GSR
+   GD<5>.CE = nVBLANK & !cnt<0> & !cnt<1> & cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 8 | GD<6>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 5 | 5
+INPUTS | 6 | DB<6>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 135 | 47 | 49
+EQ | 4 | 
+   GD<6>.D = DB<6>;
+   !GD<6>.CLK = CLK;	// GCK
+   GD<6>.AR = RST;	// GSR
+   GD<6>.CE = nVBLANK & !cnt<0> & !cnt<1> & cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 7 | GD<7>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 4 | 9
+INPUTS | 6 | DB<7>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 136 | 47 | 49
+EQ | 4 | 
+   GD<7>.D = DB<7>;
+   !GD<7>.CLK = CLK;	// GCK
+   GD<7>.AR = RST;	// GSR
+   GD<7>.CE = nVBLANK & !cnt<0> & !cnt<1> & cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 6 | RD<0>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 3 | 12
+INPUTS | 6 | DB<0>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 116 | 47 | 49
+EQ | 4 | 
+   RD<0>.D = DB<0>;
+   !RD<0>.CLK = CLK;	// GCK
+   RD<0>.AR = RST;	// GSR
+   RD<0>.CE = nVBLANK & !cnt<0> & cnt<1> & !cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 0 | 16 | RD<1>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 5 | 4
+INPUTS | 6 | DB<1>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 118 | 47 | 49
+EQ | 4 | 
+   RD<1>.D = DB<1>;
+   !RD<1>.CLK = CLK;	// GCK
+   RD<1>.AR = RST;	// GSR
+   RD<1>.CE = nVBLANK & !cnt<0> & cnt<1> & !cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 5 | RD<2>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 5 | 3
+INPUTS | 6 | DB<2>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 123 | 47 | 49
+EQ | 4 | 
+   RD<2>.D = DB<2>;
+   !RD<2>.CLK = CLK;	// GCK
+   RD<2>.AR = RST;	// GSR
+   RD<2>.CE = nVBLANK & !cnt<0> & cnt<1> & !cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 4 | RD<3>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 5 | 2
+INPUTS | 6 | DB<3>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 125 | 47 | 49
+EQ | 4 | 
+   RD<3>.D = DB<3>;
+   !RD<3>.CLK = CLK;	// GCK
+   RD<3>.AR = RST;	// GSR
+   RD<3>.CE = nVBLANK & !cnt<0> & cnt<1> & !cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 3 | RD<4>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 1 | 17
+INPUTS | 6 | DB<4>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 127 | 47 | 49
+EQ | 4 | 
+   RD<4>.D = DB<4>;
+   !RD<4>.CLK = CLK;	// GCK
+   RD<4>.AR = RST;	// GSR
+   RD<4>.CE = nVBLANK & !cnt<0> & cnt<1> & !cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 2 | RD<5>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 1 | 16
+INPUTS | 6 | DB<5>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 130 | 47 | 49
+EQ | 4 | 
+   RD<5>.D = DB<5>;
+   !RD<5>.CLK = CLK;	// GCK
+   RD<5>.AR = RST;	// GSR
+   RD<5>.CE = nVBLANK & !cnt<0> & cnt<1> & !cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 1 | RD<6>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 2 | 17
+INPUTS | 6 | DB<6>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 135 | 47 | 49
+EQ | 4 | 
+   RD<6>.D = DB<6>;
+   !RD<6>.CLK = CLK;	// GCK
+   RD<6>.AR = RST;	// GSR
+   RD<6>.CE = nVBLANK & !cnt<0> & cnt<1> & !cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 0 | RD<7>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 4 | 8
+INPUTS | 6 | DB<7>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 3 | 136 | 47 | 49
+EQ | 4 | 
+   RD<7>.D = DB<7>;
+   !RD<7>.CLK = CLK;	// GCK
+   RD<7>.AR = RST;	// GSR
+   RD<7>.CE = nVBLANK & !cnt<0> & cnt<1> & !cnt<2> & nHBLANK;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 14 | f4<0>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 3 | 7
+INPUTS | 8 | IODB<0>  | IOAD<0>  | IOAD<1>  | iocnt<0>  | iocnt<1>  | iocnt<2>  | nIWR  | nF47
+INPUTMC | 3 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTP | 5 | 15 | 63 | 62 | 37 | 54
+EQ | 5 | 
+   f4<0>.D = IODB<0>;
+   f4<0>.CLK = CLK;	// GCK
+   f4<0>.AR = RST;	// GSR
+   f4<0>.CE = !IOAD<0> & !IOAD<1> & iocnt<0> & iocnt<1> & 
+	!iocnt<2> & !nIWR & !nF47;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 13 | f4<1>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 3 | 10
+INPUTS | 8 | IODB<1>  | IOAD<0>  | IOAD<1>  | iocnt<0>  | iocnt<1>  | iocnt<2>  | nIWR  | nF47
+INPUTMC | 3 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTP | 5 | 13 | 63 | 62 | 37 | 54
+EQ | 5 | 
+   f4<1>.D = IODB<1>;
+   f4<1>.CLK = CLK;	// GCK
+   f4<1>.AR = RST;	// GSR
+   f4<1>.CE = !IOAD<0> & !IOAD<1> & iocnt<0> & iocnt<1> & 
+	!iocnt<2> & !nIWR & !nF47;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 12 | f4<2>
+ATTRIBUTES | 8561472 | 0
+OUTPUTMC | 1 | 3 | 8
+INPUTS | 8 | IODB<2>  | IOAD<0>  | IOAD<1>  | iocnt<0>  | iocnt<1>  | iocnt<2>  | nIWR  | nF47
+INPUTMC | 3 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTP | 5 | 11 | 63 | 62 | 37 | 54
+EQ | 5 | 
+   f4<2>.D = IODB<2>;
+   f4<2>.CLK = CLK;	// GCK
+   f4<2>.AR = RST;	// GSR
+   f4<2>.CE = !IOAD<0> & !IOAD<1> & iocnt<0> & iocnt<1> & 
+	!iocnt<2> & !nIWR & !nF47;
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 11 | f5<0>
+ATTRIBUTES | 8557376 | 0
+OUTPUTMC | 1 | 3 | 7
+INPUTS | 8 | IODB<0>  | IOAD<0>  | IOAD<1>  | iocnt<0>  | iocnt<1>  | iocnt<2>  | nIWR  | nF47
+INPUTMC | 3 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTP | 5 | 15 | 63 | 62 | 37 | 54
+EQ | 5 | 
+   f5<0>.D = IODB<0>;
+   f5<0>.CLK = CLK;	// GCK
+   f5<0>.AP = RST;	// GSR
+   f5<0>.CE = IOAD<0> & !IOAD<1> & iocnt<0> & iocnt<1> & 
+	!iocnt<2> & !nIWR & !nF47;
+GLOBALS | 2 | 2 | CLK | 1 | RST
+
+MACROCELL | 1 | 10 | f5<1>
+ATTRIBUTES | 8557376 | 0
+OUTPUTMC | 1 | 3 | 10
+INPUTS | 8 | IODB<1>  | IOAD<0>  | IOAD<1>  | iocnt<0>  | iocnt<1>  | iocnt<2>  | nIWR  | nF47
+INPUTMC | 3 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTP | 5 | 13 | 63 | 62 | 37 | 54
+EQ | 5 | 
+   f5<1>.D = IODB<1>;
+   f5<1>.CLK = CLK;	// GCK
+   f5<1>.AP = RST;	// GSR
+   f5<1>.CE = IOAD<0> & !IOAD<1> & iocnt<0> & iocnt<1> & 
+	!iocnt<2> & !nIWR & !nF47;
+GLOBALS | 2 | 2 | CLK | 1 | RST
+
+MACROCELL | 1 | 9 | f5<2>
+ATTRIBUTES | 8557376 | 0
+OUTPUTMC | 1 | 3 | 8
+INPUTS | 8 | IODB<2>  | IOAD<0>  | IOAD<1>  | iocnt<0>  | iocnt<1>  | iocnt<2>  | nIWR  | nF47
+INPUTMC | 3 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTP | 5 | 11 | 63 | 62 | 37 | 54
+EQ | 5 | 
+   f5<2>.D = IODB<2>;
+   f5<2>.CLK = CLK;	// GCK
+   f5<2>.AP = RST;	// GSR
+   f5<2>.CE = IOAD<0> & !IOAD<1> & iocnt<0> & iocnt<1> & 
+	!iocnt<2> & !nIWR & !nF47;
+GLOBALS | 2 | 2 | CLK | 1 | RST
+
+MACROCELL | 1 | 4 | f6<3>
+ATTRIBUTES | 8557376 | 0
+OUTPUTMC | 1 | 0 | 11
+INPUTS | 8 | IODB<3>  | IOAD<0>  | IOAD<1>  | iocnt<0>  | iocnt<1>  | iocnt<2>  | nIWR  | nF47
+INPUTMC | 3 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTP | 5 | 2 | 63 | 62 | 37 | 54
+EQ | 5 | 
+   f6<3>.D = IODB<3>;
+   f6<3>.CLK = CLK;	// GCK
+   f6<3>.AP = RST;	// GSR
+   f6<3>.CE = !IOAD<0> & IOAD<1> & iocnt<0> & iocnt<1> & 
+	!iocnt<2> & !nIWR & !nF47;
+GLOBALS | 2 | 2 | CLK | 1 | RST
+
+MACROCELL | 4 | 15 | rCSED
+ATTRIBUTES | 8557312 | 0
+OUTPUTMC | 5 | 4 | 15 | 5 | 16 | 3 | 1 | 5 | 14 | 3 | 14
+INPUTS | 5 | nCSED  | rCSED  | csedcnt<0>  | csedcnt<1>  | csedcnt<2>
+INPUTMC | 4 | 4 | 15 | 4 | 10 | 4 | 17 | 4 | 16
+INPUTP | 1 | 30
+EQ | 4 | 
+   !rCSED.D = !nCSED & !rCSED
+	# !nCSED & csedcnt<0> & csedcnt<1> & !csedcnt<2>;
+   rCSED.CLK = CLK;	// GCK
+   rCSED.AP = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 1 | RST
+
+MACROCELL | 3 | 11 | SBANKAD_0_OBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 7 | nVBLANK  | f7<0>  | nHBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | SBANKAD_0_OBUFE/SBANKAD_0_OBUFE_TRST__$INT
+INPUTMC | 5 | 1 | 3 | 3 | 0 | 3 | 2 | 3 | 6 | 3 | 3
+INPUTP | 2 | 47 | 49
+EQ | 4 | 
+   !SBANKAD<0> = !nVBLANK & !f7<0>
+	# !f7<0> & !nHBLANK
+	# nVBLANK & !cnt<0> & cnt<1> & !cnt<2> & nHBLANK;
+   SBANKAD<0>.OE = !SBANKAD_0_OBUFE/SBANKAD_0_OBUFE_TRST__$INT;
+
+MACROCELL | 3 | 13 | SBANKAD_1_OBUFE
+ATTRIBUTES | 265986 | 0
+INPUTS | 7 | nVBLANK  | f7<1>  | nHBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | SBANKAD_0_OBUFE/SBANKAD_0_OBUFE_TRST__$INT
+INPUTMC | 5 | 1 | 2 | 3 | 0 | 3 | 2 | 3 | 6 | 3 | 3
+INPUTP | 2 | 47 | 49
+EQ | 5 | 
+   SBANKAD<1> = !nVBLANK & f7<1>
+	# f7<1> & !nHBLANK
+	# nVBLANK & !cnt<0> & cnt<1> & !cnt<2> & nHBLANK
+	# nVBLANK & !cnt<0> & !cnt<1> & cnt<2> & nHBLANK;
+   SBANKAD<1>.OE = !SBANKAD_0_OBUFE/SBANKAD_0_OBUFE_TRST__$INT;
+
+MACROCELL | 3 | 0 | cnt<0>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 80 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 16 | 7 | 15 | 0 | 14 | 5 | 1 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 13 | 2 | 12 | 7 | 10 | 0 | 15 | 5 | 0 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 0 | 16 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2 | 2 | 1 | 2 | 0 | 3 | 11 | 3 | 13 | 3 | 0 | 3 | 2 | 3 | 6 | 3 | 17 | 3 | 15 | 3 | 12 | 3 | 9 | 5 | 17 | 5 | 15 | 5 | 13 | 5 | 12 | 5 | 11 | 4 | 11 | 5 | 10 | 5 | 9 | 5 | 8 | 5 | 7 | 5 | 6 | 5 | 5 | 4 | 9 | 5 | 4 | 5 | 3 | 5 | 2 | 1 | 17 | 1 | 16 | 2 | 17 | 4 | 8 | 3 | 1 | 0 | 4 | 7 | 13 | 3 | 3 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 6 | 0 | 6 | 1 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 9 | 7 | 11 | 7 | 12 | 7 | 14 | 7 | 16 | 7 | 17
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | nRD  | nWD  | cnt<1>  | cnt<2>
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 4 | 47 | 49 | 23 | 22
+EXPORTS | 1 | 3 | 1
+EQ | 5 | 
+   cnt<0>.D = nVBLANK & !cnt<0> & nHBLANK;
+   cnt<0>.CLK = CLK;	// GCK
+   cnt<0>.AR = RST;	// GSR
+    cnt<0>.EXP  =  cnt<0> & !nRD & !nWD
+	# nVBLANK & !cnt<1> & !cnt<2> & nHBLANK
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 3 | 2 | cnt<1>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 80 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 16 | 7 | 15 | 0 | 14 | 5 | 1 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 13 | 2 | 12 | 7 | 10 | 0 | 15 | 5 | 0 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 0 | 16 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2 | 2 | 1 | 2 | 0 | 3 | 11 | 3 | 13 | 3 | 2 | 3 | 6 | 3 | 17 | 3 | 15 | 3 | 12 | 3 | 9 | 5 | 17 | 5 | 15 | 5 | 13 | 5 | 12 | 5 | 11 | 4 | 11 | 5 | 10 | 5 | 9 | 5 | 8 | 5 | 7 | 5 | 6 | 5 | 5 | 4 | 9 | 5 | 4 | 5 | 3 | 5 | 2 | 1 | 17 | 1 | 16 | 2 | 17 | 4 | 8 | 3 | 1 | 0 | 4 | 7 | 13 | 3 | 3 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 3 | 0 | 6 | 0 | 6 | 1 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 9 | 7 | 11 | 7 | 12 | 7 | 14 | 7 | 16 | 7 | 17
+INPUTS | 9 | nVBLANK  | cnt<0>  | cnt<1>  | nHBLANK  | f7<0>  | f7<1>  | cnt<2>  | nRD  | nWD
+INPUTMC | 5 | 3 | 0 | 3 | 2 | 1 | 3 | 1 | 2 | 3 | 6
+INPUTP | 4 | 47 | 49 | 23 | 22
+EXPORTS | 1 | 3 | 1
+EQ | 7 | 
+   cnt<1>.D = nVBLANK & cnt<0> & !cnt<1> & nHBLANK
+	# nVBLANK & !cnt<0> & cnt<1> & nHBLANK;
+   cnt<1>.CLK = CLK;	// GCK
+   cnt<1>.AR = RST;	// GSR
+    cnt<1>.EXP  =  !f7<0> & !f7<1> & !cnt<1> & !cnt<2>
+	# !cnt<1> & !cnt<2> & nRD & nWD
+	# !cnt<1> & !cnt<2> & !nRD & !nWD
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 3 | 6 | cnt<2>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 80 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 16 | 7 | 15 | 0 | 14 | 5 | 1 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 13 | 2 | 12 | 7 | 10 | 0 | 15 | 5 | 0 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 0 | 16 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2 | 2 | 1 | 2 | 0 | 3 | 11 | 3 | 13 | 3 | 6 | 3 | 17 | 3 | 15 | 3 | 12 | 3 | 9 | 5 | 17 | 5 | 15 | 5 | 13 | 5 | 12 | 5 | 11 | 4 | 11 | 5 | 10 | 5 | 9 | 5 | 8 | 5 | 7 | 5 | 6 | 5 | 5 | 4 | 9 | 5 | 4 | 5 | 3 | 5 | 2 | 1 | 17 | 1 | 16 | 2 | 17 | 4 | 8 | 3 | 1 | 0 | 4 | 7 | 13 | 3 | 3 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 3 | 0 | 3 | 2 | 6 | 0 | 6 | 1 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 9 | 7 | 11 | 7 | 12 | 7 | 14 | 7 | 16 | 7 | 17
+INPUTS | 5 | nVBLANK  | cnt<0>  | cnt<2>  | nHBLANK  | cnt<1>
+INPUTMC | 3 | 3 | 0 | 3 | 6 | 3 | 2
+INPUTP | 2 | 47 | 49
+EQ | 5 | 
+   cnt<2>.D = nVBLANK & !cnt<0> & cnt<2> & nHBLANK
+	# nVBLANK & !cnt<1> & cnt<2> & nHBLANK
+	# nVBLANK & cnt<0> & cnt<1> & !cnt<2> & nHBLANK;
+   cnt<2>.CLK = CLK;	// GCK
+   cnt<2>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 0 | iocnt<0>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 16 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 3 | 1 | 2 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 10 | 1 | 9 | 1 | 4 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTS | 3 | iocnt<0>  | nIWR  | nF47
+INPUTMC | 1 | 1 | 0
+INPUTP | 2 | 37 | 54
+EQ | 3 | 
+   iocnt<0>.D = !iocnt<0> & !nIWR & !nF47;
+   iocnt<0>.CLK = CLK;	// GCK
+   iocnt<0>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 1 | iocnt<1>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 15 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 3 | 1 | 2 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 10 | 1 | 9 | 1 | 4 | 1 | 1 | 1 | 15
+INPUTS | 5 | iocnt<0>  | iocnt<1>  | nIWR  | nF47  | iocnt<2>
+INPUTMC | 3 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTP | 2 | 37 | 54
+EQ | 4 | 
+   iocnt<1>.D = !iocnt<0> & iocnt<1> & !nIWR & !nF47
+	# iocnt<0> & !iocnt<1> & !iocnt<2> & !nIWR & !nF47;
+   iocnt<1>.CLK = CLK;	// GCK
+   iocnt<1>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 15 | iocnt<2>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 15 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 3 | 1 | 2 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 10 | 1 | 9 | 1 | 4 | 1 | 1 | 1 | 15
+INPUTS | 5 | iocnt<0>  | iocnt<2>  | nIWR  | nF47  | iocnt<1>
+INPUTMC | 3 | 1 | 0 | 1 | 15 | 1 | 1
+INPUTP | 2 | 37 | 54
+EQ | 5 | 
+   iocnt<2>.D = !iocnt<0> & iocnt<2> & !nIWR & !nF47
+	# !iocnt<1> & iocnt<2> & !nIWR & !nF47
+	# iocnt<0> & iocnt<1> & !iocnt<2> & !nIWR & !nF47;
+   iocnt<2>.CLK = CLK;	// GCK
+   iocnt<2>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 7 | 16 | gdlatchad/LIMITAD<9>
+ATTRIBUTES | 4334368 | 0
+OUTPUTMC | 17 | 7 | 6 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 0 | 6 | 16 | 7 | 16 | 4 | 14 | 0 | 13 | 0 | 4 | 7 | 13 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 9 | 7 | 17
+INPUTS | 27 | nVBLANK  | gdlatchad/LIMITAD<5>  | gdlatchad/LIMITAD<6>  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<8>  | gdlatchad/LIMITAD<0>  | gdlatchad/LIMITAD<1>  | gdlatchad/LIMITAD<3>  | gdlatchad/LIMITAD<4>  | gdlatchad/LIMITAD<2>  | gdlatchad/LIMITAD<9>  | nHBLANK  | SRAD<9>  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | cnt<0>  | cnt<1>  | cnt<2>  | $OpTx$$OpTx$FX_DC$383_INV$700  | $OpTx$$OpTx$FX_DC$393_INV$703
+INPUTMC | 25 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 17 | 0 | 10 | 0 | 2 | 0 | 1 | 0 | 12 | 7 | 16 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 4 | 14 | 0 | 13
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 7 | 17
+EQ | 15 | 
+   gdlatchad/LIMITAD<9>.T = !nVBLANK & gdlatchad/LIMITAD<9>
+	# nVBLANK & gdlatchad/LIMITAD<5> & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8> & 
+	gdlatchad/LIMITAD<2> & gdlatchad/LIMITAD<3> & gdlatchad/LIMITAD<4>
+	# nVBLANK & gdlatchad/LIMITAD<5> & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8> & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & gdlatchad/LIMITAD<3> & 
+	gdlatchad/LIMITAD<4>;
+   gdlatchad/LIMITAD<9>.CLK = !nHBLANK;
+   gdlatchad/LIMITAD<9>.AR = RST;	// GSR
+    gdlatchad/LIMITAD<9>.EXP  =  !SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+GLOBALS | 1 | 4 | RST
+
+MACROCELL | 0 | 6 | gdlatchad/LIMITAD<5>
+ATTRIBUTES | 4334368 | 0
+OUTPUTMC | 15 | 7 | 7 | 7 | 1 | 0 | 0 | 0 | 3 | 0 | 17 | 6 | 1 | 7 | 16 | 7 | 12 | 0 | 7 | 0 | 8 | 0 | 9 | 7 | 8 | 7 | 9 | 7 | 17 | 0 | 5
+INPUTS | 19 | nVBLANK  | gdlatchad/LIMITAD<0>  | gdlatchad/LIMITAD<1>  | gdlatchad/LIMITAD<3>  | gdlatchad/LIMITAD<4>  | SRAD<11>  | SRAD<4>  | nHBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | $OpTx$$OpTx$FX_DC$383_INV$700  | $OpTx$$OpTx$FX_DC$393_INV$703  | $OpTx$$OpTx$FX_DC$385_INV$701  | $OpTx$$OpTx$FX_DC$392_INV$702  | $OpTx$INV$382  | SRAD<5>  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<6>.EXP
+INPUTMC | 17 | 0 | 17 | 0 | 10 | 0 | 2 | 0 | 1 | 7 | 5 | 6 | 10 | 3 | 0 | 3 | 2 | 3 | 6 | 4 | 14 | 0 | 13 | 4 | 13 | 4 | 12 | 0 | 0 | 6 | 11 | 0 | 8 | 0 | 7
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 0 | 5
+IMPORTS | 1 | 0 | 7
+EQ | 20 | 
+   gdlatchad/LIMITAD<5>.T = nVBLANK & gdlatchad/LIMITAD<0> & 
+	gdlatchad/LIMITAD<1> & gdlatchad/LIMITAD<3> & gdlatchad/LIMITAD<4>
+;Imported pterms FB1_8
+	# !nVBLANK & gdlatchad/LIMITAD<5>
+	# nVBLANK & gdlatchad/LIMITAD<2> & 
+	gdlatchad/LIMITAD<3> & gdlatchad/LIMITAD<4>;
+   gdlatchad/LIMITAD<5>.CLK = !nHBLANK;
+   gdlatchad/LIMITAD<5>.AR = RST;	// GSR
+    gdlatchad/LIMITAD<5>.EXP  =  !SRAD<11> & !SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<5> & !SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<0> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+GLOBALS | 1 | 4 | RST
+
+MACROCELL | 0 | 7 | gdlatchad/LIMITAD<6>
+ATTRIBUTES | 4334368 | 0
+OUTPUTMC | 17 | 7 | 7 | 7 | 3 | 7 | 2 | 7 | 5 | 0 | 17 | 6 | 0 | 7 | 16 | 7 | 12 | 0 | 8 | 0 | 9 | 0 | 3 | 0 | 0 | 7 | 1 | 7 | 8 | 7 | 9 | 7 | 17 | 0 | 6
+INPUTS | 9 | nVBLANK  | gdlatchad/LIMITAD<5>  | gdlatchad/LIMITAD<0>  | gdlatchad/LIMITAD<1>  | gdlatchad/LIMITAD<3>  | gdlatchad/LIMITAD<4>  | gdlatchad/LIMITAD<2>  | gdlatchad/LIMITAD<7>.EXP  | nHBLANK
+INPUTMC | 7 | 0 | 6 | 0 | 17 | 0 | 10 | 0 | 2 | 0 | 1 | 0 | 12 | 0 | 8
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 0 | 6
+IMPORTS | 1 | 0 | 8
+EQ | 12 | 
+   gdlatchad/LIMITAD<6>.T = nVBLANK & gdlatchad/LIMITAD<5> & 
+	gdlatchad/LIMITAD<2> & gdlatchad/LIMITAD<3> & gdlatchad/LIMITAD<4>
+	# nVBLANK & gdlatchad/LIMITAD<5> & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & gdlatchad/LIMITAD<3> & 
+	gdlatchad/LIMITAD<4>
+;Imported pterms FB1_9
+	# !nVBLANK & gdlatchad/LIMITAD<6>;
+   gdlatchad/LIMITAD<6>.CLK = !nHBLANK;
+   gdlatchad/LIMITAD<6>.AR = RST;	// GSR
+    gdlatchad/LIMITAD<6>.EXP  =  !nVBLANK & gdlatchad/LIMITAD<5>
+	# nVBLANK & gdlatchad/LIMITAD<2> & 
+	gdlatchad/LIMITAD<3> & gdlatchad/LIMITAD<4>
+GLOBALS | 1 | 4 | RST
+
+MACROCELL | 0 | 8 | gdlatchad/LIMITAD<7>
+ATTRIBUTES | 4334368 | 0
+OUTPUTMC | 27 | 7 | 7 | 7 | 3 | 7 | 2 | 7 | 6 | 7 | 0 | 6 | 1 | 7 | 16 | 0 | 8 | 0 | 9 | 0 | 4 | 7 | 13 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 6 | 0 | 6 | 17 | 7 | 1 | 7 | 8 | 7 | 9 | 7 | 10 | 7 | 11 | 7 | 12 | 7 | 14 | 7 | 15 | 7 | 17 | 0 | 7
+INPUTS | 10 | nVBLANK  | gdlatchad/LIMITAD<5>  | gdlatchad/LIMITAD<6>  | gdlatchad/LIMITAD<0>  | gdlatchad/LIMITAD<1>  | gdlatchad/LIMITAD<3>  | gdlatchad/LIMITAD<4>  | gdlatchad/LIMITAD<2>  | gdlatchad/LIMITAD<7>  | nHBLANK
+INPUTMC | 8 | 0 | 6 | 0 | 7 | 0 | 17 | 0 | 10 | 0 | 2 | 0 | 1 | 0 | 12 | 0 | 8
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 0 | 7
+EQ | 10 | 
+   gdlatchad/LIMITAD<7>.T = !nVBLANK & gdlatchad/LIMITAD<7>
+	# nVBLANK & gdlatchad/LIMITAD<5> & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<2> & gdlatchad/LIMITAD<3> & 
+	gdlatchad/LIMITAD<4>
+	# nVBLANK & gdlatchad/LIMITAD<5> & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & 
+	gdlatchad/LIMITAD<3> & gdlatchad/LIMITAD<4>;
+   gdlatchad/LIMITAD<7>.CLK = !nHBLANK;
+   gdlatchad/LIMITAD<7>.AR = RST;	// GSR
+    gdlatchad/LIMITAD<7>.EXP  =  !nVBLANK & gdlatchad/LIMITAD<6>
+GLOBALS | 1 | 4 | RST
+
+MACROCELL | 0 | 9 | gdlatchad/LIMITAD<8>
+ATTRIBUTES | 4334368 | 0
+OUTPUTMC | 19 | 7 | 7 | 7 | 4 | 7 | 5 | 7 | 6 | 7 | 0 | 6 | 16 | 7 | 16 | 0 | 9 | 0 | 13 | 0 | 4 | 7 | 13 | 6 | 0 | 6 | 1 | 6 | 17 | 7 | 1 | 7 | 2 | 7 | 3 | 7 | 8 | 7 | 9
+INPUTS | 11 | nVBLANK  | gdlatchad/LIMITAD<5>  | gdlatchad/LIMITAD<6>  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<0>  | gdlatchad/LIMITAD<1>  | gdlatchad/LIMITAD<3>  | gdlatchad/LIMITAD<4>  | gdlatchad/LIMITAD<2>  | gdlatchad/LIMITAD<8>  | nHBLANK
+INPUTMC | 9 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 17 | 0 | 10 | 0 | 2 | 0 | 1 | 0 | 12 | 0 | 9
+INPUTP | 2 | 47 | 49
+EQ | 9 | 
+   gdlatchad/LIMITAD<8>.T = !nVBLANK & gdlatchad/LIMITAD<8>
+	# nVBLANK & gdlatchad/LIMITAD<5> & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<2> & 
+	gdlatchad/LIMITAD<3> & gdlatchad/LIMITAD<4>
+	# nVBLANK & gdlatchad/LIMITAD<5> & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<0> & 
+	gdlatchad/LIMITAD<1> & gdlatchad/LIMITAD<3> & gdlatchad/LIMITAD<4>;
+   gdlatchad/LIMITAD<8>.CLK = !nHBLANK;
+   gdlatchad/LIMITAD<8>.AR = RST;	// GSR
+GLOBALS | 1 | 4 | RST
+
+MACROCELL | 4 | 10 | csedcnt<0>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 4 | 4 | 15 | 4 | 10 | 4 | 17 | 4 | 16
+INPUTS | 2 | nCSED  | csedcnt<0>
+INPUTMC | 1 | 4 | 10
+INPUTP | 1 | 30
+EQ | 3 | 
+   csedcnt<0>.D = !nCSED & !csedcnt<0>;
+   csedcnt<0>.CLK = CLK;	// GCK
+   csedcnt<0>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 0 | 17 | gdlatchad/LIMITAD<0>
+ATTRIBUTES | 8524576 | 0
+OUTPUTMC | 14 | 7 | 16 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 17 | 0 | 10 | 0 | 12 | 0 | 2 | 0 | 1 | 7 | 11 | 7 | 10 | 7 | 15 | 0 | 0
+INPUTS | 9 | nVBLANK  | gdlatchad/LIMITAD<0>  | nHBLANK  | SRAD<10>  | SRAD<8>  | gdlatchad/LIMITAD<5>  | gdlatchad/LIMITAD<4>  | SRAD<9>  | gdlatchad/LIMITAD<6>
+INPUTMC | 7 | 0 | 17 | 7 | 4 | 6 | 16 | 0 | 6 | 0 | 1 | 7 | 1 | 0 | 7
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 0 | 0
+EQ | 9 | 
+   !gdlatchad/LIMITAD<0>.D = nVBLANK & gdlatchad/LIMITAD<0>;
+   gdlatchad/LIMITAD<0>.CLK = !nHBLANK;
+   gdlatchad/LIMITAD<0>.AP = RST;	// GSR
+    gdlatchad/LIMITAD<0>.EXP  =  SRAD<10> & SRAD<8> & !gdlatchad/LIMITAD<5> & 
+	!gdlatchad/LIMITAD<4>
+	# SRAD<9> & SRAD<8> & !gdlatchad/LIMITAD<6> & 
+	!gdlatchad/LIMITAD<4>
+	# SRAD<8> & !gdlatchad/LIMITAD<5> & 
+	!gdlatchad/LIMITAD<6> & !gdlatchad/LIMITAD<4>
+GLOBALS | 1 | 1 | RST
+
+MACROCELL | 0 | 10 | gdlatchad/LIMITAD<1>
+ATTRIBUTES | 8528672 | 0
+OUTPUTMC | 15 | 7 | 16 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 10 | 0 | 12 | 0 | 1 | 0 | 0 | 0 | 2 | 7 | 11 | 0 | 5 | 7 | 10 | 7 | 14 | 7 | 15
+INPUTS | 4 | nVBLANK  | gdlatchad/LIMITAD<0>  | gdlatchad/LIMITAD<1>  | nHBLANK
+INPUTMC | 2 | 0 | 17 | 0 | 10
+INPUTP | 2 | 47 | 49
+EQ | 6 | 
+   gdlatchad/LIMITAD<1>.D = nVBLANK & gdlatchad/LIMITAD<0> & 
+	!gdlatchad/LIMITAD<1>
+	# nVBLANK & !gdlatchad/LIMITAD<0> & 
+	gdlatchad/LIMITAD<1>;
+   gdlatchad/LIMITAD<1>.CLK = !nHBLANK;
+   gdlatchad/LIMITAD<1>.AR = RST;	// GSR
+GLOBALS | 1 | 4 | RST
+
+MACROCELL | 0 | 12 | gdlatchad/LIMITAD<2>
+ATTRIBUTES | 4330272 | 0
+OUTPUTMC | 15 | 7 | 16 | 0 | 5 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 12 | 0 | 2 | 0 | 1 | 0 | 0 | 4 | 13 | 7 | 12 | 7 | 10 | 7 | 11 | 7 | 14 | 7 | 15
+INPUTS | 5 | nVBLANK  | gdlatchad/LIMITAD<0>  | gdlatchad/LIMITAD<1>  | gdlatchad/LIMITAD<2>  | nHBLANK
+INPUTMC | 3 | 0 | 17 | 0 | 10 | 0 | 12
+INPUTP | 2 | 47 | 49
+EQ | 5 | 
+   !gdlatchad/LIMITAD<2>.T = !nVBLANK & gdlatchad/LIMITAD<2>
+	# nVBLANK & gdlatchad/LIMITAD<0> & 
+	gdlatchad/LIMITAD<1>;
+   gdlatchad/LIMITAD<2>.CLK = !nHBLANK;
+   gdlatchad/LIMITAD<2>.AP = RST;	// GSR
+GLOBALS | 1 | 1 | RST
+
+MACROCELL | 0 | 2 | gdlatchad/LIMITAD<3>
+ATTRIBUTES | 4334368 | 0
+OUTPUTMC | 15 | 7 | 7 | 7 | 1 | 0 | 5 | 4 | 12 | 7 | 16 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 2 | 0 | 1 | 7 | 9 | 7 | 8 | 7 | 14 | 0 | 3
+INPUTS | 19 | nVBLANK  | gdlatchad/LIMITAD<3>  | gdlatchad/LIMITAD<0>  | gdlatchad/LIMITAD<2>  | SRAD<5>  | nHBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<1>  | $OpTx$$OpTx$FX_DC$383_INV$700  | $OpTx$$OpTx$FX_DC$393_INV$703  | $OpTx$$OpTx$FX_DC$385_INV$701  | $OpTx$$OpTx$FX_DC$392_INV$702  | $OpTx$INV$382  | SRAD<11>  | SRAD<4>  | gdlatchad/LIMITAD<4>.EXP
+INPUTMC | 17 | 0 | 2 | 0 | 17 | 0 | 12 | 6 | 11 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 8 | 0 | 10 | 4 | 14 | 0 | 13 | 4 | 13 | 4 | 12 | 0 | 0 | 7 | 5 | 6 | 10 | 0 | 1
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 0 | 3
+IMPORTS | 1 | 0 | 1
+EQ | 16 | 
+   !gdlatchad/LIMITAD<3>.T = !nVBLANK & !gdlatchad/LIMITAD<3>
+	# nVBLANK & !gdlatchad/LIMITAD<0> & 
+	!gdlatchad/LIMITAD<2>
+;Imported pterms FB1_2
+	# nVBLANK & !gdlatchad/LIMITAD<1> & 
+	!gdlatchad/LIMITAD<2>;
+   gdlatchad/LIMITAD<3>.CLK = !nHBLANK;
+   gdlatchad/LIMITAD<3>.AR = RST;	// GSR
+    gdlatchad/LIMITAD<3>.EXP  =  !SRAD<5> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<11> & !SRAD<5> & !SRAD<4> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<0> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+GLOBALS | 1 | 4 | RST
+
+MACROCELL | 0 | 1 | gdlatchad/LIMITAD<4>
+ATTRIBUTES | 4334368 | 0
+OUTPUTMC | 18 | 7 | 7 | 7 | 1 | 6 | 17 | 0 | 17 | 6 | 0 | 7 | 16 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 1 | 0 | 4 | 0 | 0 | 7 | 13 | 0 | 3 | 7 | 8 | 7 | 9 | 0 | 2
+INPUTS | 8 | nVBLANK  | gdlatchad/LIMITAD<3>  | gdlatchad/LIMITAD<4>  | gdlatchad/LIMITAD<0>  | gdlatchad/LIMITAD<2>  | gdlatchad/LIMITAD<1>  | nHBLANK  | $OpTx$INV$382.EXP
+INPUTMC | 6 | 0 | 2 | 0 | 1 | 0 | 17 | 0 | 12 | 0 | 10 | 0 | 0
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 0 | 2
+IMPORTS | 1 | 0 | 0
+EQ | 11 | 
+   !gdlatchad/LIMITAD<4>.T = nVBLANK & !gdlatchad/LIMITAD<3>
+	# !nVBLANK & !gdlatchad/LIMITAD<4>
+	# nVBLANK & !gdlatchad/LIMITAD<0> & 
+	!gdlatchad/LIMITAD<2>
+;Imported pterms FB1_1
+	# nVBLANK & !gdlatchad/LIMITAD<1> & 
+	!gdlatchad/LIMITAD<2>;
+   gdlatchad/LIMITAD<4>.CLK = !nHBLANK;
+   gdlatchad/LIMITAD<4>.AR = RST;	// GSR
+    gdlatchad/LIMITAD<4>.EXP  =  nVBLANK & !gdlatchad/LIMITAD<1> & 
+	!gdlatchad/LIMITAD<2>
+GLOBALS | 1 | 4 | RST
+
+MACROCELL | 4 | 17 | csedcnt<1>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 3 | 4 | 15 | 4 | 17 | 4 | 16
+INPUTS | 4 | nCSED  | csedcnt<0>  | csedcnt<1>  | csedcnt<2>
+INPUTMC | 3 | 4 | 10 | 4 | 17 | 4 | 16
+INPUTP | 1 | 30
+EQ | 5 | 
+   csedcnt<1>.D = !nCSED & csedcnt<0> & !csedcnt<1>
+	# !nCSED & csedcnt<0> & !csedcnt<2>
+	# !nCSED & !csedcnt<0> & csedcnt<1>;
+   csedcnt<1>.CLK = CLK;	// GCK
+   csedcnt<1>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 3 | 17 | BG
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 2 | 0 | 11 | 3 | 7
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | bgdout/outdata<1>  | cnt<1>  | cnt<2>  | BD<0>
+INPUTMC | 5 | 3 | 0 | 3 | 9 | 3 | 2 | 3 | 6 | 7 | 15
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   BG.D = nVBLANK & cnt<0> & nHBLANK & bgdout/outdata<1>
+	# nVBLANK & cnt<1> & nHBLANK & bgdout/outdata<1>
+	# nVBLANK & cnt<2> & nHBLANK & bgdout/outdata<1>
+	# nVBLANK & BD<0> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   BG.CLK = CLK;	// GCK
+   BG.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 3 | 15 | GG
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 2 | 0 | 11 | 3 | 8
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | ggdout/outdata<1>  | cnt<1>  | cnt<2>  | GD<0>
+INPUTMC | 5 | 3 | 0 | 5 | 10 | 3 | 2 | 3 | 6 | 7 | 10
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   GG.D = nVBLANK & cnt<0> & nHBLANK & ggdout/outdata<1>
+	# nVBLANK & cnt<1> & nHBLANK & ggdout/outdata<1>
+	# nVBLANK & cnt<2> & nHBLANK & ggdout/outdata<1>
+	# nVBLANK & GD<0> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   GG.CLK = CLK;	// GCK
+   GG.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 3 | 12 | RG
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 2 | 0 | 11 | 3 | 10
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | rgdout/outdata<1>  | cnt<1>  | cnt<2>  | RD<0>
+INPUTMC | 5 | 3 | 0 | 5 | 4 | 3 | 2 | 3 | 6 | 2 | 6
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   RG.D = nVBLANK & cnt<0> & nHBLANK & rgdout/outdata<1>
+	# nVBLANK & cnt<1> & nHBLANK & rgdout/outdata<1>
+	# nVBLANK & cnt<2> & nHBLANK & rgdout/outdata<1>
+	# nVBLANK & RD<0> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   RG.CLK = CLK;	// GCK
+   RG.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 4 | 16 | csedcnt<2>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 3 | 4 | 15 | 4 | 17 | 4 | 16
+INPUTS | 4 | nCSED  | csedcnt<0>  | csedcnt<2>  | csedcnt<1>
+INPUTMC | 3 | 4 | 10 | 4 | 16 | 4 | 17
+INPUTP | 1 | 30
+EQ | 4 | 
+   csedcnt<2>.D = !nCSED & !csedcnt<0> & csedcnt<2>
+	# !nCSED & !csedcnt<1> & csedcnt<2>;
+   csedcnt<2>.CLK = CLK;	// GCK
+   csedcnt<2>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 3 | 9 | bgdout/outdata<1>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 3 | 17
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | bgdout/outdata<2>  | cnt<1>  | cnt<2>  | BD<1>
+INPUTMC | 5 | 3 | 0 | 5 | 17 | 3 | 2 | 3 | 6 | 0 | 14
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   bgdout/outdata<1>.D = nVBLANK & cnt<0> & nHBLANK & bgdout/outdata<2>
+	# nVBLANK & cnt<1> & nHBLANK & bgdout/outdata<2>
+	# nVBLANK & cnt<2> & nHBLANK & bgdout/outdata<2>
+	# nVBLANK & BD<1> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   bgdout/outdata<1>.CLK = CLK;	// GCK
+   bgdout/outdata<1>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 17 | bgdout/outdata<2>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 3 | 9
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | bgdout/outdata<3>  | cnt<1>  | cnt<2>  | BD<2>
+INPUTMC | 5 | 3 | 0 | 5 | 15 | 3 | 2 | 3 | 6 | 5 | 1
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   bgdout/outdata<2>.D = nVBLANK & cnt<0> & nHBLANK & bgdout/outdata<3>
+	# nVBLANK & cnt<1> & nHBLANK & bgdout/outdata<3>
+	# nVBLANK & cnt<2> & nHBLANK & bgdout/outdata<3>
+	# nVBLANK & BD<2> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   bgdout/outdata<2>.CLK = CLK;	// GCK
+   bgdout/outdata<2>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 15 | bgdout/outdata<3>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 5 | 17
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | bgdout/outdata<4>  | cnt<1>  | cnt<2>  | BD<3>
+INPUTMC | 5 | 3 | 0 | 5 | 13 | 3 | 2 | 3 | 6 | 2 | 16
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   bgdout/outdata<3>.D = nVBLANK & cnt<0> & nHBLANK & bgdout/outdata<4>
+	# nVBLANK & cnt<1> & nHBLANK & bgdout/outdata<4>
+	# nVBLANK & cnt<2> & nHBLANK & bgdout/outdata<4>
+	# nVBLANK & BD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   bgdout/outdata<3>.CLK = CLK;	// GCK
+   bgdout/outdata<3>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 13 | bgdout/outdata<4>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 5 | 15
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | bgdout/outdata<5>  | cnt<1>  | cnt<2>  | BD<4>
+INPUTMC | 5 | 3 | 0 | 5 | 12 | 3 | 2 | 3 | 6 | 2 | 15
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   bgdout/outdata<4>.D = nVBLANK & cnt<0> & nHBLANK & bgdout/outdata<5>
+	# nVBLANK & cnt<1> & nHBLANK & bgdout/outdata<5>
+	# nVBLANK & cnt<2> & nHBLANK & bgdout/outdata<5>
+	# nVBLANK & BD<4> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   bgdout/outdata<4>.CLK = CLK;	// GCK
+   bgdout/outdata<4>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 12 | bgdout/outdata<5>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 5 | 13
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | bgdout/outdata<6>  | cnt<1>  | cnt<2>  | BD<5>
+INPUTMC | 5 | 3 | 0 | 5 | 11 | 3 | 2 | 3 | 6 | 2 | 14
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   bgdout/outdata<5>.D = nVBLANK & cnt<0> & nHBLANK & bgdout/outdata<6>
+	# nVBLANK & cnt<1> & nHBLANK & bgdout/outdata<6>
+	# nVBLANK & cnt<2> & nHBLANK & bgdout/outdata<6>
+	# nVBLANK & BD<5> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   bgdout/outdata<5>.CLK = CLK;	// GCK
+   bgdout/outdata<5>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 11 | bgdout/outdata<6>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 5 | 12
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | bgdout/outdata<7>  | cnt<1>  | cnt<2>  | BD<6>
+INPUTMC | 5 | 3 | 0 | 4 | 11 | 3 | 2 | 3 | 6 | 2 | 13
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   bgdout/outdata<6>.D = nVBLANK & cnt<0> & nHBLANK & bgdout/outdata<7>
+	# nVBLANK & cnt<1> & nHBLANK & bgdout/outdata<7>
+	# nVBLANK & cnt<2> & nHBLANK & bgdout/outdata<7>
+	# nVBLANK & BD<6> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   bgdout/outdata<6>.CLK = CLK;	// GCK
+   bgdout/outdata<6>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 4 | 11 | bgdout/outdata<7>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 5 | 11
+INPUTS | 6 | nVBLANK  | BD<7>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 4 | 2 | 12 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 2 | 47 | 49
+EQ | 4 | 
+   bgdout/outdata<7>.D = nVBLANK & BD<7> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   bgdout/outdata<7>.CLK = CLK;	// GCK
+   bgdout/outdata<7>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 10 | ggdout/outdata<1>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 3 | 15
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | ggdout/outdata<2>  | cnt<1>  | cnt<2>  | GD<1>
+INPUTMC | 5 | 3 | 0 | 5 | 9 | 3 | 2 | 3 | 6 | 0 | 15
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   ggdout/outdata<1>.D = nVBLANK & cnt<0> & nHBLANK & ggdout/outdata<2>
+	# nVBLANK & cnt<1> & nHBLANK & ggdout/outdata<2>
+	# nVBLANK & cnt<2> & nHBLANK & ggdout/outdata<2>
+	# nVBLANK & GD<1> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   ggdout/outdata<1>.CLK = CLK;	// GCK
+   ggdout/outdata<1>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 9 | ggdout/outdata<2>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 5 | 10
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | ggdout/outdata<3>  | cnt<1>  | cnt<2>  | GD<2>
+INPUTMC | 5 | 3 | 0 | 5 | 8 | 3 | 2 | 3 | 6 | 5 | 0
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   ggdout/outdata<2>.D = nVBLANK & cnt<0> & nHBLANK & ggdout/outdata<3>
+	# nVBLANK & cnt<1> & nHBLANK & ggdout/outdata<3>
+	# nVBLANK & cnt<2> & nHBLANK & ggdout/outdata<3>
+	# nVBLANK & GD<2> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   ggdout/outdata<2>.CLK = CLK;	// GCK
+   ggdout/outdata<2>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 8 | ggdout/outdata<3>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 5 | 9
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | ggdout/outdata<4>  | cnt<1>  | cnt<2>  | GD<3>
+INPUTMC | 5 | 3 | 0 | 5 | 7 | 3 | 2 | 3 | 6 | 2 | 11
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   ggdout/outdata<3>.D = nVBLANK & cnt<0> & nHBLANK & ggdout/outdata<4>
+	# nVBLANK & cnt<1> & nHBLANK & ggdout/outdata<4>
+	# nVBLANK & cnt<2> & nHBLANK & ggdout/outdata<4>
+	# nVBLANK & GD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   ggdout/outdata<3>.CLK = CLK;	// GCK
+   ggdout/outdata<3>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 7 | ggdout/outdata<4>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 5 | 8
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | ggdout/outdata<5>  | cnt<1>  | cnt<2>  | GD<4>
+INPUTMC | 5 | 3 | 0 | 5 | 6 | 3 | 2 | 3 | 6 | 2 | 10
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   ggdout/outdata<4>.D = nVBLANK & cnt<0> & nHBLANK & ggdout/outdata<5>
+	# nVBLANK & cnt<1> & nHBLANK & ggdout/outdata<5>
+	# nVBLANK & cnt<2> & nHBLANK & ggdout/outdata<5>
+	# nVBLANK & GD<4> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   ggdout/outdata<4>.CLK = CLK;	// GCK
+   ggdout/outdata<4>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 6 | ggdout/outdata<5>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 5 | 7
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | ggdout/outdata<6>  | cnt<1>  | cnt<2>  | GD<5>
+INPUTMC | 5 | 3 | 0 | 5 | 5 | 3 | 2 | 3 | 6 | 2 | 9
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   ggdout/outdata<5>.D = nVBLANK & cnt<0> & nHBLANK & ggdout/outdata<6>
+	# nVBLANK & cnt<1> & nHBLANK & ggdout/outdata<6>
+	# nVBLANK & cnt<2> & nHBLANK & ggdout/outdata<6>
+	# nVBLANK & GD<5> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   ggdout/outdata<5>.CLK = CLK;	// GCK
+   ggdout/outdata<5>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 5 | ggdout/outdata<6>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 5 | 6
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | ggdout/outdata<7>  | cnt<1>  | cnt<2>  | GD<6>
+INPUTMC | 5 | 3 | 0 | 4 | 9 | 3 | 2 | 3 | 6 | 2 | 8
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   ggdout/outdata<6>.D = nVBLANK & cnt<0> & nHBLANK & ggdout/outdata<7>
+	# nVBLANK & cnt<1> & nHBLANK & ggdout/outdata<7>
+	# nVBLANK & cnt<2> & nHBLANK & ggdout/outdata<7>
+	# nVBLANK & GD<6> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   ggdout/outdata<6>.CLK = CLK;	// GCK
+   ggdout/outdata<6>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 4 | 9 | ggdout/outdata<7>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 5 | 5
+INPUTS | 6 | nVBLANK  | GD<7>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 4 | 2 | 7 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 2 | 47 | 49
+EQ | 4 | 
+   ggdout/outdata<7>.D = nVBLANK & GD<7> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   ggdout/outdata<7>.CLK = CLK;	// GCK
+   ggdout/outdata<7>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 4 | rgdout/outdata<1>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 3 | 12
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | rgdout/outdata<2>  | cnt<1>  | cnt<2>  | RD<1>
+INPUTMC | 5 | 3 | 0 | 5 | 3 | 3 | 2 | 3 | 6 | 0 | 16
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   rgdout/outdata<1>.D = nVBLANK & cnt<0> & nHBLANK & rgdout/outdata<2>
+	# nVBLANK & cnt<1> & nHBLANK & rgdout/outdata<2>
+	# nVBLANK & cnt<2> & nHBLANK & rgdout/outdata<2>
+	# nVBLANK & RD<1> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   rgdout/outdata<1>.CLK = CLK;	// GCK
+   rgdout/outdata<1>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 3 | rgdout/outdata<2>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 5 | 4
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | rgdout/outdata<3>  | cnt<1>  | cnt<2>  | RD<2>
+INPUTMC | 5 | 3 | 0 | 5 | 2 | 3 | 2 | 3 | 6 | 2 | 5
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   rgdout/outdata<2>.D = nVBLANK & cnt<0> & nHBLANK & rgdout/outdata<3>
+	# nVBLANK & cnt<1> & nHBLANK & rgdout/outdata<3>
+	# nVBLANK & cnt<2> & nHBLANK & rgdout/outdata<3>
+	# nVBLANK & RD<2> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   rgdout/outdata<2>.CLK = CLK;	// GCK
+   rgdout/outdata<2>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 5 | 2 | rgdout/outdata<3>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 5 | 3
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | rgdout/outdata<4>  | cnt<1>  | cnt<2>  | RD<3>
+INPUTMC | 5 | 3 | 0 | 1 | 17 | 3 | 2 | 3 | 6 | 2 | 4
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   rgdout/outdata<3>.D = nVBLANK & cnt<0> & nHBLANK & rgdout/outdata<4>
+	# nVBLANK & cnt<1> & nHBLANK & rgdout/outdata<4>
+	# nVBLANK & cnt<2> & nHBLANK & rgdout/outdata<4>
+	# nVBLANK & RD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   rgdout/outdata<3>.CLK = CLK;	// GCK
+   rgdout/outdata<3>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 17 | rgdout/outdata<4>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 5 | 2
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | rgdout/outdata<5>  | cnt<1>  | cnt<2>  | RD<4>
+INPUTMC | 5 | 3 | 0 | 1 | 16 | 3 | 2 | 3 | 6 | 2 | 3
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   rgdout/outdata<4>.D = nVBLANK & cnt<0> & nHBLANK & rgdout/outdata<5>
+	# nVBLANK & cnt<1> & nHBLANK & rgdout/outdata<5>
+	# nVBLANK & cnt<2> & nHBLANK & rgdout/outdata<5>
+	# nVBLANK & RD<4> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   rgdout/outdata<4>.CLK = CLK;	// GCK
+   rgdout/outdata<4>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 1 | 16 | rgdout/outdata<5>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 1 | 17
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | rgdout/outdata<6>  | cnt<1>  | cnt<2>  | RD<5>
+INPUTMC | 5 | 3 | 0 | 2 | 17 | 3 | 2 | 3 | 6 | 2 | 2
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   rgdout/outdata<5>.D = nVBLANK & cnt<0> & nHBLANK & rgdout/outdata<6>
+	# nVBLANK & cnt<1> & nHBLANK & rgdout/outdata<6>
+	# nVBLANK & cnt<2> & nHBLANK & rgdout/outdata<6>
+	# nVBLANK & RD<5> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   rgdout/outdata<5>.CLK = CLK;	// GCK
+   rgdout/outdata<5>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 2 | 17 | rgdout/outdata<6>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 1 | 16
+INPUTS | 7 | nVBLANK  | cnt<0>  | nHBLANK  | rgdout/outdata<7>  | cnt<1>  | cnt<2>  | RD<6>
+INPUTMC | 5 | 3 | 0 | 4 | 8 | 3 | 2 | 3 | 6 | 2 | 1
+INPUTP | 2 | 47 | 49
+EQ | 7 | 
+   rgdout/outdata<6>.D = nVBLANK & cnt<0> & nHBLANK & rgdout/outdata<7>
+	# nVBLANK & cnt<1> & nHBLANK & rgdout/outdata<7>
+	# nVBLANK & cnt<2> & nHBLANK & rgdout/outdata<7>
+	# nVBLANK & RD<6> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   rgdout/outdata<6>.CLK = CLK;	// GCK
+   rgdout/outdata<6>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 4 | 8 | rgdout/outdata<7>
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 2 | 17
+INPUTS | 6 | nVBLANK  | RD<7>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK
+INPUTMC | 4 | 2 | 0 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 2 | 47 | 49
+EQ | 4 | 
+   rgdout/outdata<7>.D = nVBLANK & RD<7> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK;
+   rgdout/outdata<7>.CLK = CLK;	// GCK
+   rgdout/outdata<7>.AR = RST;	// GSR
+GLOBALS | 2 | 2 | CLK | 4 | RST
+
+MACROCELL | 3 | 4 | rstchk
+ATTRIBUTES | 8688450 | 0
+INPUTS | 2 | nIWR  | nF47
+INPUTP | 2 | 37 | 54
+EQ | 4 | 
+   tp1.D = Gnd;
+   tp1.CLK = CLK;	// GCK
+   tp1.AP = RST;	// GSR
+   tp1.CE = !nIWR & !nF47;
+GLOBALS | 2 | 2 | CLK | 1 | RST
+
+MACROCELL | 0 | 11 | GOUT_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 10 | nVBLANK  | f6<0>  | f6<3>  | nHBLANK  | BG  | VGATE  | f6<1>  | RG  | f6<2>  | GG
+INPUTMC | 7 | 1 | 7 | 1 | 4 | 3 | 17 | 1 | 6 | 3 | 12 | 1 | 5 | 3 | 15
+INPUTP | 3 | 47 | 49 | 59
+EQ | 6 | 
+   GOUT = nVBLANK & f6<0> & !f6<3> & nHBLANK & BG & 
+	!VGATE
+	# nVBLANK & f6<1> & !f6<3> & nHBLANK & RG & 
+	!VGATE
+	# nVBLANK & f6<2> & !f6<3> & nHBLANK & GG & 
+	!VGATE;
+
+MACROCELL | 5 | 16 | nWE_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 7 | nVBLANK  | f7<0>  | rCSED  | nRD  | nWD  | nHBLANK  | f7<1>
+INPUTMC | 3 | 1 | 3 | 4 | 15 | 1 | 2
+INPUTP | 4 | 47 | 23 | 22 | 49
+EQ | 4 | 
+   !nWE = !nVBLANK & f7<0> & !rCSED & nRD & !nWD
+	# !nVBLANK & f7<1> & !rCSED & nRD & !nWD
+	# f7<0> & !rCSED & !nHBLANK & nRD & !nWD
+	# f7<1> & !rCSED & !nHBLANK & nRD & !nWD;
+
+MACROCELL | 3 | 5 | tp2_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 3 | nCSED  | nRD  | BLANK
+INPUTP | 3 | 30 | 23 | 17
+EQ | 1 | 
+   !tp2 = !nCSED & !nRD & BLANK;
+
+MACROCELL | 3 | 7 | BLUE_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 10 | nVBLANK  | f4<0>  | nHBLANK  | VGATE  | VQH  | VID  | f5<3>  | f5<0>  | f6<0>  | BG
+INPUTMC | 5 | 1 | 14 | 1 | 8 | 1 | 11 | 1 | 7 | 3 | 17
+INPUTP | 5 | 47 | 49 | 59 | 19 | 58
+EQ | 8 | 
+   BLUE = nVBLANK & f5<3> & f4<0> & nHBLANK & !VGATE & 
+	VID
+	# nVBLANK & f4<0> & nHBLANK & !VGATE & !VQH & VID
+	# nVBLANK & f5<0> & nHBLANK & !VGATE & VQH & VID
+	# nVBLANK & f5<3> & f6<0> & nHBLANK & BG & 
+	!VGATE & VID
+	# nVBLANK & f6<0> & nHBLANK & BG & !VGATE & !VQH & 
+	VID;
+
+MACROCELL | 3 | 8 | GREEN_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 10 | nVBLANK  | f4<2>  | nHBLANK  | VGATE  | VQH  | VID  | f5<3>  | f5<2>  | f6<2>  | GG
+INPUTMC | 5 | 1 | 12 | 1 | 8 | 1 | 9 | 1 | 5 | 3 | 15
+INPUTP | 5 | 47 | 49 | 59 | 19 | 58
+EQ | 8 | 
+   GREEN = nVBLANK & f5<3> & f4<2> & nHBLANK & !VGATE & 
+	VID
+	# nVBLANK & f4<2> & nHBLANK & !VGATE & !VQH & VID
+	# nVBLANK & f5<2> & nHBLANK & !VGATE & VQH & VID
+	# nVBLANK & f5<3> & f6<2> & nHBLANK & GG & 
+	!VGATE & VID
+	# nVBLANK & f6<2> & nHBLANK & GG & !VGATE & !VQH & 
+	VID;
+
+MACROCELL | 3 | 10 | RED_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 10 | nVBLANK  | f4<1>  | nHBLANK  | VGATE  | VQH  | VID  | f5<3>  | f5<1>  | f6<1>  | RG
+INPUTMC | 5 | 1 | 13 | 1 | 8 | 1 | 10 | 1 | 6 | 3 | 12
+INPUTP | 5 | 47 | 49 | 59 | 19 | 58
+EQ | 8 | 
+   RED = nVBLANK & f5<3> & f4<1> & nHBLANK & !VGATE & 
+	VID
+	# nVBLANK & f4<1> & nHBLANK & !VGATE & !VQH & VID
+	# nVBLANK & f5<1> & nHBLANK & !VGATE & VQH & VID
+	# nVBLANK & f5<3> & f6<1> & nHBLANK & RG & 
+	!VGATE & VID
+	# nVBLANK & f6<1> & nHBLANK & RG & !VGATE & !VQH & 
+	VID;
+
+MACROCELL | 3 | 1 | nCS_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 12 | rCSED  | cnt<0>  | cnt<1>  | cnt<2>  | nVBLANK  | nHBLANK  | f7<0>  | f7<1>  | nRD  | nWD  | cnt<0>.EXP  | cnt<1>.EXP
+INPUTMC | 8 | 4 | 15 | 3 | 0 | 3 | 2 | 3 | 6 | 1 | 3 | 1 | 2 | 3 | 0 | 3 | 2
+INPUTP | 4 | 47 | 49 | 23 | 22
+IMPORTS | 2 | 3 | 0 | 3 | 2
+EQ | 12 | 
+   nCS = rCSED & cnt<0>
+	# nVBLANK & cnt<0> & nHBLANK
+	# !f7<0> & !f7<1> & cnt<0>
+	# rCSED & !cnt<1> & !cnt<2>
+	# cnt<0> & nRD & nWD
+;Imported pterms FB4_1
+	# cnt<0> & !nRD & !nWD
+	# nVBLANK & !cnt<1> & !cnt<2> & nHBLANK
+;Imported pterms FB4_3
+	# !f7<0> & !f7<1> & !cnt<1> & !cnt<2>
+	# !cnt<1> & !cnt<2> & nRD & nWD
+	# !cnt<1> & !cnt<2> & !nRD & !nWD;
+
+MACROCELL | 5 | 14 | nOE_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 7 | nVBLANK  | f7<0>  | rCSED  | nRD  | nWD  | nHBLANK  | f7<1>
+INPUTMC | 3 | 1 | 3 | 4 | 15 | 1 | 2
+INPUTP | 4 | 47 | 23 | 22 | 49
+EQ | 4 | 
+   nOE = !nVBLANK & f7<0> & !rCSED & nRD & !nWD
+	# !nVBLANK & f7<1> & !rCSED & nRD & !nWD
+	# f7<0> & !rCSED & !nHBLANK & nRD & !nWD
+	# f7<1> & !rCSED & !nHBLANK & nRD & !nWD;
+
+MACROCELL | 3 | 16 | BUFDIR_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 1 | nWD
+INPUTP | 1 | 22
+EQ | 1 | 
+   BUFDIR = !nWD;
+
+MACROCELL | 3 | 14 | nBUFOE_OBUF
+ATTRIBUTES | 264962 | 0
+INPUTS | 7 | rCSED  | nVBLANK  | nHBLANK  | f7<0>  | f7<1>  | nRD  | nWD
+INPUTMC | 3 | 4 | 15 | 1 | 3 | 1 | 2
+INPUTP | 4 | 47 | 49 | 23 | 22
+EQ | 5 | 
+   nBUFOE = rCSED
+	# nVBLANK & nHBLANK
+	# !f7<0> & !f7<1>
+	# nRD & nWD
+	# !nRD & !nWD;
+
+MACROCELL | 4 | 14 | $OpTx$$OpTx$FX_DC$383_INV$700
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 18 | 7 | 0 | 6 | 16 | 0 | 4 | 7 | 13 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 6 | 0 | 6 | 1 | 6 | 17 | 7 | 10 | 7 | 11 | 7 | 12 | 7 | 14 | 7 | 15 | 7 | 16 | 7 | 17
+INPUTS | 2 | SRAD<13>  | gdlatchad/LIMITAD<9>
+INPUTMC | 2 | 7 | 8 | 7 | 16
+EQ | 1 | 
+   $OpTx$$OpTx$FX_DC$383_INV$700 = SRAD<13> & !gdlatchad/LIMITAD<9>;
+
+MACROCELL | 0 | 13 | $OpTx$$OpTx$FX_DC$393_INV$703
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 14 | 7 | 0 | 0 | 4 | 7 | 13 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 7 | 10 | 7 | 11 | 7 | 12 | 7 | 14 | 7 | 15 | 7 | 16 | 7 | 17
+INPUTS | 4 | SRAD<13>  | SRAD<12>  | gdlatchad/LIMITAD<8>  | gdlatchad/LIMITAD<9>
+INPUTMC | 4 | 7 | 8 | 7 | 7 | 0 | 9 | 7 | 16
+EQ | 3 | 
+   $OpTx$$OpTx$FX_DC$393_INV$703 = SRAD<13> & SRAD<12> & !gdlatchad/LIMITAD<8>
+	# SRAD<12> & !gdlatchad/LIMITAD<9> & 
+	!gdlatchad/LIMITAD<8>;
+
+MACROCELL | 0 | 4 | gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 12 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 6 | 15 | 7 | 0
+INPUTS | 18 | nVBLANK  | SRAD<13>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<9>  | $OpTx$$OpTx$FX_DC$393_INV$703  | SRAD<11>  | gdlatchad/LIMITAD<7>  | $OpTx$$OpTx$FX_DC$383_INV$700  | SRAD<12>  | gdlatchad/LIMITAD<8>  | SRAD<8>  | gdlatchad/LIMITAD<4>  | $OpTx$INV$382  | EXP10_.EXP  | EXP11_.EXP
+INPUTMC | 16 | 7 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 7 | 16 | 0 | 13 | 7 | 5 | 0 | 8 | 4 | 14 | 7 | 7 | 0 | 9 | 6 | 16 | 0 | 1 | 0 | 0 | 0 | 3 | 0 | 5
+INPUTP | 2 | 47 | 49
+IMPORTS | 2 | 0 | 3 | 0 | 5
+EQ | 71 | 
+   gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2 = !nVBLANK
+	# !SRAD<13> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<9> & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<11> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<12> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<8> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<11> & !SRAD<8> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<4> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382
+;Imported pterms FB1_4
+	# !SRAD<10> & !SRAD<11> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<6> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382
+	# !SRAD<10> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382
+	# !SRAD<11> & !SRAD<9> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382
+	# !SRAD<9> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382
+	# !SRAD<8> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<4> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382
+;Imported pterms FB1_3
+	# !SRAD<5> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<11> & !SRAD<5> & !SRAD<4> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<0> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+;Imported pterms FB1_6
+	# !SRAD<11> & !SRAD<6> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<11> & !SRAD<7> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<3> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<6> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<7> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<3> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<11> & !SRAD<5> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+;Imported pterms FB1_7
+	# !SRAD<11> & !SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<5> & !SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<0> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382;
+
+MACROCELL | 4 | 13 | $OpTx$$OpTx$FX_DC$385_INV$701
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 3 | 0 | 2 | 0 | 5 | 0 | 6
+INPUTS | 2 | SRAD<6>  | gdlatchad/LIMITAD<2>
+INPUTMC | 2 | 6 | 13 | 0 | 12
+EQ | 1 | 
+   $OpTx$$OpTx$FX_DC$385_INV$701 = SRAD<6> & !gdlatchad/LIMITAD<2>;
+
+MACROCELL | 4 | 12 | $OpTx$$OpTx$FX_DC$392_INV$702
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 8 | 0 | 2 | 7 | 12 | 0 | 5 | 0 | 6 | 7 | 10 | 7 | 11 | 7 | 14 | 7 | 15
+INPUTS | 2 | SRAD<7>  | gdlatchad/LIMITAD<3>
+INPUTMC | 2 | 6 | 14 | 0 | 2
+EQ | 1 | 
+   $OpTx$$OpTx$FX_DC$392_INV$702 = SRAD<7> & !gdlatchad/LIMITAD<3>;
+
+MACROCELL | 0 | 0 | $OpTx$INV$382
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 15 | 6 | 1 | 0 | 4 | 7 | 13 | 0 | 2 | 0 | 3 | 0 | 5 | 0 | 6 | 6 | 0 | 6 | 17 | 7 | 10 | 7 | 11 | 7 | 12 | 7 | 14 | 7 | 15 | 0 | 1
+INPUTS | 10 | SRAD<10>  | gdlatchad/LIMITAD<6>  | SRAD<9>  | gdlatchad/LIMITAD<5>  | SRAD<8>  | gdlatchad/LIMITAD<4>  | nVBLANK  | gdlatchad/LIMITAD<1>  | gdlatchad/LIMITAD<2>  | gdlatchad/LIMITAD<0>.EXP
+INPUTMC | 9 | 7 | 4 | 0 | 7 | 7 | 1 | 0 | 6 | 6 | 16 | 0 | 1 | 0 | 10 | 0 | 12 | 0 | 17
+INPUTP | 1 | 47
+EXPORTS | 1 | 0 | 1
+IMPORTS | 1 | 0 | 17
+EQ | 15 | 
+   $OpTx$INV$382 = SRAD<10> & !gdlatchad/LIMITAD<6>
+	# SRAD<10> & SRAD<9> & !gdlatchad/LIMITAD<5>
+	# SRAD<9> & !gdlatchad/LIMITAD<5> & 
+	!gdlatchad/LIMITAD<6>
+	# SRAD<10> & SRAD<9> & SRAD<8> & 
+	!gdlatchad/LIMITAD<4>
+;Imported pterms FB1_18
+	# SRAD<10> & SRAD<8> & !gdlatchad/LIMITAD<5> & 
+	!gdlatchad/LIMITAD<4>
+	# SRAD<9> & SRAD<8> & !gdlatchad/LIMITAD<6> & 
+	!gdlatchad/LIMITAD<4>
+	# SRAD<8> & !gdlatchad/LIMITAD<5> & 
+	!gdlatchad/LIMITAD<6> & !gdlatchad/LIMITAD<4>;
+    $OpTx$INV$382.EXP  =  nVBLANK & !gdlatchad/LIMITAD<1> & 
+	!gdlatchad/LIMITAD<2>
+
+MACROCELL | 7 | 13 | $OpTx$FX_SC$397
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 2 | 6 | 5 | 6 | 4
+INPUTS | 19 | SRAD<13>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<9>  | $OpTx$$OpTx$FX_DC$393_INV$703  | gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2  | SRAD<11>  | gdlatchad/LIMITAD<7>  | $OpTx$$OpTx$FX_DC$383_INV$700  | SRAD<12>  | gdlatchad/LIMITAD<8>  | SRAD<8>  | gdlatchad/LIMITAD<4>  | $OpTx$INV$382  | EXP21_.EXP  | EXP22_.EXP
+INPUTMC | 17 | 7 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 7 | 16 | 0 | 13 | 7 | 9 | 7 | 5 | 0 | 8 | 4 | 14 | 7 | 7 | 0 | 9 | 6 | 16 | 0 | 1 | 0 | 0 | 7 | 12 | 7 | 14
+INPUTP | 2 | 47 | 49
+IMPORTS | 2 | 7 | 12 | 7 | 14
+EQ | 127 | 
+   $OpTx$FX_SC$397 = !SRAD<13> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<9> & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<12> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<8> & nVBLANK & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<4> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<8> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<4> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+;Imported pterms FB8_13
+	# !SRAD<10> & !SRAD<11> & nVBLANK & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<10> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<9> & nVBLANK & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<5> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<9> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<6> & nVBLANK & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+;Imported pterms FB8_12
+	# !SRAD<5> & !SRAD<6> & nVBLANK & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<1> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<5> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<1> & 
+	gdlatchad/LIMITAD<2> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<5> & !SRAD<6> & nVBLANK & 
+	!SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<0> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<5> & nVBLANK & !SRAD<4> & 
+	!cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<5> & !SRAD<6> & nVBLANK & !SRAD<4> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<0> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+;Imported pterms FB8_11
+	# !SRAD<6> & nVBLANK & !SRAD<4> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# nVBLANK & !SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<0> & 
+	gdlatchad/LIMITAD<1> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+;Imported pterms FB8_15
+	# !SRAD<11> & !SRAD<7> & nVBLANK & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<3> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<6> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<7> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<3> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<5> & !SRAD<6> & nVBLANK & 
+	!cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<1> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<5> & nVBLANK & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<1> & 
+	gdlatchad/LIMITAD<2> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+;Imported pterms FB8_16
+	# !SRAD<11> & !SRAD<6> & nVBLANK & !SRAD<4> & 
+	!cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & nVBLANK & !SRAD<4> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<0> & 
+	gdlatchad/LIMITAD<1> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<5> & nVBLANK & !SRAD<4> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2;
+
+MACROCELL | 7 | 9 | gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 7 | 7 | 13 | 7 | 10 | 7 | 11 | 7 | 12 | 7 | 14 | 7 | 15 | 7 | 8
+INPUTS | 26 | SRAD<13>  | SRAD<10>  | SRAD<11>  | SRAD<12>  | SRAD<9>  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<9>  | gdlatchad/LIMITAD<5>  | gdlatchad/LIMITAD<6>  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<8>  | gdlatchad/LIMITAD<3>  | gdlatchad/LIMITAD<4>
+INPUTMC | 24 | 7 | 8 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 7 | 16 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 2 | 0 | 1
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 7 | 8
+EQ | 21 | 
+   gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2 = SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3>;
+    gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2.EXP  =  SRAD<13> & !nVBLANK
+	# !SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & 
+	nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<9>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<3>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4>
+
+MACROCELL | 3 | 3 | SBANKAD_0_OBUFE/SBANKAD_0_OBUFE_TRST__$INT
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 2 | 3 | 11 | 3 | 13
+INPUTS | 5 | nVBLANK  | cnt<0>  | nHBLANK  | cnt<1>  | cnt<2>
+INPUTMC | 3 | 3 | 0 | 3 | 2 | 3 | 6
+INPUTP | 2 | 47 | 49
+EQ | 2 | 
+   SBANKAD_0_OBUFE/SBANKAD_0_OBUFE_TRST__$INT = nVBLANK & cnt<0> & nHBLANK
+	# nVBLANK & !cnt<1> & !cnt<2> & nHBLANK;
+
+MACROCELL | 0 | 3 | EXP10_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 4
+INPUTS | 16 | SRAD<10>  | SRAD<11>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<6>  | $OpTx$$OpTx$FX_DC$383_INV$700  | $OpTx$$OpTx$FX_DC$393_INV$703  | $OpTx$INV$382  | gdlatchad/LIMITAD<7>  | SRAD<9>  | gdlatchad/LIMITAD<5>  | SRAD<8>  | gdlatchad/LIMITAD<4>  | gdlatchad/LIMITAD<3>.EXP
+INPUTMC | 15 | 7 | 4 | 7 | 5 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 7 | 4 | 14 | 0 | 13 | 0 | 0 | 0 | 8 | 7 | 1 | 0 | 6 | 6 | 16 | 0 | 1 | 0 | 2
+INPUTP | 1 | 49
+EXPORTS | 1 | 0 | 4
+IMPORTS | 1 | 0 | 2
+EQ | 24 | 
+       EXP10_.EXP  =  !SRAD<10> & !SRAD<11> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<6> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382
+	# !SRAD<10> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382
+	# !SRAD<11> & !SRAD<9> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382
+	# !SRAD<9> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382
+	# !SRAD<8> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<4> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382
+;Imported pterms FB1_3
+	# !SRAD<5> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<11> & !SRAD<5> & !SRAD<4> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<0> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+
+MACROCELL | 0 | 5 | EXP11_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 0 | 4
+INPUTS | 18 | SRAD<11>  | SRAD<6>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<2>  | $OpTx$$OpTx$FX_DC$383_INV$700  | $OpTx$$OpTx$FX_DC$393_INV$703  | $OpTx$$OpTx$FX_DC$392_INV$702  | $OpTx$INV$382  | SRAD<7>  | gdlatchad/LIMITAD<3>  | gdlatchad/LIMITAD<7>  | SRAD<5>  | gdlatchad/LIMITAD<1>  | $OpTx$$OpTx$FX_DC$385_INV$701  | gdlatchad/LIMITAD<5>.EXP
+INPUTMC | 17 | 7 | 5 | 6 | 13 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 12 | 4 | 14 | 0 | 13 | 4 | 12 | 0 | 0 | 6 | 14 | 0 | 2 | 0 | 8 | 6 | 11 | 0 | 10 | 4 | 13 | 0 | 6
+INPUTP | 1 | 49
+EXPORTS | 1 | 0 | 4
+IMPORTS | 1 | 0 | 6
+EQ | 33 | 
+       EXP11_.EXP  =  !SRAD<11> & !SRAD<6> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<11> & !SRAD<7> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<3> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<6> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<7> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<3> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<11> & !SRAD<5> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+;Imported pterms FB1_7
+	# !SRAD<11> & !SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<5> & !SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<0> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+	# !SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$385_INV$701 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382
+
+MACROCELL | 6 | 0 | EXP12_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 6 | 17
+INPUTS | 24 | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | nVBLANK  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<8>  | gdlatchad/LIMITAD<4>  | $OpTx$$OpTx$FX_DC$383_INV$700  | $OpTx$INV$382  | SRAD<10>  | SRAD<11>  | SRAD<12>  | gdlatchad/LIMITAD<6>  | EXP13_.EXP
+INPUTMC | 22 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 8 | 0 | 9 | 0 | 1 | 4 | 14 | 0 | 0 | 7 | 4 | 7 | 5 | 7 | 7 | 0 | 7 | 6 | 1
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 6 | 17
+IMPORTS | 1 | 6 | 1
+EQ | 46 | 
+       EXP12_.EXP  =  SRAD<5> & SRAD<6> & SRAD<7> & !SRAD<8> & 
+	nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<10> & !SRAD<11> & !SRAD<12> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<10> & !SRAD<11> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<10> & !SRAD<12> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<10> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+;Imported pterms FB7_2
+	# !SRAD<11> & !SRAD<12> & !SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<5> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<11> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<12> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+
+MACROCELL | 6 | 1 | EXP13_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 6 | 0
+INPUTS | 22 | SRAD<11>  | SRAD<12>  | SRAD<9>  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | nVBLANK  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<5>  | $OpTx$$OpTx$FX_DC$383_INV$700  | $OpTx$INV$382  | gdlatchad/LIMITAD<8>  | gdlatchad/LIMITAD<7>
+INPUTMC | 20 | 7 | 5 | 7 | 7 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 6 | 4 | 14 | 0 | 0 | 0 | 9 | 0 | 8
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 6 | 0
+EQ | 20 | 
+       EXP13_.EXP  =  !SRAD<11> & !SRAD<12> & !SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<5> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<11> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<12> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+
+MACROCELL | 6 | 15 | EXP14_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 6 | 14
+INPUTS | 12 | SRAD<11>  | SRAD<5>  | SRAD<6>  | nVBLANK  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2  | SRAD<12>  | SRAD<8>
+INPUTMC | 11 | 7 | 5 | 6 | 11 | 6 | 13 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 0 | 4 | 7 | 7 | 6 | 16
+INPUTP | 1 | 47
+EXPORTS | 1 | 6 | 14
+EQ | 9 | 
+       EXP14_.EXP  =  !SRAD<11> & SRAD<5> & SRAD<6> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# !SRAD<12> & SRAD<5> & SRAD<6> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# SRAD<5> & SRAD<6> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+
+MACROCELL | 6 | 17 | EXP15_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 6 | 16
+INPUTS | 22 | SRAD<11>  | SRAD<12>  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | nVBLANK  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<7>  | $OpTx$$OpTx$FX_DC$383_INV$700  | gdlatchad/LIMITAD<8>  | gdlatchad/LIMITAD<4>  | $OpTx$INV$382  | EXP12_.EXP
+INPUTMC | 20 | 7 | 5 | 7 | 7 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 8 | 4 | 14 | 0 | 9 | 0 | 1 | 0 | 0 | 6 | 0
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 6 | 16
+IMPORTS | 1 | 6 | 0
+EQ | 72 | 
+       EXP15_.EXP  =  !SRAD<11> & !SRAD<12> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700
+	# !SRAD<11> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700
+	# !SRAD<11> & !SRAD<12> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<4> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<11> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<12> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<4> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+;Imported pterms FB7_1
+	# SRAD<5> & SRAD<6> & SRAD<7> & !SRAD<8> & 
+	nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<10> & !SRAD<11> & !SRAD<12> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<10> & !SRAD<11> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<10> & !SRAD<12> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<10> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+;Imported pterms FB7_2
+	# !SRAD<11> & !SRAD<12> & !SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<5> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<11> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<12> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & !SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+	# !SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	!SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$INV$382
+
+MACROCELL | 7 | 0 | EXP16_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 7 | 1
+INPUTS | 26 | SRAD<9>  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2  | SRAD<13>  | SRAD<10>  | SRAD<11>  | SRAD<12>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<9>  | $OpTx$$OpTx$FX_DC$393_INV$703  | gdlatchad/LIMITAD<7>  | $OpTx$$OpTx$FX_DC$383_INV$700  | gdlatchad/LIMITAD<8>  | EXP23_.EXP
+INPUTMC | 24 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 0 | 4 | 7 | 8 | 7 | 4 | 7 | 5 | 7 | 7 | 3 | 0 | 3 | 2 | 3 | 6 | 7 | 16 | 0 | 13 | 0 | 8 | 4 | 14 | 0 | 9 | 7 | 17
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 7 | 1
+IMPORTS | 1 | 7 | 17
+EQ | 54 | 
+       EXP16_.EXP  =  SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	SRAD<8> & SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & 
+	gdlatchad/OUTAD_not0001/gdlatchad/OUTAD_not0001_D2
+	# !SRAD<13> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<9> & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<11> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<12> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<8> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+;Imported pterms FB8_18
+	# !SRAD<10> & !SRAD<11> & !SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<5> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<10> & !SRAD<11> & !SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<10> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<10> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<11> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+;Imported pterms FB8_17
+	# !SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+
+MACROCELL | 7 | 2 | EXP17_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 7 | 3
+INPUTS | 24 | SRAD<13>  | SRAD<10>  | SRAD<11>  | SRAD<12>  | SRAD<9>  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | nVBLANK  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<6>  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<8>  | gdlatchad/LIMITAD<9>  | OUTAD<9>.EXP
+INPUTMC | 22 | 7 | 8 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 7 | 16 | 7 | 1
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 7 | 3
+IMPORTS | 1 | 7 | 1
+EQ | 43 | 
+       EXP17_.EXP  =  !SRAD<13> & !SRAD<10> & !SRAD<11> & !SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & 
+	nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<6>
+	# !SRAD<13> & !SRAD<10> & !SRAD<12> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	gdlatchad/LIMITAD<7>
+	# !SRAD<13> & !SRAD<10> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8>
+	# !SRAD<10> & !SRAD<11> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<8>
+	# !SRAD<10> & SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<9> & gdlatchad/LIMITAD<6> & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8>
+;Imported pterms FB8_2
+	# !SRAD<13> & !SRAD<10> & !SRAD<11> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	gdlatchad/LIMITAD<8>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<3>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4>
+
+MACROCELL | 7 | 3 | EXP18_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 7 | 4
+INPUTS | 24 | SRAD<13>  | SRAD<11>  | SRAD<12>  | SRAD<9>  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | nVBLANK  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<8>  | gdlatchad/LIMITAD<9>  | SRAD<10>  | gdlatchad/LIMITAD<6>  | EXP17_.EXP
+INPUTMC | 22 | 7 | 8 | 7 | 5 | 7 | 7 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 8 | 0 | 9 | 7 | 16 | 7 | 4 | 0 | 7 | 7 | 2
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 7 | 4
+IMPORTS | 1 | 7 | 2
+EQ | 68 | 
+       EXP18_.EXP  =  !SRAD<13> & !SRAD<11> & !SRAD<12> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<7>
+	# !SRAD<13> & !SRAD<11> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8>
+	# !SRAD<11> & !SRAD<12> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<7>
+	# !SRAD<11> & SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<9> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8>
+	# !SRAD<10> & !SRAD<12> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7>
+;Imported pterms FB8_3
+	# !SRAD<13> & !SRAD<10> & !SRAD<11> & !SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & 
+	nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<6>
+	# !SRAD<13> & !SRAD<10> & !SRAD<12> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	gdlatchad/LIMITAD<7>
+	# !SRAD<13> & !SRAD<10> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8>
+	# !SRAD<10> & !SRAD<11> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<8>
+	# !SRAD<10> & SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<9> & gdlatchad/LIMITAD<6> & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8>
+;Imported pterms FB8_2
+	# !SRAD<13> & !SRAD<10> & !SRAD<11> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	gdlatchad/LIMITAD<8>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<3>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4>
+
+MACROCELL | 7 | 6 | EXP19_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 7 | 5
+INPUTS | 23 | SRAD<13>  | SRAD<10>  | SRAD<12>  | SRAD<9>  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | nVBLANK  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<8>  | SRAD<11>  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<9>  | OUTAD<12>.EXP
+INPUTMC | 21 | 7 | 8 | 7 | 4 | 7 | 7 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 9 | 7 | 5 | 0 | 8 | 7 | 16 | 7 | 7
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 7 | 5
+IMPORTS | 1 | 7 | 7
+EQ | 37 | 
+       EXP19_.EXP  =  !SRAD<13> & SRAD<10> & !SRAD<12> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<8>
+	# !SRAD<13> & SRAD<10> & !SRAD<11> & !SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & 
+	nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & 
+	SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<7>
+	# !SRAD<13> & SRAD<10> & !SRAD<11> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8>
+	# SRAD<10> & !SRAD<11> & !SRAD<12> & SRAD<9> & 
+	SRAD<5> & SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<7>
+	# SRAD<10> & !SRAD<11> & SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<8>
+;Imported pterms FB8_8
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<3>
+	# SRAD<13> & SRAD<10> & SRAD<11> & SRAD<12> & 
+	SRAD<9> & SRAD<5> & SRAD<6> & !SRAD<7> & !SRAD<8> & 
+	SRAD<0> & SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<9> & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<8> & gdlatchad/LIMITAD<4>
+
+MACROCELL | 7 | 11 | EXP20_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 7 | 12
+INPUTS | 19 | SRAD<5>  | SRAD<6>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<1>  | $OpTx$$OpTx$FX_DC$383_INV$700  | $OpTx$$OpTx$FX_DC$393_INV$703  | $OpTx$$OpTx$FX_DC$392_INV$702  | $OpTx$INV$382  | gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2  | gdlatchad/LIMITAD<2>  | SRAD<11>  | SRAD<4>  | gdlatchad/LIMITAD<0>  | GD<0>.EXP
+INPUTMC | 17 | 6 | 11 | 6 | 13 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 8 | 0 | 10 | 4 | 14 | 0 | 13 | 4 | 12 | 0 | 0 | 7 | 9 | 0 | 12 | 7 | 5 | 6 | 10 | 0 | 17 | 7 | 10
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 7 | 12
+IMPORTS | 1 | 7 | 10
+EQ | 39 | 
+       EXP20_.EXP  =  !SRAD<5> & !SRAD<6> & nVBLANK & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<1> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<5> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<1> & 
+	gdlatchad/LIMITAD<2> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<5> & !SRAD<6> & nVBLANK & 
+	!SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<0> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<5> & nVBLANK & !SRAD<4> & 
+	!cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<5> & !SRAD<6> & nVBLANK & !SRAD<4> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<0> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+;Imported pterms FB8_11
+	# !SRAD<6> & nVBLANK & !SRAD<4> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# nVBLANK & !SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<0> & 
+	gdlatchad/LIMITAD<1> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+
+MACROCELL | 7 | 12 | EXP21_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 7 | 13
+INPUTS | 19 | SRAD<10>  | SRAD<11>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<6>  | $OpTx$$OpTx$FX_DC$383_INV$700  | $OpTx$$OpTx$FX_DC$393_INV$703  | $OpTx$INV$382  | gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2  | gdlatchad/LIMITAD<7>  | SRAD<9>  | gdlatchad/LIMITAD<5>  | SRAD<6>  | gdlatchad/LIMITAD<2>  | $OpTx$$OpTx$FX_DC$392_INV$702  | EXP20_.EXP
+INPUTMC | 17 | 7 | 4 | 7 | 5 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 7 | 4 | 14 | 0 | 13 | 0 | 0 | 7 | 9 | 0 | 8 | 7 | 1 | 0 | 6 | 6 | 13 | 0 | 12 | 4 | 12 | 7 | 11
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 7 | 13
+IMPORTS | 1 | 7 | 11
+EQ | 61 | 
+       EXP21_.EXP  =  !SRAD<10> & !SRAD<11> & nVBLANK & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<10> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<9> & nVBLANK & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<5> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<9> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<6> & nVBLANK & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+;Imported pterms FB8_12
+	# !SRAD<5> & !SRAD<6> & nVBLANK & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<1> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<5> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<1> & 
+	gdlatchad/LIMITAD<2> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<5> & !SRAD<6> & nVBLANK & 
+	!SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<0> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<5> & nVBLANK & !SRAD<4> & 
+	!cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<5> & !SRAD<6> & nVBLANK & !SRAD<4> & !cnt<0> & 
+	!cnt<1> & !cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<0> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+;Imported pterms FB8_11
+	# !SRAD<6> & nVBLANK & !SRAD<4> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# nVBLANK & !SRAD<4> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<0> & 
+	gdlatchad/LIMITAD<1> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+
+MACROCELL | 7 | 14 | EXP22_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 7 | 13
+INPUTS | 19 | SRAD<11>  | SRAD<7>  | nVBLANK  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<3>  | $OpTx$$OpTx$FX_DC$383_INV$700  | $OpTx$$OpTx$FX_DC$393_INV$703  | $OpTx$$OpTx$FX_DC$392_INV$702  | $OpTx$INV$382  | gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2  | SRAD<6>  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<2>  | SRAD<5>  | gdlatchad/LIMITAD<1>  | BD<0>.EXP
+INPUTMC | 17 | 7 | 5 | 6 | 14 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 2 | 4 | 14 | 0 | 13 | 4 | 12 | 0 | 0 | 7 | 9 | 6 | 13 | 0 | 8 | 0 | 12 | 6 | 11 | 0 | 10 | 7 | 15
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 7 | 13
+IMPORTS | 1 | 7 | 15
+EQ | 44 | 
+       EXP22_.EXP  =  !SRAD<11> & !SRAD<7> & nVBLANK & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<3> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<6> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<7> & nVBLANK & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<7> & gdlatchad/LIMITAD<3> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<5> & !SRAD<6> & nVBLANK & 
+	!cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<1> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & !SRAD<5> & nVBLANK & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<1> & 
+	gdlatchad/LIMITAD<2> & !$OpTx$$OpTx$FX_DC$383_INV$700 & 
+	!$OpTx$$OpTx$FX_DC$393_INV$703 & !$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+;Imported pterms FB8_16
+	# !SRAD<11> & !SRAD<6> & nVBLANK & !SRAD<4> & 
+	!cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<1> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<11> & nVBLANK & !SRAD<4> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<0> & 
+	gdlatchad/LIMITAD<1> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+	# !SRAD<5> & nVBLANK & !SRAD<4> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<7> & 
+	gdlatchad/LIMITAD<0> & gdlatchad/LIMITAD<2> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703 & 
+	!$OpTx$$OpTx$FX_DC$392_INV$702 & !$OpTx$INV$382 & 
+	!gdlatchad/OUTAD_cmp_eq0001/gdlatchad/OUTAD_cmp_eq0001_D2
+
+MACROCELL | 7 | 17 | EXP23_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 7 | 0
+INPUTS | 23 | SRAD<10>  | SRAD<11>  | SRAD<9>  | SRAD<5>  | SRAD<6>  | SRAD<7>  | SRAD<8>  | nVBLANK  | SRAD<0>  | SRAD<4>  | SRAD<1>  | SRAD<2>  | SRAD<3>  | cnt<0>  | cnt<1>  | cnt<2>  | nHBLANK  | gdlatchad/LIMITAD<5>  | $OpTx$$OpTx$FX_DC$383_INV$700  | $OpTx$$OpTx$FX_DC$393_INV$703  | gdlatchad/LIMITAD<6>  | gdlatchad/LIMITAD<7>  | gdlatchad/LIMITAD<9>.EXP
+INPUTMC | 21 | 7 | 4 | 7 | 5 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 3 | 0 | 3 | 2 | 3 | 6 | 0 | 6 | 4 | 14 | 0 | 13 | 0 | 7 | 0 | 8 | 7 | 16
+INPUTP | 2 | 47 | 49
+EXPORTS | 1 | 7 | 0
+IMPORTS | 1 | 7 | 16
+EQ | 31 | 
+       EXP23_.EXP  =  !SRAD<10> & !SRAD<11> & !SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<5> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<10> & !SRAD<11> & !SRAD<9> & SRAD<5> & 
+	SRAD<6> & SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & 
+	SRAD<4> & SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & 
+	!cnt<2> & nHBLANK & gdlatchad/LIMITAD<6> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<10> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<10> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+	# !SRAD<11> & !SRAD<9> & SRAD<5> & SRAD<6> & 
+	SRAD<7> & SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & 
+	SRAD<1> & SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & 
+	nHBLANK & gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+;Imported pterms FB8_17
+	# !SRAD<9> & SRAD<5> & SRAD<6> & SRAD<7> & 
+	SRAD<8> & nVBLANK & SRAD<0> & SRAD<4> & SRAD<1> & 
+	SRAD<2> & SRAD<3> & !cnt<0> & !cnt<1> & !cnt<2> & nHBLANK & 
+	gdlatchad/LIMITAD<5> & gdlatchad/LIMITAD<6> & gdlatchad/LIMITAD<7> & 
+	!$OpTx$$OpTx$FX_DC$383_INV$700 & !$OpTx$$OpTx$FX_DC$393_INV$703
+
+PIN | CLK | 4096 | 0 | N/A | 33 | 86 | 7 | 8 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 3 | 1 | 2 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 10 | 1 | 9 | 1 | 4 | 4 | 15 | 3 | 0 | 3 | 2 | 3 | 6 | 1 | 0 | 1 | 1 | 1 | 15 | 4 | 10 | 4 | 17 | 3 | 17 | 3 | 15 | 3 | 12 | 4 | 16 | 3 | 9 | 5 | 17 | 5 | 15 | 5 | 13 | 5 | 12 | 5 | 11 | 4 | 11 | 5 | 10 | 5 | 9 | 5 | 8 | 5 | 7 | 5 | 6 | 5 | 5 | 4 | 9 | 5 | 4 | 5 | 3 | 5 | 2 | 1 | 17 | 1 | 16 | 2 | 17 | 4 | 8 | 3 | 4 | 7 | 15 | 0 | 14 | 5 | 1 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 13 | 2 | 12 | 7 | 10 | 0 | 15 | 5 | 0 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 0 | 16 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2 | 2 | 1 | 2 | 0
+PIN | RST | 65536 | 0 | N/A | 160 | 96 | 7 | 8 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 3 | 1 | 2 | 7 | 15 | 0 | 14 | 5 | 1 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 13 | 2 | 12 | 7 | 10 | 0 | 15 | 5 | 0 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 0 | 16 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2 | 2 | 1 | 2 | 0 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 10 | 1 | 9 | 1 | 4 | 4 | 15 | 3 | 0 | 3 | 2 | 3 | 6 | 1 | 0 | 1 | 1 | 1 | 15 | 7 | 16 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 4 | 10 | 0 | 17 | 0 | 10 | 0 | 12 | 0 | 2 | 0 | 1 | 4 | 17 | 3 | 17 | 3 | 15 | 3 | 12 | 4 | 16 | 3 | 9 | 5 | 17 | 5 | 15 | 5 | 13 | 5 | 12 | 5 | 11 | 4 | 11 | 5 | 10 | 5 | 9 | 5 | 8 | 5 | 7 | 5 | 6 | 5 | 5 | 4 | 9 | 5 | 4 | 5 | 3 | 5 | 2 | 1 | 17 | 1 | 16 | 2 | 17 | 4 | 8 | 3 | 4
+PIN | nVBLANK | 64 | 0 | N/A | 47 | 102 | 7 | 8 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 7 | 15 | 0 | 14 | 5 | 1 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 13 | 2 | 12 | 7 | 10 | 0 | 15 | 5 | 0 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 0 | 16 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2 | 2 | 1 | 2 | 0 | 3 | 11 | 3 | 13 | 3 | 0 | 3 | 2 | 3 | 6 | 7 | 16 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 17 | 0 | 10 | 0 | 12 | 0 | 2 | 0 | 1 | 3 | 17 | 3 | 15 | 3 | 12 | 3 | 9 | 5 | 17 | 5 | 15 | 5 | 13 | 5 | 12 | 5 | 11 | 4 | 11 | 5 | 10 | 5 | 9 | 5 | 8 | 5 | 7 | 5 | 6 | 5 | 5 | 4 | 9 | 5 | 4 | 5 | 3 | 5 | 2 | 1 | 17 | 1 | 16 | 2 | 17 | 4 | 8 | 0 | 11 | 5 | 16 | 3 | 7 | 3 | 8 | 3 | 10 | 3 | 1 | 5 | 14 | 3 | 14 | 0 | 4 | 7 | 13 | 3 | 3 | 0 | 0 | 6 | 0 | 6 | 1 | 6 | 15 | 6 | 17 | 7 | 0 | 7 | 2 | 7 | 3 | 7 | 6 | 7 | 9 | 7 | 11 | 7 | 12 | 7 | 14 | 7 | 17
+PIN | nHBLANK | 64 | 0 | N/A | 49 | 102 | 7 | 8 | 7 | 4 | 7 | 5 | 7 | 7 | 7 | 1 | 6 | 11 | 6 | 13 | 6 | 14 | 6 | 16 | 6 | 4 | 6 | 10 | 6 | 5 | 6 | 7 | 6 | 8 | 7 | 15 | 0 | 14 | 5 | 1 | 2 | 16 | 2 | 15 | 2 | 14 | 2 | 13 | 2 | 12 | 7 | 10 | 0 | 15 | 5 | 0 | 2 | 11 | 2 | 10 | 2 | 9 | 2 | 8 | 2 | 7 | 2 | 6 | 0 | 16 | 2 | 5 | 2 | 4 | 2 | 3 | 2 | 2 | 2 | 1 | 2 | 0 | 3 | 11 | 3 | 13 | 3 | 0 | 3 | 2 | 3 | 6 | 7 | 16 | 0 | 6 | 0 | 7 | 0 | 8 | 0 | 9 | 0 | 17 | 0 | 10 | 0 | 12 | 0 | 2 | 0 | 1 | 3 | 17 | 3 | 15 | 3 | 12 | 3 | 9 | 5 | 17 | 5 | 15 | 5 | 13 | 5 | 12 | 5 | 11 | 4 | 11 | 5 | 10 | 5 | 9 | 5 | 8 | 5 | 7 | 5 | 6 | 5 | 5 | 4 | 9 | 5 | 4 | 5 | 3 | 5 | 2 | 1 | 17 | 1 | 16 | 2 | 17 | 4 | 8 | 0 | 11 | 5 | 16 | 3 | 7 | 3 | 8 | 3 | 10 | 3 | 1 | 5 | 14 | 3 | 14 | 0 | 4 | 7 | 13 | 3 | 3 | 0 | 3 | 0 | 5 | 6 | 0 | 6 | 1 | 6 | 17 | 7 | 0 | 7 | 2 | 7 | 3 | 7 | 6 | 7 | 9 | 7 | 11 | 7 | 12 | 7 | 14 | 7 | 17
+PIN | IODB<3> | 64 | 0 | N/A | 2 | 2 | 1 | 8 | 1 | 4
+PIN | IOAD<0> | 64 | 0 | N/A | 63 | 13 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 3 | 1 | 2 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 10 | 1 | 9 | 1 | 4
+PIN | IOAD<1> | 64 | 0 | N/A | 62 | 13 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 3 | 1 | 2 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 10 | 1 | 9 | 1 | 4
+PIN | nF47 | 64 | 0 | N/A | 54 | 17 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 3 | 1 | 2 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 10 | 1 | 9 | 1 | 4 | 1 | 0 | 1 | 1 | 1 | 15 | 3 | 4
+PIN | nIWR | 64 | 0 | N/A | 37 | 17 | 1 | 8 | 1 | 7 | 1 | 6 | 1 | 5 | 1 | 3 | 1 | 2 | 1 | 14 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 10 | 1 | 9 | 1 | 4 | 1 | 0 | 1 | 1 | 1 | 15 | 3 | 4
+PIN | IODB<0> | 64 | 0 | N/A | 15 | 4 | 1 | 7 | 1 | 3 | 1 | 14 | 1 | 11
+PIN | IODB<1> | 64 | 0 | N/A | 13 | 4 | 1 | 6 | 1 | 2 | 1 | 13 | 1 | 10
+PIN | IODB<2> | 64 | 0 | N/A | 11 | 3 | 1 | 5 | 1 | 12 | 1 | 9
+PIN | DB<0> | 64 | 0 | N/A | 116 | 3 | 7 | 15 | 7 | 10 | 2 | 6
+PIN | DB<1> | 64 | 0 | N/A | 118 | 3 | 0 | 14 | 0 | 15 | 0 | 16
+PIN | DB<2> | 64 | 0 | N/A | 123 | 3 | 5 | 1 | 5 | 0 | 2 | 5
+PIN | DB<3> | 64 | 0 | N/A | 125 | 3 | 2 | 16 | 2 | 11 | 2 | 4
+PIN | DB<4> | 64 | 0 | N/A | 127 | 3 | 2 | 15 | 2 | 10 | 2 | 3
+PIN | DB<5> | 64 | 0 | N/A | 130 | 3 | 2 | 14 | 2 | 9 | 2 | 2
+PIN | DB<6> | 64 | 0 | N/A | 135 | 3 | 2 | 13 | 2 | 8 | 2 | 1
+PIN | DB<7> | 64 | 0 | N/A | 136 | 3 | 2 | 12 | 2 | 7 | 2 | 0
+PIN | nCSED | 64 | 0 | N/A | 30 | 5 | 4 | 15 | 4 | 10 | 4 | 17 | 4 | 16 | 3 | 5
+PIN | VGATE | 64 | 0 | N/A | 59 | 4 | 0 | 11 | 3 | 7 | 3 | 8 | 3 | 10
+PIN | VQH | 64 | 0 | N/A | 19 | 3 | 3 | 7 | 3 | 8 | 3 | 10
+PIN | nRD | 64 | 0 | N/A | 23 | 7 | 5 | 16 | 3 | 5 | 3 | 1 | 5 | 14 | 3 | 14 | 3 | 0 | 3 | 2
+PIN | VID | 64 | 0 | N/A | 58 | 3 | 3 | 7 | 3 | 8 | 3 | 10
+PIN | nWD | 64 | 0 | N/A | 22 | 7 | 5 | 16 | 3 | 1 | 5 | 14 | 3 | 16 | 3 | 14 | 3 | 0 | 3 | 2
+PIN | BLANK | 64 | 0 | N/A | 17 | 1 | 3 | 5
+PIN | SRAD<13> | 536871040 | 0 | N/A | 107
+PIN | SRAD<10> | 536871040 | 0 | N/A | 103
+PIN | SRAD<11> | 536871040 | 0 | N/A | 104
+PIN | SRAD<12> | 536871040 | 0 | N/A | 105
+PIN | SRAD<9> | 536871040 | 0 | N/A | 102
+PIN | SRAD<5> | 536871040 | 0 | N/A | 95
+PIN | SRAD<6> | 536871040 | 0 | N/A | 96
+PIN | SRAD<7> | 536871040 | 0 | N/A | 97
+PIN | SRAD<8> | 536871040 | 0 | N/A | 98
+PIN | SRAD<0> | 536871040 | 0 | N/A | 82
+PIN | SRAD<4> | 536871040 | 0 | N/A | 92
+PIN | SRAD<1> | 536871040 | 0 | N/A | 86
+PIN | SRAD<2> | 536871040 | 0 | N/A | 88
+PIN | SRAD<3> | 536871040 | 0 | N/A | 90
+PIN | SBANKAD<0> | 536871040 | 0 | N/A | 149
+PIN | SBANKAD<1> | 536871040 | 0 | N/A | 153
+PIN | tp1 | 536871040 | 0 | N/A | 143
+PIN | GOUT | 536871040 | 0 | N/A | 28
+PIN | nWE | 536871040 | 0 | N/A | 140
+PIN | tp2 | 536871040 | 0 | N/A | 144
+PIN | BLUE | 536871040 | 0 | N/A | 145
+PIN | GREEN | 536871040 | 0 | N/A | 146
+PIN | RED | 536871040 | 0 | N/A | 147
+PIN | nCS | 536871040 | 0 | N/A | 141
+PIN | nOE | 536871040 | 0 | N/A | 139
+PIN | BUFDIR | 536871040 | 0 | N/A | 157
+PIN | nBUFOE | 536871040 | 0 | N/A | 155

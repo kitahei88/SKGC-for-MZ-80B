@@ -1,0 +1,26 @@
+Name     adddecode;
+PartNo   00;
+Date     2022/08/08;
+Revision 01;
+Designer Engineer;
+Company  personal;
+Assembly None;
+Location ;
+Device   g16v8a;
+
+
+ORDER: a12, a12_org, a13, a13_org, a14, a15, b2000, dsp_org, dspad, dspad_org; 
+
+
+VECTORS:
+******Z***
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+**********
+**********

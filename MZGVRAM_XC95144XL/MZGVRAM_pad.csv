@@ -1,0 +1,129 @@
+Release 8.1i - Fit P.20131013
+Copyright(c) 1995-2003 Xilinx Inc. All rights reserved
+
+11-13-2022  8:40PM
+
+NOTE: This file is designed to be imported into a spreadsheet program
+such as Microsoft Excel for viewing, printing and sorting. The comma ','
+character is used as the data field separator.
+This file is also designed to support parsing.
+
+Input file:  MZGVRAM.ngd
+output file: MZGVRAM_pad.csv
+Part type:   xc95144xl
+Speed grade: -10
+Package:     tq100
+
+Pinout by Pin Number:
+
+-----,-----,-----,-----,-----,-----,-----,-----,-----,-----,
+Pin Number,Signal Name,Pin Usage,Pin Name,Direction,IO Standard,IO Bank Number,{blank},Slew Rate,Termination,{blank},Voltage,Constraint,
+P1,IODB<3>,I,I/O/GTS3,INPUT,,,,,,,,,
+P2,PGND,,I/O/GTS4,,,,,,,,,,
+P3,PGND,,I/O/GTS1,,,,,,,,,,
+P4,PGND,,I/O/GTS2,,,,,,,,,,
+P5,VCC,,VCCINT,,,,,,,,,,
+P6,IODB<2>,I,I/O,INPUT,,,,,,,,,
+P7,PGND,,I/O,,,,,,,,,,
+P8,IODB<1>,I,I/O,INPUT,,,,,,,,,
+P9,IODB<0>,I,I/O,INPUT,,,,,,,,,
+P10,BLANK,I,I/O,INPUT,,,,,,,,,
+P11,PGND,,I/O,,,,,,,,,,
+P12,VQH,I,I/O,INPUT,,,,,,,,,
+P13,PGND,,I/O,,,,,,,,,,
+P14,nWD,I,I/O,INPUT,,,,,,,,,
+P15,nRD,I,I/O,INPUT,,,,,,,,,
+P16,PGND,,I/O,,,,,,,,,,
+P17,PGND,,I/O,,,,,,,,,,
+P18,GOUT,O,I/O,OUTPUT,,,,,,,,,
+P19,PGND,,I/O,,,,,,,,,,
+P20,nCSED,I,I/O,INPUT,,,,,,,,,
+P21,GND,,GND,,,,,,,,,,
+P22,CLK,GCK,I/O/GCK1,,,,,,,,,,
+P23,PGND,,I/O/GCK2,,,,,,,,,,
+P24,PGND,,I/O,,,,,,,,,,
+P25,nIWR,I,I/O,INPUT,,,,,,,,,
+P26,VCC,,VCCIO,,,,,,,,,,
+P27,PGND,,I/O/GCK3,,,,,,,,,,
+P28,PGND,,I/O,,,,,,,,,,
+P29,nVBLANK,I,I/O,INPUT,,,,,,,,,
+P30,nHBLANK,I,I/O,INPUT,,,,,,,,,
+P31,GND,,GND,,,,,,,,,,
+P32,nF47,I,I/O,INPUT,,,,,,,,,
+P33,PGND,,I/O,,,,,,,,,,
+P34,PGND,,I/O,,,,,,,,,,
+P35,VID,I,I/O,INPUT,,,,,,,,,
+P36,VGATE,I,I/O,INPUT,,,,,,,,,
+P37,PGND,,I/O,,,,,,,,,,
+P38,VCC,,VCCIO,,,,,,,,,,
+P39,IOAD<1>,I,I/O,INPUT,,,,,,,,,
+P40,IOAD<0>,I,I/O,INPUT,,,,,,,,,
+P41,PGND,,I/O,,,,,,,,,,
+P42,PGND,,I/O,,,,,,,,,,
+P43,PGND,,I/O,,,,,,,,,,
+P44,GND,,GND,,,,,,,,,,
+P45,TDI,,TDI,,,,,,,,,,
+P46,PGND,,I/O,,,,,,,,,,
+P47,TMS,,TMS,,,,,,,,,,
+P48,TCK,,TCK,,,,,,,,,,
+P49,PGND,,I/O,,,,,,,,,,
+P50,PGND,,I/O,,,,,,,,,,
+P51,VCC,,VCCIO,,,,,,,,,,
+P52,SRAD<0>,O,I/O,OUTPUT,,,,,,,,,
+P53,SRAD<1>,O,I/O,OUTPUT,,,,,,,,,
+P54,SRAD<2>,O,I/O,OUTPUT,,,,,,,,,
+P55,SRAD<3>,O,I/O,OUTPUT,,,,,,,,,
+P56,SRAD<4>,O,I/O,OUTPUT,,,,,,,,,
+P57,VCC,,VCCINT,,,,,,,,,,
+P58,SRAD<5>,O,I/O,OUTPUT,,,,,,,,,
+P59,SRAD<6>,O,I/O,OUTPUT,,,,,,,,,
+P60,SRAD<7>,O,I/O,OUTPUT,,,,,,,,,
+P61,SRAD<8>,O,I/O,OUTPUT,,,,,,,,,
+P62,GND,,GND,,,,,,,,,,
+P63,SRAD<9>,O,I/O,OUTPUT,,,,,,,,,
+P64,SRAD<10>,O,I/O,OUTPUT,,,,,,,,,
+P65,SRAD<11>,O,I/O,OUTPUT,,,,,,,,,
+P66,SRAD<12>,O,I/O,OUTPUT,,,,,,,,,
+P67,SRAD<13>,O,I/O,OUTPUT,,,,,,,,,
+P68,PGND,,I/O,,,,,,,,,,
+P69,GND,,GND,,,,,,,,,,
+P70,PGND,,I/O,,,,,,,,,,
+P71,PGND,,I/O,,,,,,,,,,
+P72,DB<0>,I,I/O,INPUT,,,,,,,,,
+P73,PGND,,I/O,,,,,,,,,,
+P74,DB<1>,I,I/O,INPUT,,,,,,,,,
+P75,GND,,GND,,,,,,,,,,
+P76,DB<2>,I,I/O,INPUT,,,,,,,,,
+P77,DB<3>,I,I/O,INPUT,,,,,,,,,
+P78,DB<4>,I,I/O,INPUT,,,,,,,,,
+P79,DB<5>,I,I/O,INPUT,,,,,,,,,
+P80,PGND,,I/O,,,,,,,,,,
+P81,DB<6>,I,I/O,INPUT,,,,,,,,,
+P82,DB<7>,I,I/O,INPUT,,,,,,,,,
+P83,TDO,,TDO,,,,,,,,,,
+P84,GND,,GND,,,,,,,,,,
+P85,nOE,O,I/O,OUTPUT,,,,,,,,,
+P86,nWE,O,I/O,OUTPUT,,,,,,,,,
+P87,nCS,O,I/O,OUTPUT,,,,,,,,,
+P88,VCC,,VCCIO,,,,,,,,,,
+P89,tp1,O,I/O,OUTPUT,,,,,,,,,
+P90,tp2,O,I/O,OUTPUT,,,,,,,,,
+P91,BLUE,O,I/O,OUTPUT,,,,,,,,,
+P92,GREEN,O,I/O,OUTPUT,,,,,,,,,
+P93,RED,O,I/O,OUTPUT,,,,,,,,,
+P94,SBANKAD<0>,O,I/O,OUTPUT,,,,,,,,,
+P95,SBANKAD<1>,O,I/O,OUTPUT,,,,,,,,,
+P96,nBUFOE,O,I/O,OUTPUT,,,,,,,,,
+P97,BUFDIR,O,I/O,OUTPUT,,,,,,,,,
+P98,VCC,,VCCINT,,,,,,,,,,
+P99,RST,GSR,I/O/GSR,,,,,,,,,,
+P100,GND,,GND,,,,,,,,,,
+
+To preserve the pinout above for future design iterations in
+Project Navigator simply execute the (Lock Pins) process
+located under the (Implement Design) process in a toolbox named
+(Optional Implementation Tools) or invoke PIN2UCF from the
+command line. The location constraints will be written into your
+specified UCF file
+
+

@@ -1,0 +1,104 @@
+// GCK1	22 global clock
+// GCK2	23
+// GCK3	27
+// GTS1	3  global tristate
+// GTS2	4
+// GTS3	1
+// GTS4	2
+// GSR	99 global set reset
+
+// TCK	48
+// TDI	45
+// TDO	83
+// TMS	47
+
+// VCC3V3			5,57,98
+// VCC2V5or3V3		26,38,51,88
+// GND				21,31,44,62,69,75,84,100
+
+// board pin setting
+
+NET "CLK"	LOC	=	"22" ;	// global clock
+NET "RST"	LOC	=	"99";	 // global rst
+
+NET "nHBLANK"	LOC	=	"30";
+NET "nVBLANK"	LOC	=	"29";
+NET "BLANK"	LOC	=	"10";
+
+NET "VQH"	LOC	=	"12"; 
+NET "VID"	LOC	=	"35";
+NET "VGATE"	LOC	=	"36";
+
+NET "nCSED"	LOC	=	"20";
+NET "nF47"	LOC	=	"32";
+NET "nIWR"	LOC	=	"25";
+//NET "nIOW"	LOC	=	"25";
+
+NET "nRD"	LOC	=	"15";
+NET "nWD"	LOC	=	"14";
+//NET "nMREQ"	LOC	=	"16";
+
+NET "DB[0]"	LOC	=	"72";
+NET "DB[1]"	LOC	=	"74";
+NET "DB[2]"	LOC	=	"76";
+NET "DB[3]"	LOC	=	"77";
+NET "DB[4]"	LOC	=	"78";
+NET "DB[5]"	LOC	=	"79";
+NET "DB[6]"	LOC	=	"81";
+NET "DB[7]"	LOC	=	"82";
+
+NET "IOAD[1]"	LOC	=	"39";  
+NET "IOAD[0]"	LOC	=	"40";  
+
+NET "IODB[0]"	LOC	=	"9";  
+NET "IODB[1]"	LOC	=	"8";  
+NET "IODB[2]"	LOC	=	"6";  
+NET "IODB[3]"	LOC	=	"1";  
+
+NET "SRAD[0]"	LOC	=	"52";  
+NET "SRAD[1]"	LOC	=	"53";  
+NET "SRAD[2]"	LOC	=	"54";  
+NET "SRAD[3]"	LOC	=	"55";  
+NET "SRAD[4]"	LOC	=	"56";  
+NET "SRAD[5]"	LOC	=	"58";  
+NET "SRAD[6]"	LOC	=	"59";  
+NET "SRAD[7]"	LOC	=	"60";  
+NET "SRAD[8]"	LOC	=	"61";  
+//FB8
+NET "SRAD[9]"	LOC	=	"63";  
+NET "SRAD[10]"	LOC	=	"64";  
+NET "SRAD[11]"	LOC	=	"65";  
+NET "SRAD[12]"	LOC	=	"66";  
+NET "SRAD[13]"	LOC	=	"67";  
+//NET "SRAD[12]"	LOC	=	"49";  
+//NET "SRAD[13]"	LOC	=	"50"; 
+
+NET "SBANKAD[0]"	LOC	=	"94";
+NET "SBANKAD[1]"	LOC	=	"95";  
+
+//NET "SBANKAD[2]"	LOC	=	"71";  
+//NET "SBANKAD[0]"	LOC	=	"41";  
+//NET "SBANKAD[1]"	LOC	=	"42";  
+//NET "SBANKAD[2]"	LOC	=	"49";
+
+NET "nOE"	LOC	=	"85";  
+NET "nWE"	LOC	=	"86"; 
+NET "nCS"	LOC	=	"87"; 
+
+NET "tp1"	LOC	=	"89"; 
+NET "tp2"	LOC	=	"90"; 
+NET "BUFDIR"	LOC	=	"97"; 
+NET "nBUFOE"	LOC	=	"96";   
+
+NET "RED"	LOC	=	"93"; 
+NET "GREEN"	LOC	=	"92";   
+NET "BLUE"	LOC	=	"91";  
+
+//NET "nHSYNC"	LOC	=	"94"; 
+//NET "nVSYNC"	LOC	=	"95";   
+
+NET "GOUT"	LOC	=	"18";  
+
+//NET "SW"	LOC	=	"87";  
+//NET "nMRAM"	LOC	=	"11"; 
+//NET "Bn2000"	LOC	=	"28";   
