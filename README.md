@@ -1,12 +1,10 @@
 # SKGC for SHARP MZ-80B
-#Super Kolour Graphic Card kit for MZ-80B
-
-##Make your MZ-80B to MZ-2000+GVRAM!
-
-##No more need to plant bombs at Sharp corporation!
+## Super Kolour Graphic Card kit for MZ-80B
+## Make your MZ-80B to MZ-2000+GVRAM!
+## No more need to plant bombs at Sharp corporation!
 
 
-###これはなんですか？###
+### これはなんですか？ ###
 
 往年の名機であるSHARPのMZ-80BをMZ-2000+GVRAM（MZ-2200相当）にするキットです。
 MZ-80BとMZ-2000は多少の差があるのみで殆ど同じような設計です。
