@@ -1,8 +1,0 @@
-INTSTYLE=impact
-INFILE=/home/takuya/Desktop/MZ/MZGVRAM/impact.xsl
-OUTFILE=/home/takuya/Desktop/MZ/MZGVRAM/impact.xsl
-FAMILY=Single
-PART=Single
-WORKINGDIR=/home/takuya/Desktop/MZ/MZGVRAM
-LICENSE=iMPACT
-USER_INFO=iMPACT
