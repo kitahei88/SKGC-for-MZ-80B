@@ -15,20 +15,23 @@ CMTとモニター部分のカバーを5箇所のネジを外して開けます�
 
 <img src="https://user-images.githubusercontent.com/8729286/216264791-c0070d16-a3d6-4a39-96fc-3d2e098f0a7a.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216264857-079e6eb8-5d5d-4b78-99cc-6e3f4ff23631.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216264952-1e62dc3f-0f9a-4aa8-8324-d711a8b7cfde.jpg" width="200" />
 
+この際、モニター周囲は高圧が掛かっている可能性が高く、注意してください。最悪、指に穴が空きます。
+
 <img src="https://user-images.githubusercontent.com/8729286/216265205-ba8a6bc9-40a7-42bf-b221-016a548f69f0.jpg" width="200" />
 
-この際、モニター周囲は高圧が掛かっている可能性が高く、注意してください。最悪、指に穴が空きます。
+写真にあるCMT制御基板のコネクターを外します。これはテープカウンターの動作信号が入ってくるところで、これでテープが回転しているかを入力しています。
+
 <img src="https://user-images.githubusercontent.com/8729286/216265506-7d899875-9e0b-4c69-b7a3-28e6ac762d9f.jpg" width="200" />
 <img src="https://user-images.githubusercontent.com/8729286/216265578-88ce937e-f3f0-44e8-9ee1-9482419700ad.jpg" width="200" />
 
-写真にあるCMT制御基板のコネクターを外します。これはテープカウンターの動作信号が入ってくるところで、これでテープが回転しているかを入力しています。
-<img src="https://user-images.githubusercontent.com/8729286/216265740-bd87c8bf-6a0e-47c3-8661-17c6a27cdd9c.jpg" width="200" />
+ここにセットのケーブルをつけて取り込みます。
 
+<img src="https://user-images.githubusercontent.com/8729286/216265740-bd87c8bf-6a0e-47c3-8661-17c6a27cdd9c.jpg" width="200" />
 
 <img src="https://user-images.githubusercontent.com/8729286/216265877-897dd3b2-4d19-43c1-86ac-d8ce793f28c5.jpg" width="200" />
 <img src="https://user-images.githubusercontent.com/8729286/216266128-1ff2a525-f3f2-48f4-9e49-3a8cb21f3850.jpg" width="200" />
 
-ここにセットのケーブルをつけて取り込みます。
+
 <img src="https://user-images.githubusercontent.com/8729286/216265983-a065d835-c0c6-4246-8188-9411a38d726d.jpg" width="200" />
 
 <img src="https://user-images.githubusercontent.com/8729286/216266385-7ad53db7-73ed-4a07-8947-2342f9750bd4.jpg" width="200" />
