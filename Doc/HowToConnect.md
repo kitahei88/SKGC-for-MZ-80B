@@ -21,28 +21,20 @@ CMTとモニター部分のカバーを5箇所のネジを外して開けます�
 
 写真にあるCMT制御基板のコネクターを外します。これはテープカウンターの動作信号が入ってくるところで、これでテープが回転しているかを入力しています。
 
-<img src="https://user-images.githubusercontent.com/8729286/216265506-7d899875-9e0b-4c69-b7a3-28e6ac762d9f.jpg" width="200" />
-<img src="https://user-images.githubusercontent.com/8729286/216265578-88ce937e-f3f0-44e8-9ee1-9482419700ad.jpg" width="200" />
+<img src="https://user-images.githubusercontent.com/8729286/216265506-7d899875-9e0b-4c69-b7a3-28e6ac762d9f.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216265578-88ce937e-f3f0-44e8-9ee1-9482419700ad.jpg" width="200" />
 
 ここにセットのケーブルをつけて取り込みます。
 
-<img src="https://user-images.githubusercontent.com/8729286/216265740-bd87c8bf-6a0e-47c3-8661-17c6a27cdd9c.jpg" width="200" />
-
-<img src="https://user-images.githubusercontent.com/8729286/216265877-897dd3b2-4d19-43c1-86ac-d8ce793f28c5.jpg" width="200" />
-<img src="https://user-images.githubusercontent.com/8729286/216266128-1ff2a525-f3f2-48f4-9e49-3a8cb21f3850.jpg" width="200" />
-
-
-<img src="https://user-images.githubusercontent.com/8729286/216265983-a065d835-c0c6-4246-8188-9411a38d726d.jpg" width="200" />
-
-<img src="https://user-images.githubusercontent.com/8729286/216266385-7ad53db7-73ed-4a07-8947-2342f9750bd4.jpg" width="200" />
-<img src="https://user-images.githubusercontent.com/8729286/216266418-15bdb7b8-a740-46b6-8053-0869ff03d825.jpg" width="200" />
-<img src="https://user-images.githubusercontent.com/8729286/216266439-ab2ad033-fbf7-4617-9870-c515542b0f3d.jpg" width="200" />
+<img src="https://user-images.githubusercontent.com/8729286/216265740-bd87c8bf-6a0e-47c3-8661-17c6a27cdd9c.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216265877-897dd3b2-4d19-43c1-86ac-d8ce793f28c5.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216266128-1ff2a525-f3f2-48f4-9e49-3a8cb21f3850.jpg" width="200" />
 
 ケーブルはCMT基板のすぐ下にある、電源からのコードが通じている穴を通して、メインのマザーボード側へ誘導します。
-<img src="https://user-images.githubusercontent.com/8729286/216266527-d71848f2-532e-410b-840c-da0a4ccbe27a.jpg" width="200" />
-<img src="https://user-images.githubusercontent.com/8729286/216266543-79e4da6e-7a70-4c63-a81d-cc3c2a4b448a.jpg" width="200" />
+
+<img src="https://user-images.githubusercontent.com/8729286/216265983-a065d835-c0c6-4246-8188-9411a38d726d.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216266385-7ad53db7-73ed-4a07-8947-2342f9750bd4.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216266418-15bdb7b8-a740-46b6-8053-0869ff03d825.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216266439-ab2ad033-fbf7-4617-9870-c515542b0f3d.jpg" width="200" />
 
 この段階でCMTとモニター部分のカバーを元通り取り付けます。ネジで止めても問題ありません。
+
+<img src="https://user-images.githubusercontent.com/8729286/216266527-d71848f2-532e-410b-840c-da0a4ccbe27a.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216266543-79e4da6e-7a70-4c63-a81d-cc3c2a4b448a.jpg" width="200" />
+
 
 次にマザーボード側の取り付けを行います。
 拡張I/OボードのMZ-8BKが取り付けられている場合、これを外さないとマザーボードが取り外せません。
