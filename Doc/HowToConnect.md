@@ -1,5 +1,6 @@
 ## 取り付け方法 ##
 頒布したセットの取り付け方法を記載します。
+
 <img src="https://user-images.githubusercontent.com/8729286/216263337-4efe0cc5-8e72-42b2-ab23-b85ada870ab6.jpg" width="200" />
 
 まずMZ-80B本体の電源を確実に切り、電源ケーブルを外してください。
