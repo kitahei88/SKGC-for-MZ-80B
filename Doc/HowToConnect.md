@@ -8,8 +8,8 @@
 <img src="https://user-images.githubusercontent.com/8729286/216263749-d6ea624e-9dae-479f-ae2a-823cd22ba8b5.jpg" width="200" />
 
 次に背面二ヶ所のネジを外し、CMTとモニター部分を上方へ押し上げ、本体をあけます。
-<img src="https://user-images.githubusercontent.com/8729286/216264058-ffdb8049-ed43-40de-8515-f1d081745d26.jpg"　width="200" />
-<img src="https://user-images.githubusercontent.com/8729286/216264114-a61f4894-ffc2-49bc-9b6a-1e9287deb5ab.jpg"　width="200" />
+<img src="https://user-images.githubusercontent.com/8729286/216264058-ffdb8049-ed43-40de-8515-f1d081745d26.jpg" width="200" />
+<img src="https://user-images.githubusercontent.com/8729286/216264114-a61f4894-ffc2-49bc-9b6a-1e9287deb5ab.jpg" width="200" />
                           
                                                                                                                           
 CMTとモニター部分のカバーを5箇所のネジを外して開けます。
