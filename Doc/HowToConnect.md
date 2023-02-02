@@ -5,7 +5,13 @@
 
 まずMZ-80B本体の電源を確実に切り、電源ケーブルを外してください。
 
-次に背面二箇所のネジを外し、CMTとモニター部分を上方へ押し上げ、本体をあけます。
+<img src="https://user-images.githubusercontent.com/8729286/216263749-d6ea624e-9dae-479f-ae2a-823cd22ba8b5.jpg width="200" />
+
+次に背面二ヶ所のネジを外し、CMTとモニター部分を上方へ押し上げ、本体をあけます。
+<img src="https://user-images.githubusercontent.com/8729286/216264058-ffdb8049-ed43-40de-8515-f1d081745d26.jpg　width="200" />
+<img src="https://user-images.githubusercontent.com/8729286/216264114-a61f4894-ffc2-49bc-9b6a-1e9287deb5ab.jpg　width="200" />
+                          
+                                                                                                                          
 CMTとモニター部分のカバーを5箇所のネジを外して開けます。
 この際、モニター周囲は高圧が掛かっている可能性が高く、注意してください。最悪、指に穴が空きます。
 写真にあるCMT制御基板のコネクターを外します。これはテープカウンターの動作信号が入ってくるところで、これでテープが回転しているかを入力しています。
