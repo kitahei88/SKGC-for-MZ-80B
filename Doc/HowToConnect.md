@@ -39,29 +39,61 @@ CMTとモニター部分のカバーを5箇所のネジを外して開けます�
 次にマザーボード側の取り付けを行います。
 拡張I/OボードのMZ-8BKが取り付けられている場合、これを外さないとマザーボードが取り外せません。
 まず、拡張I/Oボード背面のパネルを取り外します。
+
+<img src="https://user-images.githubusercontent.com/8729286/216267728-309c6c12-265a-41b6-9223-d99dc41bbc6f.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216267769-2fff8bbc-8ed6-451a-acbe-6b8a634febf0.jpg" width="200" />
+
 次に拡張I/Oボード用の電源を引き抜き、マザーボードと固定されているネジを取り外して引き抜きます。
 
+<img src="https://user-images.githubusercontent.com/8729286/216267848-6240dd50-9c65-4f68-8964-1b5e7bbb3ad3.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216267897-6e376e5c-2533-4ed1-a97d-1e12b28ed773.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216268041-3f2cd50c-c3cd-40a0-b112-4b5ef03a70c5.jpg" width="200" />
+
 マザーボードを取り外します。
-マザーボードから伸びている、電源コード、CMT、キーボード、CMTコントロールボタン、リセット、ディスプレイ信号などのケーブルをすべて取り外します。
-取り外しには力が必要だったり、爪で固定されているなどしているので、上手く外してください。
+マザーボードから伸びている、電源コード、CMT、キーボード、CMTコントロールボタン、リセット、ディスプレイ信号などのケーブルをすべて取り外します。取り外しには力が必要だったり、爪で固定されているなどしているので、上手く外してください。
+
+<img src="https://user-images.githubusercontent.com/8729286/216268095-6902beef-3ea2-4a76-aa5e-7dc331047eef.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216268117-65c7e621-e334-4826-ab96-08a74f1ddbc9.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216268199-ebcb85af-beca-408b-97ea-30606b5a3a46.jpg" width="200" />
+
 次にマザーボードと背面のパネルを固定してる2箇所のネジを取り外します。
+
+<img src="https://user-images.githubusercontent.com/8729286/216268328-4f8ea49a-91e4-490f-9ffc-827887bd4e11.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216268359-386de7ac-f18e-464d-b5f2-0d93f499fe0c.jpg" width="200" />
+
 そうすることで、マザーボードを背面にスライドさせることで取り外すことができます。
+
+<img src="https://user-images.githubusercontent.com/8729286/216268404-6ef25041-8d6c-4ff2-98e7-9b8c6f1f5e04.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216268553-982a3611-e982-4b96-812b-817d2ab6ab65.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216268675-713b3dd2-0220-4f73-b33f-36fdcd8b2192.jpg" width="200" />
 
 マザーボードには以下の4枚のカードを取り付けます。
 
+<img src="https://user-images.githubusercontent.com/8729286/216268741-850ea84c-127d-46a6-8564-4c8313293e93.jpg" width="200" />
+
 IC43 G#3にはこの基板を取り付けます。
+
+<img src="https://user-images.githubusercontent.com/8729286/216268851-2f3cb18f-de9b-4617-a0c2-3c343956335a.jpg" width="200" />
+
 まず該当のICを取り外してください。このとき、ピン曲がりや折れに注意してください。
+
+<img src="https://user-images.githubusercontent.com/8729286/216268998-de9f373a-ac18-4366-860f-02b0a2cc24e2.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216269119-8c64ca7d-dd57-4c72-9945-3988316c171c.jpg" width="200" />
+
 基板を写真の向きで取り付け、ICをソケットにはめ込みます。
+
+<img src="https://user-images.githubusercontent.com/8729286/216269234-d9df1a32-b680-4b4a-bcfa-6fcefe1ce5be.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216269269-61ba2fee-95a9-4cb2-af03-46057ec97e1d.jpg" width="200" />
+
 このパーツ部分はMZ-80Bのキーボードの直下になり、不用意に高さがあるとキーボードの基板に干渉します。
 その場合、ショートしたりするため、MZ-80Bが起動しない、キー入力ができないなどの不具合が出ることがあります。
 しっかりはめ込んで、もし必要であればICのピン部分をマスキングしてください。（しっかりはめ込めば不要な高さとなるように設計しています）
-このときも基板を割らないように、ピンを折らないように注意してください。
-コネクターには３芯のケーブルを取り付けて、拡張ボード側へ誘導します。
+
+<img src="https://user-images.githubusercontent.com/8729286/216269417-852a6bf1-8870-427e-8616-34e8661e2261.jpg" width="200" />
+
+このときも基板を割らないように、ピンを折らないように注意してください。コネクターには３芯のケーブルを取り付けて、拡張ボード側へ誘導します。
+
+<img src="https://user-images.githubusercontent.com/8729286/216269579-f5dadca9-03c1-45f7-9e31-3dca48354c1e.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216269613-9e26844d-fd0b-461d-9285-3197d9b423f9.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216269657-555851bc-425c-410f-83c1-c037b9d84dbe.jpg" width="200" />
 
 IC2　G#1も同様です。
 ICを取り外した後、基板を取り付け、ICを基板上のソケットにはめ込み、5芯のケーブルを取り付けてください。
 
+<img src="https://user-images.githubusercontent.com/8729286/216269737-43fb38cf-fe32-49b8-8a3a-3909270a7310.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216269835-d18401ec-b200-44a4-b962-7a804f089768.jpg" width="200" />
+
+<img src="https://user-images.githubusercontent.com/8729286/216269849-8d0ccce6-4e8b-49d8-b032-818e6e145d22.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216269914-14fa0ec0-4d53-4e38-aff5-b6afa8c2c4e5.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216270051-7a515372-615f-4c57-9477-75a977501a10.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216270090-ad3c73da-e253-4bfc-acd7-cce090dba2a1.jpg" width="200" />
+
 CN13はGRAMを取り付ける10ピンのところです。
+
 基板を取り付けて8芯のケーブルを取り付けてください。
 写真の向きに取り付けます。
 MZ-80BのGRAMを取り付けていた場合は、この基板上にあるコネクターにもともとの取り付け向きと同じように取り付けてください
