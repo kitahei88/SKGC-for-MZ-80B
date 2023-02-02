@@ -94,21 +94,34 @@ ICを取り外した後、基板を取り付け、ICを基板上のソケット�
 
 CN13はGRAMを取り付ける10ピンのところです。
 
+<img src="https://user-images.githubusercontent.com/8729286/216271631-39ee77c3-aa9b-4974-913a-4ae3c8249116.jpg" width="200" />
+
 基板を取り付けて8芯のケーブルを取り付けてください。
 写真の向きに取り付けます。
 MZ-80BのGRAMを取り付けていた場合は、この基板上にあるコネクターにもともとの取り付け向きと同じように取り付けてください
 （これはマザーボードなどをもとに戻した後に行います）
 
+<img src="https://user-images.githubusercontent.com/8729286/216271652-04782a24-7aa6-438f-9ca5-4eba09298b0e.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216271676-b51a6c64-7ac7-4052-85d3-a50b9cfebc54.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216271753-87537249-638c-4aef-bfe5-48e44f4ed2f3.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216271789-7c1d9e05-1dc1-4a4c-b9a7-3e1c52f2f8ca.jpg" width="200" />
+
+
 最後はIC23　8255です。
 これも同じようにピン曲がりなどに気をつけてICを取り外します。
+
+<img src="https://user-images.githubusercontent.com/8729286/216271999-38fb0884-2f46-4152-8da1-421c6b37b409.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216272027-4cca05ea-4941-470e-b51a-5972aa8f8c34.jpg" width="200" />
+
 周囲のパーツの関係でこの基板のピンは長く作成しています。
 曲がったり折れやすいので注意してはめ込んでください。
+<img src="https://user-images.githubusercontent.com/8729286/216272198-7df9bb48-9484-4e04-8476-98be50c52f80.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216272237-c87a48ec-2db5-4393-a9e8-d90c02fc3173.jpg" width="200" />
+
 同様に8255も基板のソケットにはめ込みます。
 こちらには3本のケーブルを挿入します。
 4芯ケーブルは良いとして、2ピンのケーブルが2箇所あります。
 中央の2ピンのコネクターはKINHを出力しています。そのためこのCMTコントロールボタンへ向かうケーブルに割り込ませる形のケーブルを装着します。
 そしてもう一方の端の2ピンのコネクターには、CMTカウンターの信号を入力しますので、先程CMT基板に取り付けたケーブルをこちらへ誘導して装着します。
 この2芯ケーブル2本はマザーを戻してからのほうが良いと思われます。
+
+<img src="https://user-images.githubusercontent.com/8729286/216272288-a328bbf2-f502-499e-b4db-8393dad6a106.jpg" width="200" />
+
 
 以上の4枚の基板を装着したら、マザーボードをスライドさせながらもとの位置へ戻し、2箇所のネジで止めます。
 この状態で、先程取り外したケーブル類をもとに戻していきます。
