@@ -103,7 +103,7 @@ DesignSparkPCBのプロジェクトファイルを置いてありますので、
 
 
 ## 取り付け方法 ##
-Docフォルダ内の[HowToConnect.md](./Doc/HowToConnect.md)を参照にしてください。
+Docフォルダ内の[HowToInstall.md](./Doc/HowToInstall.md)を参照にしてください。
 
 ## 使用方法 ##
 Docフォルダ内の[HowToUse.md](./Doc/HowToUse.md)を参照にしてください。
