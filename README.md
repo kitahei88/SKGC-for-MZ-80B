@@ -75,8 +75,6 @@ Microchip社の[Microchip Studio](https://www.microchip.com/en-us/tools-resource
 
 バイナリとして.hexファイルもアップしていますので、書き込みのみを行うのであれば、それを使用してください。FUSEビットに付いてはソース内に記載があります。
 
-
-
 **SPLD**
 
 Microchip社のATF16V8Cを使用しています。
@@ -84,7 +82,6 @@ Microchip社のATF16V8Cを使用しています。
 開発はMicrochip社の[WinCUPL](https://www.microchip.com/en-us/products/fpgas-and-plds/spld-cplds/pld-design-resources)を使用しています。
 
 書き込みのために.jedファイルをアップしていますので、書き込みのみ行うのであれば、それを利用してください。
-
 
 **GreenPAK**
 GrennPAKとしてはルネサス社のSLG46826Gを使用しています。
@@ -95,8 +92,6 @@ GrennPAKとしてはルネサス社のSLG46826Gを使用しています。
 
 8255のところだけ、１，２と2つありますが、これは回路図等を参照ください。
 
-
-
 **CPLD**
 
 Xilinx社のXC95144XLを使用しています。
@@ -104,8 +99,6 @@ Xilinx社のXC95144XLを使用しています。
 開発には[Xilinx ISE 14.7](https://japan.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.html)を使用しています。
 
 こちらも書き込みのために.jedファイルをアップしてありますので、利用してください。
-
-
 
 **回路図　基板**
 
