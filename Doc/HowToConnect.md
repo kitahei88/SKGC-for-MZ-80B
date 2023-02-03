@@ -115,6 +115,7 @@ MZ-80BのGRAMを取り付けていた場合は、この基板上にあるコネ�
 
 同様に8255も基板のソケットにはめ込みます。
 こちらには3本のケーブルを挿入します。
+
 4芯ケーブルは良いとして、2ピンのケーブルが２ヶ所あります。
 中央の2ピンのコネクターはKINHを出力しています。こちらはCMTコントロールボタンへ向かうケーブルに割り込ませる形のケーブルを装着します。
 そしてもう一方の端の2ピンのコネクターには、CMTカウンターの信号を入力しますので、先程CMT基板に取り付けたケーブルをこちらへ誘導して装着します。
@@ -124,33 +125,72 @@ MZ-80BのGRAMを取り付けていた場合は、この基板上にあるコネ�
 
 
 以上の4枚の基板を装着したら、マザーボードをスライドさせながらもとの位置へ戻し、２ヶ所のネジで止めます。
+
+<img src="https://user-images.githubusercontent.com/8729286/216507095-6db96f7f-6b60-43a8-9cfe-e3ed9c0a69fd.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507129-26eff16b-13da-4d7c-b774-80fedb83b3ff.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507136-313ea418-3ece-4e7f-9037-366e87812345.jpg" width="200" />
+
 この状態で、先程取り外したケーブル類をもとに戻していきます。
 奥から戻したほうが楽です。
+
+<img src="https://user-images.githubusercontent.com/8729286/216507202-3586dfcb-d6f5-400a-894d-c9737ba64302.jpg" width="200" />
+
 そして、先程取り付けた8255の残り２ヶ所のケーブルを取り付けます。
 KINHのケーブルはCMTコントロールケーブルへ割り込ませる形で、CMTカウンターのケーブルとも装着します。
+
+<img src="https://user-images.githubusercontent.com/8729286/216507331-afde011b-c3b4-4f62-93bd-1786b412a1e6.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507371-3bd60459-62e6-40cf-8545-d8d45c0dc58d.jpg" width="200" />
+
+<img src="https://user-images.githubusercontent.com/8729286/216507407-2afcd484-05ff-4905-911d-0b65aad84a24.jpg" width="200" />
+
 最後にマザーボードの電源ケーブルを取り付けたか確認してください。
 マザーボードへの取り付けは完了です。
 
-次に拡張I/Oボードの取り付けを行います。
-もし拡張I/Oボードを持っていない場合はスキップしてください。
+<img src="https://user-images.githubusercontent.com/8729286/216507506-ef73f585-60cd-46e5-9220-3437e34c6ab9.jpg" width="200" />
+
+
+次に拡張I/Oボードの取り付けを行います。もし拡張I/Oボードを持っていない場合はスキップしてください。
 
 先程と逆に、拡張I/Oボードを取り付け、マザーボードとの間で2箇所のネジ止めを行います。
 電源ケーブルをマザーボードへ取り付けます。
+
+<img src="https://user-images.githubusercontent.com/8729286/216507589-a791e99b-eb8d-48b6-843b-de6880c5d4cf.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507637-607dbdb9-8e67-4eb4-8948-055d2a974bc3.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507670-74d2521c-8bbc-4811-83c7-6934adc5b7b2.jpg" width="200" />
+
 後ろのパネルはカードを取り付けるまで閉じないでください。
 GRAMのカードを取り付けます。
 マザーボードから複数のケーブルを装着する必要があるので、一番上のどちらかに装着してください。
 背面から向かって左側がよいと思います。
-こちらを装着したら、それぞれのケーブルをそれぞれのソケットへ装着します。
-MZ-80BのGRAMがある場合はこれを取り付けてください。
-ここまで行ったら、パネルを閉じてOKです。
 
+<img src="https://user-images.githubusercontent.com/8729286/216507705-c3f32d6c-1f6d-4543-8a5a-156b803903be.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507721-a981c44c-3613-45d4-9e7e-d1ca868a4c47.jpg" width="200" />
+
+こちらを装着したら、それぞれのケーブルをそれぞれのソケットへ装着します。
+
+<img src="https://user-images.githubusercontent.com/8729286/216507753-c20d7cdd-1d3e-4189-b212-e5efc671f979.jpg" width="200" />
+
+MZ-80BのGRAMがある場合はこれを取り付けてください。
+
+<img src="https://user-images.githubusercontent.com/8729286/216507777-a279a502-149d-4f1a-9993-50660930f2c2.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507803-620c05d4-9cb7-454f-b519-1f5343d201b9.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507841-33370eeb-1fcd-4ea7-a8ae-47ed531745b7.jpg" width="200" />
+
+ここまで行ったら、パネルを閉じてOKです。
 CMT、ディスプレイを下へ戻し、ネジ止めしたら終了です。
+
+<img src="https://user-images.githubusercontent.com/8729286/216507906-52aa2079-b850-45f0-974e-a51f07753812.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507925-ece83d2f-cc50-4da3-8a34-511bec3964f8.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507944-dc7c178f-ad2f-4f52-9654-dc8225bd1692.jpg" width="200" />
 
 拡張I/Oボードを所有していない場合、基板はフリーな状態となりますが使用可能です。
 40ピンのストレートケーブル（古いIDEのケーブルなど）で拡張I/Oボードの取り付けするコネクターからGRAMへそのままケーブルを取り付けます。
+
+<img src="https://user-images.githubusercontent.com/8729286/216508066-c2a460d3-6fa7-4be4-ace1-9aa9ad27d45f.jpg" width="200" />
+
 頒布する基板にはケーブル取り付けのピンヘッダは含まれていませんので、ケーブルとピンヘッダを入手してはんだ付けしてください。
+
+<img src="https://user-images.githubusercontent.com/8729286/216508086-c7286977-be8f-41e5-a1d2-de183cf15c52.jpg" width="200" />
+
 問題は電源ですが、外部で+5V電源を供給することで使用できるようにしています。
+
+<img src="https://user-images.githubusercontent.com/8729286/216508182-86fe9a6a-477f-426e-ac12-da000904d043.jpg" width="200" />
+
 内部の電源をもらっても良いのですが、拡張I/Oボードへの電源のコネクターが入手できません。
 そのほかのマザーからの信号線は同様に取り付けます。
 基板がむき出しなのでショートしないようにしてください。
 
+<img src="https://user-images.githubusercontent.com/8729286/216508245-e934127f-6893-4b8d-a0f9-45c5dd530cf7.jpg" width="200" />
+
+以上です。
+お疲れ様でした。
