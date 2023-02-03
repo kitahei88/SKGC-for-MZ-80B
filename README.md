@@ -68,7 +68,7 @@ MZ-80Bの動作を変更したり、改善したりするものではありま�
 ## 開発環境　使用アプリケーションについて ##
 **AVR**
 
-AVRはAtmega88を使用しています。
+AVRはMicrochip社のAtmega88を使用しています。
 
 Microchip社の[Microchip Studio](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio)にて開発しています。
 
@@ -82,6 +82,15 @@ Microchip社のATF16V8Cを使用しています。
 開発はMicrochip社の[WinCUPL](https://www.microchip.com/en-us/products/fpgas-and-plds/spld-cplds/pld-design-resources)を使用しています。
 
 書き込みのために.jedファイルをアップしていますので、書き込みのみ行うのであれば、それを利用してください。
+
+**GreenPAK**
+GrennPAKとしてはルネサス社のSLG46826Gを使用しています。
+
+開発はルネサス社提供の[Go Configure Software Hub](https://www.renesas.com/jp/ja/software-tool/go-configure-software-hub)を利用しています。
+
+ファイルはそれぞれの回路図のボードに対応した名前でアップしてありますので、参照ください。
+
+8255のところだけ、１，２と2つありますが、これは回路図等を参照ください。
 
 
 **CPLD**
