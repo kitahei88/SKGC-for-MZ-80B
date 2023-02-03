@@ -7,11 +7,17 @@ MZ-80BのオーナーズマニュアルにあるCMT周りの回路図をみる�
 それぞれの8255のポートとマニュアル中の信号名は以下です。
 
 PA0	BLK2
+
 PA1	BLK1
+
 PA2	PNL
+
 PA3	STOP
+
 PC4	OPEN
+
 PC5	REW
+
 PC6	WRITE
 
 回路図を見ながらのほうがわかりやすいと思いますので、オーナーズマニュアルを所有している方は、CMTの制御回路のところを参照ください。
@@ -38,13 +44,21 @@ PNLはカセットテープを通常のPLAY（READ)もしくはREC(WRITE)の状�
 MZ-2000のオーナーズマニュアルにある8255のポートと信号名は以下です。
 
 PA0	_REW
+
 PA1	_FF
+
 PA2	_PLAY
+
 PA3	_STOP
+
 PA5	_AREW
+
 PA6	_APLAY
+
 PA7	_APSS-P
+
 PC5	KINH
+
 PC6	_REC
 
 PB3	TAPE END
