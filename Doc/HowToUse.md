@@ -4,6 +4,15 @@ GRAM背面にあるスイッチを切り換えることで、MZ-80Bとして動�
 
 切り換え時は必ず電源を切った状態で行ってください。
 
+MZ-2000モードの際、画面は実機と同様にグリーンモニターと外部モニターに出力されます。
+背面にあるminiDsub15ピンとLCDを通常のRGBケーブルで接続してください。
+<img src="https://user-images.githubusercontent.com/8729286/216513844-fd4e44c5-cf1b-4253-b42e-a6b55388b1fb.jpg" width="200" />
+
+同期信号はもともとのMZ-2000と同様に15KHzが出力されます。
+そのため15KHzでHsyncとVsyncの入力を受け付けるLCDを使用する必要があります。
+例：
+
+
 <img src="https://user-images.githubusercontent.com/8729286/216263337-4efe0cc5-8e72-42b2-ab23-b85ada870ab6.jpg" width="200" />
 
 取り付け直後では、まずMZ-80Bモードが動作するか確認してください。
