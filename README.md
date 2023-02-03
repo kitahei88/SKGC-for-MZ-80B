@@ -66,7 +66,7 @@ MZ-80Bの動作を変更したり、改善したりするものではありま�
 またMZ-2000（MZ-2200）のアプリケーションやソフトウェアは別途ご自身で用意が必要です。
 
 ## 開発環境　使用アプリケーションについて ##
-** AVR **
+**AVR**
 AVRはAtmega88を使用しています。
 
 Microchip社の[Microchip Studio](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio)にて開発しています。
@@ -74,7 +74,7 @@ Microchip社の[Microchip Studio](https://www.microchip.com/en-us/tools-resource
 バイナリとして.hexファイルもアップしていますので、書き込みのみを行うのであれば、それを使用してください。FUSEビットに付いてはソース内に記載があります。
 
 
-** SPLD **
+**SPLD**
 
 Microchip社のATF16V8Cを使用しています。
 
@@ -82,7 +82,7 @@ Microchip社のATF16V8Cを使用しています。
 
 書き込みのために.jedファイルをアップしていますので、書き込みのみ行うのであれば、それを利用してください。
 
-** CPLD **
+**CPLD**
 
 Xilinx社のXC95144XLを使用しています。
 
@@ -90,7 +90,7 @@ Xilinx社のXC95144XLを使用しています。
 
 こちらも書き込みのために.jedファイルをアップしてありますので、利用してください。
 
-** 回路図、基板 **
+**回路図　基板**
 
 DesignSpark PCBを使用しています。
 
