@@ -67,6 +67,7 @@ MZ-80Bの動作を変更したり、改善したりするものではありま�
 
 ## 開発環境　使用アプリケーションについて ##
 **AVR**
+
 AVRはAtmega88を使用しています。
 
 Microchip社の[Microchip Studio](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio)にて開発しています。
@@ -82,6 +83,7 @@ Microchip社のATF16V8Cを使用しています。
 
 書き込みのために.jedファイルをアップしていますので、書き込みのみ行うのであれば、それを利用してください。
 
+
 **CPLD**
 
 Xilinx社のXC95144XLを使用しています。
@@ -89,6 +91,7 @@ Xilinx社のXC95144XLを使用しています。
 開発には[Xilinx ISE 14.7](https://japan.xilinx.com/products/design-tools/ise-design-suite/ise-webpack.html)を使用しています。
 
 こちらも書き込みのために.jedファイルをアップしてありますので、利用してください。
+
 
 **回路図　基板**
 
