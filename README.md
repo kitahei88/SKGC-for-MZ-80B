@@ -95,11 +95,11 @@ Xilinx社のXC95144XLを使用しています。
 
 **回路図　基板**
 
-DesignSpark PCBを使用しています。
+RSコンポーネンツ社が提供している[DesignSparkPCB](https://www.rs-online.com/designspark/pcb-software-jp)を使用しています。
 
-DesignSparkのプロジェクトファイルを置いてありますので、それで開いてください。
+DesignSparkPCBのプロジェクトファイルを置いてありますので、それで開いてください。
 
-回路図の参照、Manufacture plotで基板作成できるようにしていあります。
+回路図の参照やManufacture plotで基板作成できるようにしていあります。
 
 
 ## 取り付け方法 ##
