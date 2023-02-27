@@ -1,5 +1,5 @@
 ## 取り付け方法 ##
-頒布したセットの取り付け方法を記載します。
+頒布したセットの取り付け方法を記載します。画像はクリックすると別タブで大きい画像で表示されます。
 
 <img src="images/1.jpg" width="300" />
 
@@ -33,85 +33,85 @@ CMTとモニター部分のカバーを5箇所のネジを外して開けます�
 
 この段階でCMTとモニター部分のカバーを元通り取り付けます。ネジで止めても問題ありません。
 
-<img src="images/18.jpg" width="200" /><img src="images/19.jpg" width="200" />
+<img src="images/18.jpg" width="300" /><img src="images/19.jpg" width="300" />
 
 
 次にマザーボード側の取り付けを行います。
 拡張I/OボードのMZ-8BKが取り付けられている場合、これを外さないとマザーボードが取り外せません。
 まず、拡張I/Oボード背面のパネルを取り外します。
 
-<img src="images/20.jpg" width="200" /><img src="images/21.jpg" width="200" />
+<img src="images/20.jpg" width="300" /><img src="images/21.jpg" width="300" />
 
 次に拡張I/Oボード用の電源を引き抜き、マザーボードと固定されているネジを取り外して引き抜きます。
 
-<img src="https://user-images.githubusercontent.com/8729286/216267848-6240dd50-9c65-4f68-8964-1b5e7bbb3ad3.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216267897-6e376e5c-2533-4ed1-a97d-1e12b28ed773.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216268041-3f2cd50c-c3cd-40a0-b112-4b5ef03a70c5.jpg" width="200" />
+<img src="images/22.jpg" width="300" /><img src="images/23.jpg" width="300" /><img src="images/24.jpg" width="300" />
 
 マザーボードを取り外します。
 マザーボードから伸びている、電源コード、CMT、キーボード、CMTコントロールボタン、リセット、ディスプレイ信号などのケーブルをすべて取り外します。取り外しには力が必要だったり、爪で固定されているなどしているので、上手く外してください。
 
-<img src="https://user-images.githubusercontent.com/8729286/216268095-6902beef-3ea2-4a76-aa5e-7dc331047eef.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216268117-65c7e621-e334-4826-ab96-08a74f1ddbc9.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216268199-ebcb85af-beca-408b-97ea-30606b5a3a46.jpg" width="200" />
+<img src="images/25.jpg" width="300" /><img src="images/26.jpg" width="300" /><img src="images/27.jpg" width="300" />
 
 次にマザーボードと背面のパネルを固定してる2箇所のネジを取り外します。
 
-<img src="https://user-images.githubusercontent.com/8729286/216268328-4f8ea49a-91e4-490f-9ffc-827887bd4e11.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216268359-386de7ac-f18e-464d-b5f2-0d93f499fe0c.jpg" width="200" />
+<img src="images/28.jpg width="300" /><img src="images/29.jpg" width="300" />
 
 そうすることで、マザーボードを背面にスライドさせることで取り外すことができます。
 
-<img src="https://user-images.githubusercontent.com/8729286/216268404-6ef25041-8d6c-4ff2-98e7-9b8c6f1f5e04.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216268553-982a3611-e982-4b96-812b-817d2ab6ab65.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216268675-713b3dd2-0220-4f73-b33f-36fdcd8b2192.jpg" width="200" />
+<img src="images/30.jpg" width="300" /><img src="images/31.jpg" width="300" /><img src="images/32.jpg" width="300" />
 
 マザーボードには以下の4枚のカードを取り付けます。
 
-<img src="https://user-images.githubusercontent.com/8729286/216268741-850ea84c-127d-46a6-8564-4c8313293e93.jpg" width="200" />
+<img src="images/33.jpg" width="300" />
 
 IC43 G#3にはこの基板を取り付けます。
 
-<img src="https://user-images.githubusercontent.com/8729286/216268851-2f3cb18f-de9b-4617-a0c2-3c343956335a.jpg" width="200" />
+<img src="images/34.jpg" width="300" />
 
 まず該当のICを取り外してください。このとき、ピン曲がりや折れに注意してください。
 
-<img src="https://user-images.githubusercontent.com/8729286/216268998-de9f373a-ac18-4366-860f-02b0a2cc24e2.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216269119-8c64ca7d-dd57-4c72-9945-3988316c171c.jpg" width="200" />
+<img src="images/35.jpg" width="300" /><img src="images/36.jpg" width="300" />
 
 基板を写真の向きで取り付け、ICをソケットにはめ込みます。
 
-<img src="https://user-images.githubusercontent.com/8729286/216269234-d9df1a32-b680-4b4a-bcfa-6fcefe1ce5be.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216269269-61ba2fee-95a9-4cb2-af03-46057ec97e1d.jpg" width="200" />
+<img src="images/37.jpg" width="300" /><img src="images/38.jpg" width="300" />
 
 このパーツ部分はMZ-80Bのキーボードの直下になり、不用意に高さがあるとキーボードの基板に干渉します。
 その場合、ショートしたりするため、MZ-80Bが起動しない、キー入力ができないなどの不具合が出ることがあります。
 しっかりはめ込んで、もし必要であればICのピン部分をマスキングしてください。（しっかりはめ込めば不要な高さとなるように設計しています）
 
-<img src="https://user-images.githubusercontent.com/8729286/216269417-852a6bf1-8870-427e-8616-34e8661e2261.jpg" width="200" />
+<img src="images/39.jpg" width="300" />
 
 このときも基板を割らないように、ピンを折らないように注意してください。コネクターには３芯のケーブルを取り付けて、拡張ボード側へ誘導します。
 
-<img src="https://user-images.githubusercontent.com/8729286/216269579-f5dadca9-03c1-45f7-9e31-3dca48354c1e.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216269613-9e26844d-fd0b-461d-9285-3197d9b423f9.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216269657-555851bc-425c-410f-83c1-c037b9d84dbe.jpg" width="200" />
+<img src="images/40.jpg" width="300" /><img src="images/41.jpg" width="300" /><img src="images/42.jpg" width="300" />
 
 IC2　G#1も同様です。
 ICを取り外した後、基板を取り付け、ICを基板上のソケットにはめ込み、5芯のケーブルを取り付けてください。
 
-<img src="https://user-images.githubusercontent.com/8729286/216269737-43fb38cf-fe32-49b8-8a3a-3909270a7310.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216269835-d18401ec-b200-44a4-b962-7a804f089768.jpg" width="200" />
+<img src="images/43.jpg" width="300" /><img src="images/44.jpg" width="300" />
 
-<img src="https://user-images.githubusercontent.com/8729286/216269849-8d0ccce6-4e8b-49d8-b032-818e6e145d22.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216269914-14fa0ec0-4d53-4e38-aff5-b6afa8c2c4e5.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216270051-7a515372-615f-4c57-9477-75a977501a10.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216270090-ad3c73da-e253-4bfc-acd7-cce090dba2a1.jpg" width="200" />
+<img src="images/45.jpg" width="300" /><img src="images/46.jpg" width="300" /><img src="images/47.jpg" width="300" /><img src="images/48.jpg" width="300" />
 
 CN13はGRAMを取り付ける10ピンのところです。
 
-<img src="https://user-images.githubusercontent.com/8729286/216271631-39ee77c3-aa9b-4974-913a-4ae3c8249116.jpg" width="200" />
+<img src="images/49.jpg" width="300" />
 
 基板を取り付けて8芯のケーブルを取り付けてください。
 写真の向きに取り付けます。
 MZ-80BのGRAMを取り付けていた場合は、この基板上にあるコネクターにもともとの取り付け向きと同じように取り付けてください
 （これはマザーボードなどをもとに戻した後に行います）
 
-<img src="https://user-images.githubusercontent.com/8729286/216271652-04782a24-7aa6-438f-9ca5-4eba09298b0e.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216271676-b51a6c64-7ac7-4052-85d3-a50b9cfebc54.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216271753-87537249-638c-4aef-bfe5-48e44f4ed2f3.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216271789-7c1d9e05-1dc1-4a4c-b9a7-3e1c52f2f8ca.jpg" width="200" />
+<img src="images/50.jpg" width="300" /><img src="images/51.jpg" width="300" /><img src="images/52.jpg" width="300" /><img src="images/53.jpg" width="300" />
 
 
 最後はIC23　8255です。
 これも同じようにピン曲がりなどに気をつけてICを取り外します。
 
-<img src="https://user-images.githubusercontent.com/8729286/216271999-38fb0884-2f46-4152-8da1-421c6b37b409.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216272027-4cca05ea-4941-470e-b51a-5972aa8f8c34.jpg" width="200" />
+<img src="images/54.jpg" width="300" /><img src="images/55.jpg" width="300" />
 
 周囲のパーツの関係でこの基板のピンは長く作成しています。
 曲がったり折れやすいので注意してはめ込んでください。
-<img src="https://user-images.githubusercontent.com/8729286/216272198-7df9bb48-9484-4e04-8476-98be50c52f80.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216272237-c87a48ec-2db5-4393-a9e8-d90c02fc3173.jpg" width="200" />
+<img src="images/56.jpg" width="300" /><img src="images/57.jpg" width="300" />
 
 同様に8255も基板のソケットにはめ込みます。
 こちらには3本のケーブルを挿入します。
@@ -121,29 +121,29 @@ MZ-80BのGRAMを取り付けていた場合は、この基板上にあるコネ�
 そしてもう一方の端の2ピンのコネクターには、CMTカウンターの信号を入力しますので、先程CMT基板に取り付けたケーブルをこちらへ誘導して装着します。
 この2芯ケーブル2本はマザーを戻してからのほうが良いと思われます。
 
-<img src="https://user-images.githubusercontent.com/8729286/216272288-a328bbf2-f502-499e-b4db-8393dad6a106.jpg" width="200" />
+<img src="images/58.jpg" width="300" />
 
 
 以上の4枚の基板を装着したら、マザーボードをスライドさせながらもとの位置へ戻し、２ヶ所のネジで止めます。
 
-<img src="https://user-images.githubusercontent.com/8729286/216507095-6db96f7f-6b60-43a8-9cfe-e3ed9c0a69fd.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507129-26eff16b-13da-4d7c-b774-80fedb83b3ff.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507136-313ea418-3ece-4e7f-9037-366e87812345.jpg" width="200" />
+<img src="images/59.jpg" width="300" /><img src="images/60.jpg" width="300" /><img src="images/61.jpg" width="300" />
 
 この状態で、先程取り外したケーブル類をもとに戻していきます。
 奥から戻したほうが楽です。
 
-<img src="https://user-images.githubusercontent.com/8729286/216507202-3586dfcb-d6f5-400a-894d-c9737ba64302.jpg" width="200" />
+<img src="images/62.jpg" width="300" />
 
 そして、先程取り付けた8255の残り２ヶ所のケーブルを取り付けます。
 KINHのケーブルはCMTコントロールケーブルへ割り込ませる形で、CMTカウンターのケーブルとも装着します。
 
-<img src="https://user-images.githubusercontent.com/8729286/216507331-afde011b-c3b4-4f62-93bd-1786b412a1e6.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507371-3bd60459-62e6-40cf-8545-d8d45c0dc58d.jpg" width="200" />
+<img src="images/63.jpg" width="300" /><img src="images/64.jpg" width="300" />
 
-<img src="https://user-images.githubusercontent.com/8729286/216507407-2afcd484-05ff-4905-911d-0b65aad84a24.jpg" width="200" />
+<img src="images/65.jpg" width="300" />
 
 最後にマザーボードの電源ケーブルを取り付けたか確認してください。
 マザーボードへの取り付けは完了です。
 
-<img src="https://user-images.githubusercontent.com/8729286/216507506-ef73f585-60cd-46e5-9220-3437e34c6ab9.jpg" width="200" />
+<img src="images/66.jpg" width="300" />
 
 
 次に拡張I/Oボードの取り付けを行います。もし拡張I/Oボードを持っていない場合はスキップしてください。
@@ -151,46 +151,46 @@ KINHのケーブルはCMTコントロールケーブルへ割り込ませる形�
 先程と逆に、拡張I/Oボードを取り付け、マザーボードとの間で2箇所のネジ止めを行います。
 電源ケーブルをマザーボードへ取り付けます。
 
-<img src="https://user-images.githubusercontent.com/8729286/216507589-a791e99b-eb8d-48b6-843b-de6880c5d4cf.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507637-607dbdb9-8e67-4eb4-8948-055d2a974bc3.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507670-74d2521c-8bbc-4811-83c7-6934adc5b7b2.jpg" width="200" />
+<img src="images/67.jpg" width="300" /><img src="images/68.jpg" width="300" /><img src="images/69.jpg" width="300" />
 
 後ろのパネルはカードを取り付けるまで閉じないでください。
 GRAMのカードを取り付けます。
 マザーボードから複数のケーブルを装着する必要があるので、一番上のどちらかに装着してください。
 背面から向かって左側がよいと思います。
 
-<img src="https://user-images.githubusercontent.com/8729286/216507705-c3f32d6c-1f6d-4543-8a5a-156b803903be.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507721-a981c44c-3613-45d4-9e7e-d1ca868a4c47.jpg" width="200" />
+<img src="images/70.jpg" width="300" /><img src="images/71.jpg" width="300" />
 
 こちらを装着したら、それぞれのケーブルをそれぞれのソケットへ装着します。
 
-<img src="https://user-images.githubusercontent.com/8729286/216507753-c20d7cdd-1d3e-4189-b212-e5efc671f979.jpg" width="200" />
+<img src="images/72.jpg" width="300" />
 
 MZ-80BのGRAMがある場合はこれを取り付けてください。
 
-<img src="https://user-images.githubusercontent.com/8729286/216507777-a279a502-149d-4f1a-9993-50660930f2c2.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507803-620c05d4-9cb7-454f-b519-1f5343d201b9.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507841-33370eeb-1fcd-4ea7-a8ae-47ed531745b7.jpg" width="200" />
+<img src="images/73.jpg" width="300" /><img src="images/74.jpg" width="300" /><img src="images/75.jpg" width="300" />
 
 ここまで行ったら、パネルを閉じてOKです。
 CMT、ディスプレイを下へ戻し、ネジ止めしたら終了です。
 
-<img src="https://user-images.githubusercontent.com/8729286/216507906-52aa2079-b850-45f0-974e-a51f07753812.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507925-ece83d2f-cc50-4da3-8a34-511bec3964f8.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216507944-dc7c178f-ad2f-4f52-9654-dc8225bd1692.jpg" width="200" />
+<img src="images/76.jpg" width="300" /><img src="images/77.jpg" width="300" /><img src="images/78.jpg" width="300" />
 
 拡張I/Oボードを所有していない場合、基板はフリーな状態となりますが使用可能です。
 40ピンのストレートケーブル（古いIDEのケーブルなど）で拡張I/Oボードの取り付けするコネクターからGRAMへそのままケーブルを取り付けます。
 
-<img src="https://user-images.githubusercontent.com/8729286/216508066-c2a460d3-6fa7-4be4-ace1-9aa9ad27d45f.jpg" width="200" />
+<img src="images/79.jpg" width="300" />
 
 頒布する基板にはケーブル取り付けのピンヘッダは含まれていませんので、ケーブルとピンヘッダを入手してはんだ付けしてください。
 
-<img src="https://user-images.githubusercontent.com/8729286/216508086-c7286977-be8f-41e5-a1d2-de183cf15c52.jpg" width="200" />
+<img src="images/80.jpg" width="300" />
 
 問題は電源ですが、外部で+5V電源を供給することで使用できるようにしています。
 
-<img src="https://user-images.githubusercontent.com/8729286/216508182-86fe9a6a-477f-426e-ac12-da000904d043.jpg" width="200" />
+<img src="images/81.jpg" width="300" />
 
 内部の電源をもらっても良いのですが、拡張I/Oボードへの電源のコネクターが入手できません。
 そのほかのマザーからの信号線は同様に取り付けます。
 基板がむき出しなのでショートしないようにしてください。
 
-<img src="https://user-images.githubusercontent.com/8729286/216508245-e934127f-6893-4b8d-a0f9-45c5dd530cf7.jpg" width="200" />
+<img src="images/82.jpg" width="300" />
 
 以上です。
 お疲れ様でした。
