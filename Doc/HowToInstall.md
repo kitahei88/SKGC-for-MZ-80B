@@ -5,27 +5,27 @@
 
 まずMZ-80B本体の電源を確実に切り、電源ケーブルを外してください。
 
-<img src="https://user-images.githubusercontent.com/8729286/216263749-d6ea624e-9dae-479f-ae2a-823cd22ba8b5.jpg" width="200" />
+<img src="images/2.jpg" width="200" />
 
 次に背面二ヶ所のネジを外し、CMTとモニター部分を上方へ押し上げ、本体をあけます。
 
-<img src="https://user-images.githubusercontent.com/8729286/216264058-ffdb8049-ed43-40de-8515-f1d081745d26.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216264114-a61f4894-ffc2-49bc-9b6a-1e9287deb5ab.jpg" width="200" />
+<img src="images/3.jpg" width="200" /><img src="images/4.jpg" width="200" />
 
 CMTとモニター部分のカバーを5箇所のネジを外して開けます。
 
-<img src="https://user-images.githubusercontent.com/8729286/216264791-c0070d16-a3d6-4a39-96fc-3d2e098f0a7a.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216264857-079e6eb8-5d5d-4b78-99cc-6e3f4ff23631.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216264952-1e62dc3f-0f9a-4aa8-8324-d711a8b7cfde.jpg" width="200" />
+<img src="images/5.jpg" width="200" /><img src="images/6.jpg" width="200" /><img src="images/7.jpg" width="200" />
 
 この際、モニター周囲は高圧が掛かっている可能性が高く、注意してください。最悪、指に穴が空きます。
 
-<img src="https://user-images.githubusercontent.com/8729286/216265205-ba8a6bc9-40a7-42bf-b221-016a548f69f0.jpg" width="200" />
+<img src="images/8.jpg" width="200" />
 
 写真にあるCMT制御基板のコネクターを外します。これはテープカウンターの動作信号が入ってくるところで、これでテープが回転しているかを入力しています。
 
-<img src="https://user-images.githubusercontent.com/8729286/216265506-7d899875-9e0b-4c69-b7a3-28e6ac762d9f.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216265578-88ce937e-f3f0-44e8-9ee1-9482419700ad.jpg" width="200" />
+<img src="images/9.jpg" width="200" /><img src="images/10.jpg" width="200" />
 
 ここにセットのケーブルをつけて取り込みます。
 
-<img src="https://user-images.githubusercontent.com/8729286/216265740-bd87c8bf-6a0e-47c3-8661-17c6a27cdd9c.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216265877-897dd3b2-4d19-43c1-86ac-d8ce793f28c5.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216266128-1ff2a525-f3f2-48f4-9e49-3a8cb21f3850.jpg" width="200" />
+<img src="images/11.jpg" width="200" /><img src="images/12.jpg" width="200" /><img src="images/13.jpg" width="200" />
 
 ケーブルはCMT基板のすぐ下にある、電源からのコードが通じている穴を通して、メインのマザーボード側へ誘導します。
 
