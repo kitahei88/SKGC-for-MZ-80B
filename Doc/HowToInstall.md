@@ -1,46 +1,46 @@
 ## 取り付け方法 ##
 頒布したセットの取り付け方法を記載します。
 
-<img src="images/1.jpg" width="200" />
+<img src="images/1.jpg" width="300" />
 
 まずMZ-80B本体の電源を確実に切り、電源ケーブルを外してください。
 
-<img src="images/2.jpg" width="200" />
+<img src="images/2.jpg" width="300" />
 
 次に背面二ヶ所のネジを外し、CMTとモニター部分を上方へ押し上げ、本体をあけます。
 
-<img src="images/3.jpg" width="200" /><img src="images/4.jpg" width="200" />
+<img src="images/3.jpg" width="300" /><img src="images/4.jpg" width="300" />
 
 CMTとモニター部分のカバーを5箇所のネジを外して開けます。
 
-<img src="images/5.jpg" width="200" /><img src="images/6.jpg" width="200" /><img src="images/7.jpg" width="200" />
+<img src="images/5.jpg" width="300" /><img src="images/6.jpg" width="300" /><img src="images/7.jpg" width="300" />
 
 この際、モニター周囲は高圧が掛かっている可能性が高く、注意してください。最悪、指に穴が空きます。
 
-<img src="images/8.jpg" width="200" />
+<img src="images/8.jpg" width="300" />
 
 写真にあるCMT制御基板のコネクターを外します。これはテープカウンターの動作信号が入ってくるところで、これでテープが回転しているかを入力しています。
 
-<img src="images/9.jpg" width="200" /><img src="images/10.jpg" width="200" />
+<img src="images/9.jpg" width="300" /><img src="images/10.jpg" width="300" />
 
 ここにセットのケーブルをつけて取り込みます。
 
-<img src="images/11.jpg" width="200" /><img src="images/12.jpg" width="200" /><img src="images/13.jpg" width="200" />
+<img src="images/11.jpg" width="300" /><img src="images/12.jpg" width="300" /><img src="images/13.jpg" width="300" />
 
 ケーブルはCMT基板のすぐ下にある、電源からのコードが通じている穴を通して、メインのマザーボード側へ誘導します。
 
-<img src="https://user-images.githubusercontent.com/8729286/216265983-a065d835-c0c6-4246-8188-9411a38d726d.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216266385-7ad53db7-73ed-4a07-8947-2342f9750bd4.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216266418-15bdb7b8-a740-46b6-8053-0869ff03d825.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216266439-ab2ad033-fbf7-4617-9870-c515542b0f3d.jpg" width="200" />
+<img src="images/14.jpg" width="300" /><img src="images/15.jpg" width="300" /><img src="images/16.jpg" width="300" /><img src="images/17.jpg" width="300" />
 
 この段階でCMTとモニター部分のカバーを元通り取り付けます。ネジで止めても問題ありません。
 
-<img src="https://user-images.githubusercontent.com/8729286/216266527-d71848f2-532e-410b-840c-da0a4ccbe27a.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216266543-79e4da6e-7a70-4c63-a81d-cc3c2a4b448a.jpg" width="200" />
+<img src="images/18.jpg" width="200" /><img src="images/19.jpg" width="200" />
 
 
 次にマザーボード側の取り付けを行います。
 拡張I/OボードのMZ-8BKが取り付けられている場合、これを外さないとマザーボードが取り外せません。
 まず、拡張I/Oボード背面のパネルを取り外します。
 
-<img src="https://user-images.githubusercontent.com/8729286/216267728-309c6c12-265a-41b6-9223-d99dc41bbc6f.jpg" width="200" /><img src="https://user-images.githubusercontent.com/8729286/216267769-2fff8bbc-8ed6-451a-acbe-6b8a634febf0.jpg" width="200" />
+<img src="images/20.jpg" width="200" /><img src="images/21.jpg" width="200" />
 
 次に拡張I/Oボード用の電源を引き抜き、マザーボードと固定されているネジを取り外して引き抜きます。
 
