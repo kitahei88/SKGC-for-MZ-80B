@@ -53,7 +53,7 @@ CMTとモニター部分のカバーを5箇所のネジを外して開けます�
 
 次にマザーボードと背面のパネルを固定してる2箇所のネジを取り外します。
 
-<img src="images/28.jpg width="300" /><img src="images/29.jpg" width="300" />
+<img src="images/28.jpg" width="300" /><img src="images/29.jpg" width="300" />
 
 そうすることで、マザーボードを背面にスライドさせることで取り外すことができます。
 
