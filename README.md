@@ -69,7 +69,7 @@ MZ-80Bの動作を変更したり、改善したりするものではありま�
 
 **AVR**
 
-AVRはMicrochip社のAtmega88を使用しています。
+AVRはMicrochip社のAtmega328Pを使用しています。
 
 ~~Microchip社の[Microchip Studio](https://www.microchip.com/en-us/tools-resources/develop/microchip-studio)にて開発しています。~~
 [VScode](https://code.visualstudio.com/)上での [PlatformIO](https://platformio.org/)を利用して作成しました。環境は様々に選択出来ますので、必要なhederとmain.cを置いておきます。
