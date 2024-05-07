@@ -1,14 +1,14 @@
 ## AVRのFUSE設定
 
 **ATmega328p FUSE : Low, High, Extended.**
-FUSES = {0xE2, 0xD9, 0xFF};		
+FUSES = {0xEE, 0xD9, 0xFF};		
 
 ```
 Low
     CKDIV8      1       clock divide disable
     CKOUT       1       clock out disable
     SUT         10      high speed rising
-    CKSEL       0010    internal RC Osc	 :: default
+    CKSEL       1110    Ext Crystal Osc.; Freq 8.0- Mhz; Start up time PWRDWN/RESET: 1K CK /14 CK + 0ms;
 
 High
     RSTDIBL     1       PC6 to reset
@@ -23,6 +23,5 @@ Ext
     BODLEVEL    111     Brownout reset disable	
 ```
 
-**ATmega88/V FUSE : Low, High, Extended.**
-FUSES = {0xE2, 0xDF, 0xF9}
+**外部にXtalオシレーターを使用するため、書き込みはExtended, High, Lowの順で行うこと**
 

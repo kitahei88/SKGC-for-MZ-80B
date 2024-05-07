@@ -16,16 +16,16 @@
 //#include <xc.h>
 #include <stdbool.h>
 #include <avr/io.h>
-#define F_CPU 8000000UL  // 8 MHz internal clock
+#define F_CPU 20000000UL  // 20 MHz external clock
 #include <util/delay.h>
 #include <avr/interrupt.h>
 
 /* ATmega328p fuses: Low, High, Extended. */
-// FUSES = {0xE2, 0xD9, 0xFF};		
+// FUSES = {0xEE, 0xD9, 0xFF};		
 // low	CKDIV8	1		clock divide disable
 //		CKOUT	1		clock out disable
 //		SUT		10		high speed rising
-//		CKSEL	0010	internal RC Osc	 :: default
+//		CKSEL	1110	ext Osc 8MHz~	 
 // high	RSTDIBL	1		PC6 to reset
 //		DWEN	1		Debug wire disable
 //		SPIEN	0		SPI programing enable
@@ -35,9 +35,6 @@
 //		BOOTRST	1		Reset vector set to application section
 // ext	7~3		not use (set 1)
 //		BODLEVEL 111	Brownout reset disable	
-
-/* for ATmega88 */
-// FUSES = {0xE2, 0xDF, 0xF9}
 
 
 /*
@@ -84,9 +81,9 @@
 /*
 	public variable
 */
-	unsigned char	action		= STANDY;
-	unsigned char	last_stat	= STANDY;
-	bool 			ipl_stat	= true; 
+	volatile unsigned char	action		= STANDY;
+	volatile unsigned char	last_stat	= STANDY;
+	volatile bool 			ipl_stat	= true; 
 
 /*
 	public function
@@ -95,11 +92,11 @@
 	void play(void);
 	void rew(void);
 	void ff(void);
-	void apss(void);
+//	void apss(void);
 //	void aplay(void);
 //	void arew(void);
 	
-void init(void)
+static inline void init(void)
 {
 	cli();
 	// PD0~7 set to input (pull up), PD3(TAPECOUNTER) set to INT1 interrupt
@@ -114,7 +111,7 @@ void init(void)
 	// PB0 input(B/_2000), PB1 output(OC1A TAPEEND)
 	// PB 2,7 reserved(input) PB3~5 to SPI
 	PORTB	=	0b11111111;
-	DDRB	=	0b00000010;
+	DDRB	=	0b00000110;
 		
 	MCUCR = 0x00;	
 	// INT1 edge trigger interrupt
@@ -126,7 +123,7 @@ void init(void)
 	TIMSK2 = 0x00;	// 8bits Timer2 not use
 	PCMSK0 = 0x00;	// PCINT0(0~7) not use
 	PCMSK1 = 0x00;	// PCINT1(8~15) not use
-	PCMSK2 = 0b11110111;	// PCINT2(16~23) set to CMT signal input intterupt, without PB1(PD3,TAPECOUNTER)
+	PCMSK2 = 0b10100101;	// PCINT2(16~23) set to CMT signal input intterupt, without PD1,3,4,6(AREW, TAPECOUNTER, APLAY, APSS).
 	PCICR	= 0x00;	// PCINT2	is not start yet
 	
 	ACSR	= 0x00; 
@@ -136,16 +133,16 @@ void init(void)
 	return;
 }
 
-void interrupt_init(void)
+static inline void interrupt_init(void)
 {	
-	PCIFR	|= 0x04; 	// reset PCINT2 interrupt demand
-	PCICR	= 0x04;		// PCINT2	enable
+//	PCIFR	|= 0x04; 	// reset PCINT2 interrupt demand
+//	PCICR	= 0x04;		// PCINT2	enable
 	// 16bit timer 1 setting for TAPEEND signal, CTC mode
 	TIMSK1	=	0;	
 	TCNT1	=	0;		
 //	ICR1	=	0xFF00;		
 // counter max (for overflow bug)
-	OCR1A	=	(F_CPU)/170;	// 8MHzclock/256*1.5, 1.5 sec. tape stop 
+	OCR1A	=	(F_CPU)/682;	// 20MHzclock/1024*1.5, 1.5 sec. tape stop 
 	TCCR1A	=	0b00000000;		// CTC, OC1A and OC1B to normal pin , top counter is OCR1A 
 	TCCR1B	=	0b00001000;		// timer stop
 	EIMSK = 0x02;				// INT1 interrupt start
@@ -173,7 +170,7 @@ ISR(TIMER1_COMPA_vect)
 }
 
 /*
- almost 2 sec interrupt from timer start
+ almost 3.3 sec interrupt from timer start (65535*1024/20000000 sec)
  this interrupt never occurred. something wrong.(TOP insurance)
 */
 ISR(TIMER1_OVF_vect)
@@ -192,7 +189,7 @@ ISR(INT1_vect)
 	// start timer with interrupt and reset counter
 	TCNT1	= 0;
 	TIMSK1	=	0b00000011;	// OCR1A(TOP) and OVF(0xFFFF) value interrupt
-	TCCR1B	=	0b00001100; // timer start 1/256 clock
+	TCCR1B	=	0b00001101; // timer start 1/1024 clock
 	cbi(PORTB,TAPEEND);		// TAPEEND got to low.
 }
 
@@ -201,9 +198,11 @@ Intterupt for CMT function call
 */
 ISR(PCINT2_vect)
 {
-	// multiple functions call never to be asserted at the same time.
+	// multiple function calls are not asserted at the same time.
+//	PINB = (1 << PINB2) ; // for debug
 	// action |= ~(PPI | ( 1<<PIND3));
-	unsigned char temp_act =	~(PPI | ( 1<<PIND3)) ;
+	unsigned char temp_act = ~ (PPI | 0b01011010 ) ; // ignore APSS, APLAY, TAPECOUTNER, AREW
+//	PINB = (1 << PINB2) ; // for debug
 	if (temp_act & 0xff ) {		// get value only when some function is asserted.
 		action = temp_act;
 	}
@@ -289,24 +288,26 @@ void rew(void)
 	return;
 }
 
+/*
 void apss(void)
 {
 	// MZ-80B CMT deck always works as APSS mode.
 	action &= ~(APSS);
 	return;
 }
+*/
 
 /*
 void aplay(void)
 {
-	//
+	// aplay check occured in TAPEEND status
 	action &= ~(APLAY);
 	return;
 }
 
 void arew(void)
 {
-	//
+	// arew check occured in TAPEEND status
 	action &= ~(AREW);
 	return;
 }
@@ -316,13 +317,19 @@ int main(void)
 {
 	init();
 	// wait for MZ-2000 mode.
+	interrupt_init();					// start all intterrupt
     sbi(CMT,_PLAY_HOLED);
-	while(bit_is_set(PINB,B2000)) 	(action		= STANDY);
+	while(bit_is_set(PINB,B2000)) 	{
+//		sbi(PCIFR , PCIF2) ; 
+		action	= STANDY ;
+	}
 	// start 
+	PCIFR	|= 0x04; 	// reset PCINT2 interrupt demand
+	PCICR	= 0x04;		// PCINT2	enable
 	last_stat = REW;
     CMT = (1<<BLK1 | 1<<_PLAY_HOLED);	// default IPL CMT status
 
-	interrupt_init();					// start all intterrupt
+//	interrupt_init();					// start all intterrupt
 	// signal change function enable
     while(1)
     {
@@ -330,8 +337,9 @@ int main(void)
 		if (action & PLAY)	play();
 		if (action & FF)	ff();
 		if (action & REW)	rew();
-		if (action & APSS)	apss();
+//		if (action & APSS)	apss();
 //		if (action & APLAY)	aplay();
 //		if (action & AREW)	arew();
+		while (action == STANDY) ;
     }	
 }

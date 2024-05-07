@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GPDProject version="22" oldestCompatibleVersion="22" GPDVersion="6.27.001" lastChange="2022/06/16 15:56">
+<GPDProject version="22" oldestCompatibleVersion="22" GPDVersion="6.27.001" lastChange="2024/02/21 12:06">
     <generalProjectSettings/>
     <chip family="04" type="06" friendlyName="GreenPAK 6" partNumber="36" package="16">
         <nvmData registerLenght="2048">48 53 34 48 53 34 0 0 0 0 70 28 D 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40 0 0 0 C0 3 0 0 40 FD 0 E0 FC D1 F 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30 30 0 30 80 50 30 0 0 30 80 50 0 50 0 50 0 0 50 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 14 22 30 C 0 0 0 0 0 0 0 BE EB 0 0 0 0 AC 0 0 0 0 0 0 0 0 0 0 0 0 20 0 1 0 0 0 2 1 0 0 2 0 1 0 0 2 1 0 0 2 0 1 0 0 2 1 0 0 2 0 1 0 0 2 0 1 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 A5</nvmData>
@@ -34,7 +34,7 @@
         </IOPad>
         <IOPad id="5" useCaseMode="1">
             <item id="5" caption="PIN 15 (IO4)">
-                <graphics pos="(-288.00,390.00)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
+                <graphics pos="(-70.00,401.00)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
                 <textLabel pos="(-9.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">_F4-F7(in)</textLabel>
             </item>
         </IOPad>
@@ -70,7 +70,7 @@
         </IOPad>
         <IOPad id="12" useCaseMode="1">
             <item id="12" caption="PIN 8 (IO8)">
-                <graphics pos="(-284.00,135.00)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
+                <graphics pos="(-66.00,146.00)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
                 <textLabel pos="(-16.50,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">_Gout_80B(in)</textLabel>
             </item>
         </IOPad>
@@ -81,7 +81,7 @@
         </VDDItem>
         <IOPad id="14" useCaseMode="1">
             <item id="14" caption="PIN 6 (IO9)">
-                <graphics pos="(-285.00,225.00)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
+                <graphics pos="(-67.00,236.00)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
                 <textLabel pos="(-6.50,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">_CSED(in)</textLabel>
             </item>
         </IOPad>
@@ -93,7 +93,7 @@
         </IOPad>
         <IOPad id="16" useCaseMode="1">
             <item id="16" caption="PIN 4 (IO11)">
-                <graphics pos="(-297.00,39.00)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
+                <graphics pos="(-79.00,50.00)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
                 <textLabel pos="(-19.00,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">_Gout_2000(in)</textLabel>
             </item>
         </IOPad>
@@ -111,7 +111,7 @@
         </IOPad>
         <IOPad id="19" useCaseMode="1">
             <item id="19" caption="PIN 1 (IO14)">
-                <graphics pos="(-301.00,-37.00)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
+                <graphics pos="(-83.00,-26.00)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
                 <textLabel pos="(-1.50,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">B/_2000</textLabel>
             </item>
         </IOPad>
@@ -350,22 +350,22 @@
             </item>
         </EEPROM>
         <wire output="157" input="262" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="0" wireText="NET0" wireState="0">
-            <points>(-239.00,-22.00); (106.00,-22.00); (106.00,199.00); (118.00,199.00)</points>
+            <points>(-21.00,-11.00); (98.00,-11.00); (98.00,199.00); (118.00,199.00)</points>
         </wire>
         <wire output="84" input="533" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="7" wireText="NET7" wireState="0">
             <points>(195.00,207.00); (252.00,207.00); (252.00,206.00); (258.00,206.00)</points>
         </wire>
         <wire output="157" input="543" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="0" wireText="NET0" wireState="0">
-            <points>(-239.00,-22.00); (80.00,-22.00); (80.00,287.00); (111.00,287.00)</points>
+            <points>(-21.00,-11.00); (86.00,-11.00); (86.00,287.00); (111.00,287.00)</points>
         </wire>
         <wire output="157" input="545" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="0" wireText="NET0" wireState="0">
-            <points>(-239.00,-22.00); (80.00,-22.00); (80.00,444.00); (96.00,444.00)</points>
+            <points>(-21.00,-11.00); (74.00,-11.00); (74.00,444.00); (96.00,444.00)</points>
         </wire>
         <wire output="157" input="547" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="0" wireText="NET0" wireState="0">
-            <points>(-239.00,-22.00); (80.00,-22.00); (80.00,366.00); (111.00,366.00)</points>
+            <points>(-21.00,-11.00); (86.00,-11.00); (86.00,366.00); (111.00,366.00)</points>
         </wire>
         <wire output="157" input="556" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="0" wireText="NET0" wireState="0">
-            <points>(-239.00,-22.00); (118.00,-22.00); (118.00,130.00); (160.00,130.00); (160.00,112.00)</points>
+            <points>(-21.00,-11.00); (122.00,-11.00); (122.00,129.00); (160.00,129.00); (160.00,112.00)</points>
         </wire>
         <wire output="147" input="111" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="15" wireText="NET15" wireState="0">
             <points>(624.00,24.00); (631.00,24.00)</points>
@@ -383,19 +383,19 @@
             <points>(188.00,374.00); (253.00,374.00)</points>
         </wire>
         <wire output="154" input="555" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="12" wireText="NET12" wireState="0">
-            <points>(-235.00,55.00); (94.00,55.00); (94.00,61.00); (129.00,61.00)</points>
+            <points>(-17.00,66.00); (110.00,66.00); (110.00,61.00); (129.00,61.00)</points>
         </wire>
         <wire output="158" input="518" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="8" wireText="NET8" wireState="0">
             <points>(182.00,297.00); (253.00,297.00); (253.00,301.00); (259.00,301.00)</points>
         </wire>
         <wire output="152" input="261" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="1" wireText="NET1" wireState="0">
-            <points>(-223.00,241.00); (112.00,241.00); (112.00,215.00); (118.00,215.00)</points>
+            <points>(-5.00,252.00); (98.00,252.00); (98.00,215.00); (118.00,215.00)</points>
         </wire>
         <wire output="152" input="542" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="1" wireText="NET1" wireState="0">
-            <points>(-223.00,241.00); (105.00,241.00); (105.00,307.00); (111.00,307.00)</points>
+            <points>(-5.00,252.00); (98.00,252.00); (98.00,307.00); (111.00,307.00)</points>
         </wire>
         <wire output="151" input="554" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="13" wireText="NET13" wireState="0">
-            <points>(-222.00,151.00); (98.00,151.00); (98.00,83.00); (129.00,83.00)</points>
+            <points>(-4.00,162.00); (110.00,162.00); (110.00,83.00); (129.00,83.00)</points>
         </wire>
         <wire output="0" input="528" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="-1" wireText="VDD" wireState="1">
             <points/>
@@ -404,10 +404,10 @@
             <points>(191.00,72.00); (256.00,72.00); (256.00,-1.00); (262.00,-1.00)</points>
         </wire>
         <wire output="145" input="544" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="9" wireText="NET9" wireState="0">
-            <points>(-226.00,406.00); (72.00,406.00); (72.00,464.00); (96.00,464.00)</points>
+            <points>(-8.00,417.00); (62.00,417.00); (62.00,464.00); (96.00,464.00)</points>
         </wire>
         <wire output="145" input="546" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="9" wireText="NET9" wireState="0">
-            <points>(-226.00,406.00); (105.00,406.00); (105.00,382.00); (111.00,382.00)</points>
+            <points>(-8.00,417.00); (98.00,417.00); (98.00,382.00); (111.00,382.00)</points>
         </wire>
         <wire output="159" input="502" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="10" wireText="NET10" wireState="0">
             <points>(167.00,454.00); (250.00,454.00); (250.00,488.00); (256.00,488.00)</points>
