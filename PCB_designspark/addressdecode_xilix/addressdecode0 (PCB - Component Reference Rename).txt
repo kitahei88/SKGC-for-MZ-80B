@@ -1,0 +1,22 @@
+Component Reference Rename
+--------------------------
+
+Report Written:     Monday, July 14, 2025
+Project Path:       Z:\MZ_PCB\addressdecode_xilix\addressdecode0.prj
+Design Path:        Z:\MZ_PCB\addressdecode_xilix\addressdecode0.pcb
+Design Title:       
+Created:            2022/01/11 12:10:16
+Last Saved:         2025/07/14 9:05:02
+Editing Time:       1801 min
+Units:              mm (precision 4)
+
+Old Name New Name
+--------------------
+C4       C1
+C5       C2
+C1       C3
+C2       C4
+C3       C5
+IC3      IC1
+IC1      IC3
+RN3      RN1

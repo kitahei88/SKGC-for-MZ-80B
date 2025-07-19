@@ -1,0 +1,52 @@
+// I/O/GCK1	43 global clock
+// I/O/GCK2	44
+// I/O/GCK3	1
+// I/O/GTS1	36  global tristate
+// I/O/GTS2	34
+// I/O/GSR	33 global set reset
+
+// TCK	11
+// TDI	9
+// TDO	24
+// TMS	10
+
+// VCC3V3			15,35
+// VCC2V5or3V3		26
+// GND				4,17,25
+
+// board pin setting
+// output
+NET "nRAS0"	LOC	=	"23";
+NET "nRAS1"	LOC	=	"27";
+NET "nRAS2"	LOC	=	"28";
+NET "nRAS3"	LOC	=	"29";
+NET "fastLCSW"	LOC	=	"20";
+NET "LCSW"	LOC	=	"22";
+NET "nCSED"	LOC	=	"14";
+NET "nCSDD"	LOC	=	"16";
+NET "nROMCS"	LOC	=	"19";
+NET "BUFGM"	LOC	=	"30";
+NET "BUFG0"	LOC	=	"1";
+NET "nWAIT"	LOC	=	"39";
+
+
+//input
+NET "CLK"	LOC	=	"43" ;	// global clock
+NET "DSPAD"	LOC	=	"12";
+NET "DSP"	LOC	=	"13";
+NET "nMRAM"	LOC	=	"31";
+NET "AD[3]"	LOC	=	"44";
+NET "AD[2]"	LOC	=	"42";
+NET "AD[1]"	LOC	=	"41";
+NET "AD[0]"	LOC	=	"40";
+NET "nEXWAIT"	LOC	=	"38";
+NET "nRFSH"	LOC	=	"37";
+NET "nMREQ"	LOC	=	"33";   // GSR/I
+NET "nIORQ"	LOC	=	"36";
+NET "nRD"	LOC	=	"34";
+NET "nM1"	LOC	=	"32";
+NET "Bn2000"	LOC	=	"8";
+//NET "BLANK_2K"	LOC	=	"28";
+//NET "BLANK_B"	LOC	=	"27";
+NET "BLANK"	LOC	=	"18";
+NET "delayLCSW"	LOC	=	"21";

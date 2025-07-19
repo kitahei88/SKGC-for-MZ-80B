@@ -1,0 +1,15 @@
+Pour Copper Report
+------------------
+
+Report Written:     Sunday, July 13, 2025
+Project Path:       Z:\MZ_PCB\8255_smd\8255.prj
+Design Path:        Z:\MZ_PCB\8255_smd\8255.pcb
+Design Title:       
+Created:            2022/06/06 10:15:24
+Last Saved:         2025/07/13 12:09:23
+Editing Time:       1882 min
+Units:              mm (precision 4)
+
+IC2.10 at 459.9900,496.8186 on layer Top Copper has no thermal spokes
+
+End Of Report.

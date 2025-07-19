@@ -1,0 +1,25 @@
+Back Annotation Results Report
+------------------------------
+
+Report Written:     Monday, July 14, 2025
+Project Path:       Z:\MZ_PCB\addressdecode_xilix\addressdecode0.prj
+Design Path:        Z:\MZ_PCB\addressdecode_xilix\addressdecode0.pcb
+Design Title:       
+Created:            2022/01/11 12:10:16
+Last Saved:         2025/07/14 9:05:02
+Editing Time:       1801 min
+Units:              mm (precision 4)
+
+Back Annotate renames from the PCB design to all Schematic designs in project "addressdecode0".
+
+Renamed Component from "C4" to "C1" in design "addressdecode0.sch".
+Renamed Component from "C5" to "C2" in design "addressdecode0.sch".
+Renamed Component from "C1" to "C3" in design "addressdecode0.sch".
+Renamed Component from "C2" to "C4" in design "addressdecode0.sch".
+Renamed Component from "C3" to "C5" in design "addressdecode0.sch".
+Renamed Component from "IC3" to "IC1" in design "addressdecode0.sch".
+Renamed Component from "IC1" to "IC3" in design "addressdecode0.sch".
+Renamed Component from "RN3" to "RN1" in design "addressdecode0.sch".
+
+
+End Of Report.

@@ -1,0 +1,151 @@
+Design Rule Check Report
+------------------------
+
+Report Written:     Sunday, July 13, 2025
+Project Path:       Z:\MZ_PCB\8255_smd\8255.prj
+Design Path:        Z:\MZ_PCB\8255_smd\8255.pcb
+Design Title:       
+Created:            2022/06/06 10:15:24
+Last Saved:         2025/07/13 12:09:23
+Editing Time:       1882 min
+Units:              mm (precision 4)
+
+
+Results
+=======
+
+Via to Silkscreen error (V-S) at (468.5030 496.0834) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (471.0430 493.6226) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen Error (V-S) between (461.0650 516.1000) and (461.0664 516.1000) on Layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (461.0650 513.3992) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (461.8905 519.1118) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (464.7650 496.7657) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (465.2769 465.4168) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (464.9319 459.1168) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Component to Board error (Cm-B) at (486.6426 460.2024) on layer "[Top]".
+    CONN1.
+Component to Component Error (Cm-Cm) between (470.0143 512.3118) and (466.8150 512.3118) on Layer "[Top]".
+    IC3 - IC1, Gap is 0.0000.
+Component to Component error (Cm-Cm) at (455.8157 472.8210) on layer "[Top]".
+    IC3 - IC4, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (470.0143 496.1936) and (466.8150 496.1936) on Layer "[Top]".
+    IC3 - IC2, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (470.0143 492.4885) and (465.7307 492.4885) on Layer "[Top]".
+    IC3 - R4, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (470.0143 487.5164) and (467.9950 487.5164) on Layer "[Top]".
+    IC3 - PL2, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (470.0143 492.4885) and (463.9839 492.4885) on Layer "[Top]".
+    IC3 - R2, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (453.2757 510.6367) and (459.3299 510.6367) on Layer "[Top]".
+    IC3 - C1, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (470.0143 505.3814) and (467.9950 505.3814) on Layer "[Top]".
+    IC3 - PL1, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (470.0143 508.3685) and (465.9689 508.3685) on Layer "[Top]".
+    IC3 - R3, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (470.0143 508.3685) and (463.9839 508.3685) on Layer "[Top]".
+    IC3 - R1, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (453.2757 494.4391) and (459.2505 494.4391) on Layer "[Top]".
+    IC3 - C2, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (470.0143 503.5845) and (468.0621 503.5845) on Layer "[Top]".
+    IC3 - C7, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (470.0143 519.5295) and (466.4253 519.5295) on Layer "[Top]".
+    IC3 - C6, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (459.0150 512.3118) and (455.8157 512.3118) on Layer "[Top]".
+    IC1 - IC4, Gap is 0.0000.
+Component to Board error (Cm-B) at (486.0868 452.1830) on layer "[Top]".
+    J4.
+Component to Component Error (Cm-Cm) between (455.8157 496.1936) and (459.0150 496.1936) on Layer "[Top]".
+    IC4 - IC2, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (472.5543 492.4885) and (465.7307 492.4885) on Layer "[Top]".
+    IC4 - R4, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (455.8157 487.5164) and (457.8350 487.5164) on Layer "[Top]".
+    IC4 - PL2, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (455.8157 492.4885) and (462.7585 492.4885) on Layer "[Top]".
+    IC4 - R2, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (455.8157 510.6367) and (459.3299 510.6367) on Layer "[Top]".
+    IC4 - C1, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (455.8157 505.3814) and (457.8350 505.3814) on Layer "[Top]".
+    IC4 - PL1, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (472.5543 508.3685) and (465.9689 508.3685) on Layer "[Top]".
+    IC4 - R3, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (455.8157 508.3685) and (462.7585 508.3685) on Layer "[Top]".
+    IC4 - R1, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (455.8157 494.4391) and (459.2505 494.4391) on Layer "[Top]".
+    IC4 - C2, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (472.5543 503.5845) and (468.0621 503.5845) on Layer "[Top]".
+    IC4 - C7, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (466.4253 525.3990) and (466.4253 520.7549) on Layer "[Top]".
+    IC4 - C6, Gap is 0.0000.
+Component to Board error (Cm-B) at (474.8914 452.1830) on layer "[Top]".
+    J3.
+Component to Board error (Cm-B) at (456.9470 451.5478) on layer "[Top]".
+    J1.
+Component to Component error (Cm-Cm) at (455.8157 474.2307) on layer "[Bottom]".
+    IC3 - IC4, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (470.0143 488.0244) and (467.4870 488.0244) on Layer "[Bottom]".
+    IC3 - PL2, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (470.0143 505.8894) and (467.4870 505.8894) on Layer "[Bottom]".
+    IC3 - PL1, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (455.8157 488.0244) and (458.3430 488.0244) on Layer "[Bottom]".
+    IC4 - PL2, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (455.8157 505.8894) and (458.3430 505.8894) on Layer "[Bottom]".
+    IC4 - PL1, Gap is 0.0000.
+
+Number of errors found : 42
+
+
+Settings
+========
+
+
+Spacings
+
+=========
+
+Tracks        Yes
+Pads and Vias Yes
+Shapes        Yes
+Text          Yes
+Board         Yes
+Drills        Yes
+Components    Yes
+
+
+Manufacturing
+
+==============
+
+Drill Breakout                  Yes
+Drill Backoff                   Yes
+Silkscreen Overlap              Yes
+Copper Text In Board            Yes
+Min Track Width                 Yes
+Min Annular Ring                Yes
+Min Paste Size                  Yes
+Vias In Pads                    Yes
+Unplated Vias                   Yes
+Unplated Pads With Inner Tracks Yes
+
+
+Nets
+
+=====
+
+Net Completion               Yes
+Dangling Tracks              Yes
+Net Track Length Differences No
+Nets without Components      No
+Nets on No Connect pins      No
+Nets on No Connect pins      No
+
+
+
+End Of Report.

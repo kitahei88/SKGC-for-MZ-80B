@@ -1,0 +1,14 @@
+Component Reference Rename
+--------------------------
+
+Report Written:     Thursday, July 03, 2025
+Project Path:       Z:\MZ_PCB\8255_smd\8255.prj
+Design Path:        Z:\MZ_PCB\8255_smd\8255.pcb
+Design Title:       
+Created:            2022/06/06 10:15:24
+Last Saved:         2025/07/03 14:52:51
+Editing Time:       1822 min
+Units:              mm (precision 4)
+
+Old Name New Name
+--------------------

@@ -1,0 +1,22 @@
+Back Annotation Results Report
+------------------------------
+
+Report Written:     Friday, July 04, 2025
+Project Path:       Z:\MZ_PCB\8255_smd\8255.prj
+Design Path:        Z:\MZ_PCB\8255_smd\8255.pcb
+Design Title:       
+Created:            2022/06/06 10:15:24
+Last Saved:         2025/07/03 14:59:02
+Editing Time:       1840 min
+Units:              mm (precision 4)
+
+Back Annotate renames from the PCB design to all Schematic designs in project "8255".
+
+Renamed Component from "C6" to "C3" in design "8255cmt.sch".
+Renamed Component from "C5" to "C4" in design "8255cmt.sch".
+Renamed Component from "C7" to "C5" in design "8255cmt.sch".
+Renamed Component from "C3" to "C6" in design "8255cmt.sch".
+Renamed Component from "C4" to "C7" in design "8255cmt.sch".
+
+
+End Of Report.

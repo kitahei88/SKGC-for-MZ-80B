@@ -1,0 +1,97 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+BUFG0 <= ((nM1 AND nRD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nIORQ AND nRD));
+</td></tr><tr><td>
+</td></tr><tr><td>
+BUFGM <= NOT ((nIORQ AND NOT nRD));
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+LCSW <= ((nRFSH AND NOT nMREQ AND AD(3) AND delayLCSW)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nRFSH AND NOT nMREQ AND NOT nMRAM AND delayLCSW));
+</td></tr><tr><td>
+FTCPE_cnt0: FTCPE port map (cnt(0),'1',CLK,nMREQ,'0');
+</td></tr><tr><td>
+FTCPE_cnt1: FTCPE port map (cnt(1),cnt(0),CLK,nMREQ,'0');
+</td></tr><tr><td>
+FTCPE_cnt2: FTCPE port map (cnt(2),cnt_T(2),CLK,nMREQ,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cnt_T(2) <= (cnt(0) AND cnt(1));
+</td></tr><tr><td>
+</td></tr><tr><td>
+fastLCSW <= ((nRFSH AND NOT nMREQ AND AD(3))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nRFSH AND NOT nMREQ AND NOT nMRAM));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nCSDD <= NOT (((nRFSH AND DSP AND AD(2) AND AD(0) AND DSPAD AND NOT AD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nMREQ AND AD(3) AND BLANK AND NOT Bn2000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nRFSH AND DSP AND AD(2) AND AD(0) AND DSPAD AND NOT AD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nMREQ AND NOT AD(3) AND BLANK AND Bn2000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nRFSH AND DSP AND AD(2) AND AD(0) AND NOT DSPAD AND NOT AD(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT nMREQ AND AD(3) AND BLANK AND Bn2000)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nCSED <= NOT (((nRFSH AND DSP AND AD(2) AND NOT DSPAD AND AD(1) AND NOT nMREQ AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	AD(3) AND BLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nRFSH AND DSP AND AD(2) AND NOT DSPAD AND NOT nMREQ AND AD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	BLANK AND NOT Bn2000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nRFSH AND DSP AND AD(2) AND DSPAD AND AD(1) AND NOT nMREQ AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT AD(3) AND BLANK AND Bn2000)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nRAS0 <= NOT (((NOT nRFSH AND NOT nMREQ)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT AD(2) AND NOT nMREQ AND AD(3) AND nMRAM)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT AD(2) AND NOT nMREQ AND NOT AD(3) AND NOT nMRAM)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nRAS1 <= NOT (((NOT nRFSH AND NOT nMREQ)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (AD(2) AND NOT nMREQ AND AD(3) AND nMRAM)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (AD(2) AND NOT nMREQ AND NOT AD(3) AND NOT nMRAM)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nRAS2 <= NOT (((NOT nRFSH AND NOT nMREQ)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT AD(2) AND NOT nMREQ AND AD(3) AND NOT nMRAM)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nRAS3 <= NOT (((NOT nRFSH AND NOT nMREQ)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (AD(2) AND NOT nMREQ AND AD(3) AND NOT nMRAM)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nROMCS <= NOT ((nRFSH AND NOT nMREQ AND NOT AD(3) AND nMRAM AND NOT nRD));
+</td></tr><tr><td>
+</td></tr><tr><td>
+nWAIT <= NOT (((NOT nEXWAIT)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nRFSH AND DSP AND AD(2) AND AD(0) AND DSPAD AND NOT nMREQ AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT AD(3) AND NOT BLANK AND Bn2000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nRFSH AND DSP AND AD(2) AND AD(0) AND NOT AD(1) AND NOT nMREQ AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	AD(3) AND NOT BLANK AND NOT Bn2000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nRFSH AND DSP AND AD(2) AND DSPAD AND AD(1) AND NOT nMREQ AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT AD(3) AND NOT BLANK AND Bn2000)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nRFSH AND NOT nMREQ AND NOT cnt(1) AND NOT cnt(2) AND NOT AD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	nMRAM AND NOT nRD)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nRFSH AND DSP AND AD(2) AND AD(0) AND NOT DSPAD AND NOT nMREQ AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	AD(3) AND NOT BLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nRFSH AND DSP AND AD(2) AND NOT DSPAD AND AD(1) AND NOT nMREQ AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	AD(3) AND NOT BLANK)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (nRFSH AND DSP AND AD(2) AND NOT DSPAD AND NOT nMREQ AND AD(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT BLANK AND NOT Bn2000)));
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

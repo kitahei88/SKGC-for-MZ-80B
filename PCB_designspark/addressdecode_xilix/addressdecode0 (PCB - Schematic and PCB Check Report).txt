@@ -1,0 +1,34 @@
+Schematic and PCB Check Report
+------------------------------
+
+Report Written:     Sunday, July 13, 2025
+Project Path:       Z:\MZ_PCB\addressdecode_xilix\addressdecode0.prj
+Design Path:        Z:\MZ_PCB\addressdecode_xilix\addressdecode0.pcb
+Design Title:       
+Created:            2022/01/11 12:10:16
+Last Saved:         2025/07/11 16:43:25
+Editing Time:       1767 min
+Units:              mm (precision 4)
+
+
+Checking integrity of Schematic and Pcb designs in project "addressdecode0"
+===========================================================================
+
+The PCB and Schematic designs do not match.
+To bring them into line, you will need to make the following changes to the PCB design:
+
+
+Add Component "C4" [Capacitor]
+Add Component "C5" [Capacitor]
+
+Connect Pin IC3-1 to Net "+5VDC"
+Connect Pin IC3-2 to Net "GND"
+Connect Pin IC3-3 to Net "+5VDC"
+Connect Pin IC3-5 to Net "+3V3"
+Connect Pin C4-1 to Net "GND"
+Connect Pin C4-2 to Net "+5VDC"
+Connect Pin C5-1 to Net "GND"
+Connect Pin C5-2 to Net "+3V3"
+
+
+End Of Report.

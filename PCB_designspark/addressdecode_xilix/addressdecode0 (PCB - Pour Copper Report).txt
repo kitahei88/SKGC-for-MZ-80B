@@ -1,0 +1,16 @@
+Pour Copper Report
+------------------
+
+Report Written:     Monday, July 14, 2025
+Project Path:       Z:\MZ_PCB\addressdecode_xilix\addressdecode0.prj
+Design Path:        Z:\MZ_PCB\addressdecode_xilix\addressdecode0.pcb
+Design Title:       
+Created:            2022/01/11 12:10:16
+Last Saved:         2025/07/14 9:07:48
+Editing Time:       1805 min
+Units:              mm (precision 4)
+
+IC4.17 at 482.0374,535.3360 on layer Top Copper has no thermal spokes
+C4.2 at 474.3356,532.9243 on layer Top Copper has no thermal spokes
+
+End Of Report.

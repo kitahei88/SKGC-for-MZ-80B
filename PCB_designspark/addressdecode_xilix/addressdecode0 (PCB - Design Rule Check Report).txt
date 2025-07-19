@@ -1,0 +1,97 @@
+Design Rule Check Report
+------------------------
+
+Report Written:     Monday, July 14, 2025
+Project Path:       Z:\MZ_PCB\addressdecode_xilix\addressdecode0.prj
+Design Path:        Z:\MZ_PCB\addressdecode_xilix\addressdecode0.pcb
+Design Title:       
+Created:            2022/01/11 12:10:16
+Last Saved:         2025/07/14 9:07:48
+Editing Time:       1805 min
+Units:              mm (precision 4)
+
+
+Results
+=======
+
+Via to Silkscreen Error (V-S) between (477.9086 524.9480) and (477.9086 524.9834) on Layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Via to Silkscreen error (V-S) at (478.5747 534.2480) on layer "Top Silkscreen".
+    Silkscreen shape overlaps via.
+Pad to Silkscreen error (P-S) at (491.2268 530.2800) on layer "Top Silkscreen".
+    Silkscreen shape overlaps pad.
+Pad to Silkscreen error (P-S) at (493.6407 530.3570) on layer "Top Silkscreen".
+    Silkscreen shape overlaps pad.
+Pad to Silkscreen error (P-S) at (493.3518 528.9428) on layer "Top Silkscreen".
+    Silkscreen shape overlaps pad.
+Via to Silkscreen error (V-S) at (463.5925 528.5741) on layer "Bottom Silkscreen".
+    Silkscreen text 'SKGC_Addr_...' overlaps via.
+Component to Board error (Cm-B) at (487.7145 545.4383) on layer "[Top]".
+    J1.
+Component to Component Error (Cm-Cm) between (460.0227 537.9612) and (454.5330 537.9612) on Layer "[Top]".
+    IC1 - IC2, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (461.5225 544.8816) and (461.5225 547.3700) on Layer "[Top]".
+    C1 - IC2, Gap is 0.0000.
+Component to Board error (Cm-B) at (494.0268 528.4070) on layer "[Top]".
+    J2.
+Component to Component error (Cm-Cm) at (495.9768 528.9428) on layer "[Top]".
+    J2 - CONN1, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (467.6167 519.9780) and (471.2970 519.9780) on Layer "[Top]".
+    IC3 - IC2, Gap is 0.0000.
+Component to Board error (Cm-B) at (455.2950 545.4650) on layer "[Top]".
+    IC2.
+Component to Component Error (Cm-Cm) between (471.2970 532.1541) and (465.9092 532.1541) on Layer "[Top]".
+    IC2 - C3, Gap is 0.0000.
+Component to Component Error (Cm-Cm) between (463.9839 547.3700) and (463.9839 544.8816) on Layer "[Top]".
+    IC2 - C2, Gap is 0.0000.
+
+Number of errors found : 15
+
+
+Settings
+========
+
+
+Spacings
+
+=========
+
+Tracks        Yes
+Pads and Vias Yes
+Shapes        Yes
+Text          Yes
+Board         Yes
+Drills        Yes
+Components    Yes
+
+
+Manufacturing
+
+==============
+
+Drill Breakout                  Yes
+Drill Backoff                   Yes
+Silkscreen Overlap              Yes
+Copper Text In Board            Yes
+Min Track Width                 Yes
+Min Annular Ring                Yes
+Min Paste Size                  Yes
+Vias In Pads                    Yes
+Unplated Vias                   Yes
+Unplated Pads With Inner Tracks Yes
+
+
+Nets
+
+=====
+
+Net Completion               Yes
+Dangling Tracks              Yes
+Net Track Length Differences No
+Nets without Components      No
+Nets on No Connect pins      No
+Nets on No Connect pins      No
+
+
+
+End Of Report.

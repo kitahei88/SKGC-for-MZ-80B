@@ -1,0 +1,28 @@
+Forward Design Changes Report
+-----------------------------
+
+Report Written:     Sunday, July 13, 2025
+Project Path:       Z:\MZ_PCB\addressdecode_xilix\addressdecode0.prj
+Design Path:        Z:\MZ_PCB\addressdecode_xilix\addressdecode0.pcb
+Design Title:       
+Created:            2022/01/11 12:10:16
+Last Saved:         2025/07/13 11:33:57
+Editing Time:       1767 min
+Units:              mm (precision 4)
+
+Added component reference "C4" of component "Capacitor", package "0603".
+Added value "value=1uF" to component reference "C4".
+Added component reference "C5" of component "Capacitor", package "0603".
+Added value "value=1uF" to component reference "C5".
+
+Connected pin "IC3.1" to net "+5VDC".
+Connected pin "IC3.2" to net "GND".
+Connected pin "IC3.3" to net "+5VDC".
+Connected pin "IC3.5" to net "+3V3".
+Connected pin "C4.1" to net "GND".
+Connected pin "C4.2" to net "+5VDC".
+Connected pin "C5.1" to net "GND".
+Connected pin "C5.2" to net "+3V3".
+
+
+End Of Report.

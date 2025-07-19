@@ -1,0 +1,16 @@
+Forward Design Changes Report
+-----------------------------
+
+Report Written:     Thursday, July 10, 2025
+Project Path:       Z:\MZ_PCB\8255_smd\8255.prj
+Design Path:        Z:\MZ_PCB\8255_smd\8255.pcb
+Design Title:       
+Created:            2022/06/06 10:15:24
+Last Saved:         2025/07/04 13:56:13
+Editing Time:       1844 min
+Units:              mm (precision 4)
+
+Deleted component reference "IC6".
+
+
+End Of Report.

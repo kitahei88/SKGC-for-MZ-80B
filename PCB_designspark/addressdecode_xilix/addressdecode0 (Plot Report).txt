@@ -1,0 +1,217 @@
+Plot Report
+-----------
+
+Report Written:     Monday, July 14, 2025
+Project Path:       Z:\MZ_PCB\addressdecode_xilix\addressdecode0.prj
+Design Path:        Z:\MZ_PCB\addressdecode_xilix\addressdecode0.pcb
+Design Title:       
+Created:            2022/01/11 12:10:16
+Last Saved:         2025/07/14 9:11:01
+Editing Time:       1806 min
+Units:              mm (precision 4)
+
+
+Device Settings
+===============
+
+
+Gerber Settings
+===============
+
+    Leading zero suppression.
+    G01 assumed throughout.
+    Line termination <*> <CR> <LF>.
+    3.5 format absolute inches.
+    Format commands defined in Gerber file.
+    Aperture table defined in Gerber file.
+    Hardware arcs allowed.
+
+
+
+Plots Output
+============
+
+    Plot Job: "Z:\MZ_PCB\addressdecode_xilix\addressdecode0.mop"
+
+
+Gerber Output
+=============
+
+Z:\MZ_PCB\addressdecode_xilix\addressdecode0 - Top Copper.gbr
+
+    Layers:
+    ------------------
+    Top Copper
+    Board Outlines
+
+    D-Code Shape  (thou)
+    ----------------------------------------------
+    D10    Round 12.00
+    D11    Round 10.00
+    D13    Round 40.00
+    D14    Round 32.00
+    D15    Round 8.00
+    D18    Square 64.96
+    D19    Round 64.96
+    D20    Round 60.00
+    D21    Square 60.00
+    D78    Rectangle 39.37 X 39.37  Rotation 90
+    D79    Rectangle 23.62 X 58.07  Rotation 90
+    D80    Rectangle 23.62 X 58.07
+    D81    Rectangle 31.50 X 37.40
+    D82    Rectangle 21.65 X 37.40
+    D83    Round 55.00
+    D84    Rectangle 39.37 X 39.37
+    D85    Rectangle 27.56 X 69.88  Rotation 90
+    D86    Square 53.15
+    D87    Round 53.15
+    D88    Rectangle 25.59 X 49.21  Rotation 90
+
+Gerber Output
+=============
+
+Z:\MZ_PCB\addressdecode_xilix\addressdecode0 - Top Solder Mask.gbr
+
+    Layers:
+    -------------------
+    Top Solder Mask
+    Board Outlines
+
+    D-Code Shape  (thou)
+    ----------------------------------------------
+    D10    Round 12.00
+    D22    Square 70.96
+    D23    Round 70.96
+    D26    Round 66.00
+    D27    Square 66.00
+    D89    Rectangle 45.37 X 45.37  Rotation 90
+    D90    Rectangle 29.62 X 64.07  Rotation 90
+    D91    Rectangle 29.62 X 64.07
+    D92    Rectangle 37.50 X 43.40
+    D93    Rectangle 27.65 X 43.40
+    D94    Round 61.00
+    D95    Rectangle 45.37 X 45.37
+    D96    Rectangle 33.56 X 75.88  Rotation 90
+    D97    Square 59.15
+    D98    Round 59.15
+    D99    Rectangle 31.59 X 55.21  Rotation 90
+
+Gerber Output
+=============
+
+Z:\MZ_PCB\addressdecode_xilix\addressdecode0 - Top Silkscreen.gbr
+
+    Layers:
+    ------------------
+    Top Silkscreen
+    Board Outlines
+
+    D-Code Shape  (thou)
+    -----------------------
+    D10    Round 12.00
+    D15    Round 8.00
+    D28    Round 5.00
+    D100   Round 6.00
+    D101   Round 3.00
+    D102   Round 7.87
+    D103   Round 15.75
+    D104   Round 9.84
+
+Gerber Output
+=============
+
+Z:\MZ_PCB\addressdecode_xilix\addressdecode0 - Bottom Copper.gbr
+
+    Layers:
+    ------------------
+    Bottom Copper
+    Board Outlines
+
+    D-Code Shape  (thou)
+    -----------------------
+    D10    Round 12.00
+    D11    Round 10.00
+    D13    Round 40.00
+    D14    Round 32.00
+    D15    Round 8.00
+    D18    Square 64.96
+    D19    Round 64.96
+    D20    Round 60.00
+    D21    Square 60.00
+    D83    Round 55.00
+    D86    Square 53.15
+    D87    Round 53.15
+
+Gerber Output
+=============
+
+Z:\MZ_PCB\addressdecode_xilix\addressdecode0 - Bottom Solder Mask.gbr
+
+    Layers:
+    ----------------------
+    Bottom Solder Mask
+    Board Outlines
+
+    D-Code Shape  (thou)
+    -----------------------
+    D10    Round 12.00
+    D22    Square 70.96
+    D23    Round 70.96
+    D26    Round 66.00
+    D27    Square 66.00
+    D94    Round 61.00
+    D97    Square 59.15
+    D98    Round 59.15
+
+Gerber Output
+=============
+
+Z:\MZ_PCB\addressdecode_xilix\addressdecode0 - Bottom Silkscreen.gbr
+
+    Layers:
+    ---------------------
+    Bottom Silkscreen
+    Board Outlines
+
+    D-Code Shape  (thou)
+    -----------------------
+    D10    Round 12.00
+    D101   Round 3.00
+
+Gerber Output
+=============
+
+Z:\MZ_PCB\addressdecode_xilix\addressdecode0 - Gerber Drill Data - [Through Hole].gbr
+
+    Layers:
+    ------------------
+    [Through Hole]
+
+    D-Code Shape  (thou)
+    -----------------------
+    D29    Round 24.00
+    D72    Round 16.00
+    D74    Round 43.31
+    D105   Round 32.00
+    D106   Round 36.00
+    D107   Round 35.43
+
+Gerber Output
+=============
+
+Z:\MZ_PCB\addressdecode_xilix\addressdecode0 - NC Drill Data - [Through Hole].gbr
+
+    Layers:
+    ------------------
+    [Through Hole]
+
+    D-Code Shape  (thou)
+    -----------------------
+    D29    Round 24.00
+    D72    Round 16.00
+    D74    Round 43.31
+    D105   Round 32.00
+    D106   Round 36.00
+    D107   Round 35.43
+
+End Of Report.

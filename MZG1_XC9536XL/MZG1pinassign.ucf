@@ -1,0 +1,4 @@
+NET "CLK" LOC="P1";
+NET "DSPAD"
+NET "DSP"
+NET "nMRAM"
